@@ -15,7 +15,7 @@
 
 * Grégori Roberto 
 * Rebeca Brasilino
-* Pablo Henrique
+* Vinicius Campos
 * José Simões
 
 
