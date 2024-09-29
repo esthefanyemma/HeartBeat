@@ -13,22 +13,21 @@
 
 #### Desenvolvedores:
 
-* Trainee 1
-* Trainee 2
-* Trainee 3
-* Trainee 4
-* Trainee 5
+* Grégori Roberto 
+* Rebeca Brasilino
+* Pablo Henrique
+* José Simões
 
 
 #### Scrum Master:
 
-* [Nome do Scrum](coloque o link do github, se quiser).
+* Esthefany Emmanuele
 
 #### Links Úteis:
 
 * [Trello]()
 
-* [Drive com ID Visual]()
+* [Drive com ID Visual](https://drive.google.com/drive/folders/1Y10HnDfnBltgYZgBLiva9_B3KtwTwaWk?usp=sharing)
 
 
 
