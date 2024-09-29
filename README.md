@@ -1,6 +1,6 @@
 # **Trainee 2024.2**
 
-# **Nome do seu blog**
+# **HeartBeats**
 
 ## **Projeto Trainee, Code Jr, Grupo 000, 2024.2**
 
