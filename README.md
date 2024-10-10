@@ -61,7 +61,7 @@ git config --global user.email email@codejr.com.br
 
 * Outro jeito de fazer o citado acima: clique com o botão direito na pasta e selecione "Git Bash Here" para abrir o terminal do git
 
-* Crie um clone do repositório: `git clone https://github.com/link-do-repositorio`
+* Crie um clone do repositório: `git clone https://github.com/esthefanyemma/HeartBeat.git`
 
 * Entre na pasta criada pelo comando clone: cd /caminho/para/a/pasta/nova
 
