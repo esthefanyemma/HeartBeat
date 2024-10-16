@@ -67,3 +67,11 @@ nav ul #login a{
     color: #bd7bd1;
     border-radius: 12px;
 }
+
+footer .redeSocial{
+    background-color: #f09fd5;
+}
+
+footer .infos {
+    background-color: #bd7bd1;
+}
