@@ -5,7 +5,6 @@ body{
 }
 
 #container{
-    border: 1px solid red;
     height: 420px;
     gap: 30px;
     display: flex;
@@ -16,7 +15,7 @@ body{
     padding-right: 80px;
 }
 #containerImage{
-    background: linear-gradient(to right, rgba(189, 123, 209, 0.8), rgba(255, 159, 223, 0.8), rgba(136, 200, 238, 0.8));
+    background: linear-gradient(to right, rgba(189, 123, 209, 0.7), rgba(255, 159, 223, 0.7), rgba(136, 200, 238, 0.7));
     border-radius: 8px;
     width: 600px;
     height: 420px;
@@ -25,22 +24,77 @@ body{
 }
 
 #containerImage img{
-    width: 380px;
-    height: 250px;
+    /* width: 380px;
+    height: 250px; */
     /* width: 80%;
     height: 60%; */
+    width: 45vh;
     display: flex;
     margin: auto;
     align-items: center;
     border-radius: 12px;
-    object-fit: cover;
 }
 
 #containerPost{
-    background: linear-gradient(to left, rgba(189, 123, 209, 0.8), rgba(255, 159, 223, 0.8), rgba(136, 200, 238, 0.8));
+    background: linear-gradient(to left, rgba(189, 123, 209, 0.7), rgba(255, 159, 223, 0.7), rgba(136, 200, 238, 0.7));
     border-radius: 8px;
     width: 650px;
     height: 420px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
+    padding: 44px 50px;
+}
+
+#containerAutor{
+    width: 550px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#containerAutor #elipse{
+    width: 45px;
+    height: 45px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    
+}
+
+#containerAutor #autor{
+    width: 90px;
+    height: 36px;
+    font-size: 12px;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#containerPost h1{
+    font-size: 28px;
+    font-family: 'fredoka', sans-serif;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container p{
+    font-size: 16px;
+    font-family: 'fredoka', sans-serif;
+}
+
+#containerAutor #autor h3{
+    font-size: 16px;
+    transform: translate(0px, 10px);
+    margin: 0;
+}
+
+#containerAutor #autor p{
+    font-size: 12px;
+    font-family: 'fredoka', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    word-wrap: break-word;
 }
