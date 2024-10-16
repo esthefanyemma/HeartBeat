@@ -3,3 +3,33 @@ body{
     margin: 0;
     padding: 0;
 }
+
+#container{
+    border: 1px solid red;
+    height: 420px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+#containerImage{
+    border: 1px solid rgb(238, 255, 2);
+    background: linear-gradient(to right, rgba(189, 123, 209, 0.8), rgba(255, 159, 223, 0.8), rgba(136, 200, 238, 0.8));
+    border-radius: 8px;
+    width: 600px;
+    height: 420px;
+    display: flex;
+    
+}
+
+#containerPost{
+    border: 1px solid blue;
+    background: linear-gradient(to left, rgba(189, 123, 209, 0.8), rgba(255, 159, 223, 0.8), rgba(136, 200, 238, 0.8));
+    border-radius: 8px;
+    width: 650px;
+    height: 420px;
+    display: flex;
+}
