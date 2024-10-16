@@ -1,4 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
 body{
     padding: 0;
     margin: 0;
+}
+
+header {
+    background-color: #bd7bd1;
+    display: flex;
+    justify-content: space-between;
+    height: 123px;
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+header .logo{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+header .logo #marca {
+    height: 100%;
+}
+
+header .logo #escrito {
+    height: 60% ;
+}
+
+nav{
+    /* background-color: blue; */
+    color: #f2f2f2;
+    font-family: "Itim", cursive;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* background-color: rgb(123, 123, 31); */
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    margin: 20px;
+}
+
+nav a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+nav ul .tresBarras{
+    display: none;
+}
+
+nav ul #login a{
+    padding: 5px;
+    background-color: #f2f2f2;
+    color: #bd7bd1;
+    border-radius: 12px;
 }
