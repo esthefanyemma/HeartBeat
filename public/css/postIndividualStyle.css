@@ -16,7 +16,6 @@ body{
     padding-right: 80px;
 }
 #containerImage{
-    border: 1px solid rgb(238, 255, 2);
     background: linear-gradient(to right, rgba(189, 123, 209, 0.8), rgba(255, 159, 223, 0.8), rgba(136, 200, 238, 0.8));
     border-radius: 8px;
     width: 600px;
@@ -25,11 +24,23 @@ body{
     
 }
 
+#containerImage img{
+    width: 380px;
+    height: 250px;
+    /* width: 80%;
+    height: 60%; */
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
 #containerPost{
-    border: 1px solid blue;
     background: linear-gradient(to left, rgba(189, 123, 209, 0.8), rgba(255, 159, 223, 0.8), rgba(136, 200, 238, 0.8));
     border-radius: 8px;
     width: 650px;
     height: 420px;
     display: flex;
+    flex-direction: column;
 }
