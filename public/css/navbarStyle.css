@@ -9,25 +9,24 @@ header {
     background-color: #bd7bd1;
     display: flex;
     justify-content: space-between;
-    height: 90px;  /*Achei um tamanho melhor para a navbar*/
-    padding-left: 7%;
-    padding-right: 11%;
+    width: 100%;
 }
 
 header .logo{
-    /* background-color: green; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10%;
+    margin-left: 7%;
+    /* background-color: green; */
+    /* max-width: 40vw; */
 }
 
-header .logo #marca {
-    height: 90%;
+header .logo #marca{
+    height: 90px;
+    margin-right: 50px;
 }
 
-header .logo #escrito {
-    height: 60% ;
+header .logo #escrito{
+    height: 60px;
 }
 
 nav{
@@ -35,6 +34,7 @@ nav{
     color: #f2f2f2;
     font-family: "Itim", cursive;
     font-size: 20px;
+    margin-right: 9%;
 }
 
 nav ul {
@@ -68,10 +68,77 @@ nav ul #login a{
     border-radius: 12px;
 }
 
+main{
+    height: 492px;
+}
+
+footer{
+    bottom: 0;
+    font-family: "Itim", cursive;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+}
+
 footer .redeSocial{
     background-color: #f09fd5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.redeSocial ul{
+    display: flex;
+}
+
+.redeSocial ul li{
+    padding-right: 40px;
+}
+
+.redeSocial ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 footer .infos {
     background-color: #bd7bd1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
 }
+
+.infos ul{
+    display: flex;
+    justify-content: space-around;
+    color: #f2f2f2;
+}
+
+.infos li{
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.infos img{
+    height: 100px;
+}
+
+.infos #code{
+    height: 88px;
+    border-radius: 12px;
+}
+
+
+
