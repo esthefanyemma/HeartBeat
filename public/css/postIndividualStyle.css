@@ -2,9 +2,11 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-#container {
+.container {
   height: 420px;
   width: 100%;
   gap: 30px;
@@ -13,11 +15,11 @@ body {
   align-items: center;
   margin-top: 120px;
   margin-bottom: 120px;
-  padding-left: 80px;
-  padding-right: 80px;
-  flex-flow: row wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-flow: row;
 }
-#containerImage {
+.containerImage {
   background: linear-gradient(
     to right,
     rgba(189, 123, 209, 0.7),
@@ -25,12 +27,12 @@ body {
     rgba(136, 200, 238, 0.7)
   );
   border-radius: 8px;
-  width: 600px;
+  width: 45%;
   height: 420px;
   display: flex;
 }
 
-#containerImage img {
+.containerImage img {
   /* width: 440px;
   height: 250px; */
   width: 80%;
@@ -43,7 +45,7 @@ body {
   border-radius: 12px;
 }
 
-#containerPost {
+.containerPost {
   background: linear-gradient(
     to left,
     rgba(189, 123, 209, 0.7),
@@ -51,7 +53,7 @@ body {
     rgba(136, 200, 238, 0.7)
   );
   border-radius: 8px;
-  width: 60%;
+  width: 55%;
   height: 420px;
   display: flex;
   box-sizing: border-box;
@@ -59,7 +61,7 @@ body {
   padding: 44px 50px;
 }
 
-#containerAutor {
+.containerAutor {
   width: 550px;
   height: 65px;
   display: flex;
@@ -67,14 +69,14 @@ body {
   gap: 10px;
 }
 
-#containerAutor #elipse {
+.elipse {
   width: 45px;
   height: 45px;
   background-color: #f2f2f2;
   border-radius: 50%;
 }
 
-#containerAutor #autor {
+.autor {
   width: 90px;
   height: 36px;
   font-size: 12px;
@@ -84,7 +86,7 @@ body {
   justify-content: center;
 }
 
-#containerPost h1 {
+.containerPost h1 {
   font-size: 28px;
   font-family: "fredoka", sans-serif;
   font-weight: 450;
@@ -93,21 +95,24 @@ body {
   justify-content: center;
 }
 
-#container p {
+.container p {
   font-size: 16px;
   font-family: "fredoka", sans-serif;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
 }
 
-#containerAutor #autor h3 {
+.containerAutor .autor h3 {
   font-size: 16px;
   transform: translate(0px, 10px);
   margin: 0;
 }
 
-#containerAutor #autor p {
+.autor h2 {
   font-size: 12px;
+  font-weight: 300;
   font-family: "fredoka", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
   word-wrap: break-word;
 }
+
