@@ -9,6 +9,7 @@ header {
     background-color: #bd7bd1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -68,4 +69,23 @@ nav ul #login a{
     border-radius: 12px;
 }
 
+@media screen and (max-width: 767px) {
+    header .logo #escrito {
+        display: none;
+    }
+
+    nav li{
+        display: none;
+        font-size: 24px;
+    }
+
+    nav li.tresBarras {
+        display: flex;
+    }
+
+    header .logo #marca{
+        height: 70px;
+        padding: 5px;
+    }
+}
 
