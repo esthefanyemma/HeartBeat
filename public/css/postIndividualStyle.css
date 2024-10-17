@@ -4,9 +4,11 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 
 .container {
+  border: red 1px solid;
   height: 420px;
   width: 100%;
   gap: 30px;
@@ -17,7 +19,6 @@ body {
   margin-bottom: 120px;
   padding-left: 100px;
   padding-right: 100px;
-  flex-flow: row;
 }
 .containerImage {
   background: linear-gradient(
@@ -27,9 +28,11 @@ body {
     rgba(136, 200, 238, 0.7)
   );
   border-radius: 8px;
-  width: 45%;
+  width: 50%;
   height: 420px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerImage img {
@@ -39,7 +42,6 @@ body {
   height: 60%;
   /* width: 50vh; */
   display: flex;
-  margin: auto;
   align-items: center;
   object-fit: cover;
   border-radius: 12px;
@@ -53,7 +55,7 @@ body {
     rgba(136, 200, 238, 0.7)
   );
   border-radius: 8px;
-  width: 55%;
+  width: 50%;
   height: 420px;
   display: flex;
   box-sizing: border-box;
@@ -62,7 +64,6 @@ body {
 }
 
 .containerAutor {
-  width: 550px;
   height: 65px;
   display: flex;
   align-items: center;
@@ -114,5 +115,73 @@ body {
   font-weight: 300;
   font-family: "fredoka", sans-serif;
   word-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .containerImage{
+        background: linear-gradient(
+    to left,
+    rgba(189, 123, 209, 0.7),
+    rgba(255, 159, 223, 0.7),
+    rgba(136, 200, 238, 0.7)
+  );
+        width: 100%;
+        height: 30%;
+    }
+
+    .containerImage img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .containerPost {
+        background: linear-gradient(
+          to left,
+          rgba(189, 123, 209, 0.7),
+          rgba(255, 159, 223, 0.7),
+          rgba(136, 200, 238, 0.7)
+        );
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .containerImage{
+        width: 120%;
+    }
+    .containerPost {
+        width: 120%;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .container{
+        margin-left: 40px;
+    }
+
+    .containerImage{
+        width: 130%;
+    }
+    .containerPost {
+        width: 130%;
+    }
 }
 
