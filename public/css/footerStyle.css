@@ -9,6 +9,7 @@ footer{
     /* position: absolute;     Isso deu certo no pc mas no resto não tá deixando o footer totalmente no fim da página
     bottom: 0;    */
     font-family: "Itim", cursive;
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,23 +30,37 @@ footer a{
 
 footer .redeSocial{
     background-color: #f09fd5;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     padding: 1% 0;
 }
 
 
 .redeSocial ul{
     display: flex;
-    justify-content: space-between;
-    gap: 30%;
+    justify-content: center;
+    /* background-color: blue; */
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 30px;
+    box-sizing: border-box;
 }
 
-.redeSocial ul li a{
+.redeSocial ul li{
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.redeSocial ul  li i a{
     color: #f2f2f2;
     text-decoration: none;
     font-size: 30px;
 }
+
+
+
+
+
 
 footer .infos {
     background-color: #bd7bd1;
@@ -76,14 +91,38 @@ footer .infos {
 }
 
 @media screen and (max-width: 767px){
-    footer .redeSocial a{
-      font-size: 20px;
-      justify-content: start;
+    .redeSocial {
+        width: 100%;
     }
 
     .redeSocial ul{
-        padding-left: 0;
-        margin-left: 0;
-        gap: 20%;
+        font-size: 24px;
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .infos{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .infos li{
+        font-size: 16px;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .infos ul{
+        justify-content: center;
+        gap: 15%;
+    }
+
+    .infos img{
+        height: 60px;
+    }
+
+    .infos #code{
+        height: 53px;
     }
 }
