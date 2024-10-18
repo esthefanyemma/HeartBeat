@@ -56,6 +56,12 @@ nav li{
 nav a{
     color: #f2f2f2;
     text-decoration: none;
+    transition: all 0.2s linear 0s;
+}
+
+/* Adicionei um hoover na navbar */
+nav a:hover{
+    font-size: 22px;
 }
 
 nav ul .tresBarras{
