@@ -8,7 +8,6 @@ body {
 }
 
 .container {
-  border: red 1px solid;
   height: 420px;
   width: 100%;
   gap: 30px;
@@ -157,6 +156,15 @@ body {
         );
         justify-content: center;
         width: 100%;
+    }
+
+    .elipse{
+        height: 30px;
+        width: 30px;
+    }
+
+    .containerAutor .autor h3, h2 {
+        font-size: 14px;
     }
 
 }
