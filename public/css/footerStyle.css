@@ -58,21 +58,17 @@ footer .redeSocial{
 }
 
 
-
-
-
-
 footer .infos {
     background-color: #bd7bd1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5% 0 5%;
+    padding: 1% 5% 1% 5%;
 }
 
 .infos ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #f2f2f2;
     gap: 25%;
 }
@@ -108,7 +104,7 @@ footer .infos {
     }
 
     .infos li{
-        font-size: 16px;
+        font-size: 14px;
         padding-left: 1%;
         padding-right: 1%;
     }
