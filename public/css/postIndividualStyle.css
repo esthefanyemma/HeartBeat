@@ -204,4 +204,15 @@ body {
   .containerPost p {
     font-size: 14px;
   }
+
+  .elipse {
+    height: 25px;
+    width: 25px;
+  }
+
+  .containerAutor .autor h3,
+  h2 {
+    font-size: 12px;
+  }
+
 }
