@@ -1,5 +1,6 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
@@ -34,4 +35,39 @@ body {
   gap: 10px;
   padding-right: 18px;
   padding-left: 18px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 508px;
+  height: 318px;
+}
+
+.textbox input {
+  width: 444px;
+  height: 49px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 10px;
+}
+
+.textbox input::placeholder {
+  color: #b3b3b3;
+  padding-left: 10px;
+}
+
+.btn {
+  width: 126px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  border: none;
+  color: #C44CE8;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
 }
