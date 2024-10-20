@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../../public/css/loginStyle.css">
 </head>
-<body>
+<body>  
+
+    <div class="container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="logo"><img src="../../../public/assets/heartBeats-logo-com-nome.png" alt=""></div>
+            <form action="login" method="POST">
+                <div class="textbox">
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="textbox">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
     
 </body>
 </html>
