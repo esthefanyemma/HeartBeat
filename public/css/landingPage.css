@@ -1,3 +1,28 @@
-.botoes{
-    padding: 20px;
+
+
+body *{
+    font-family: "Fredoka", sans-serif;
+}
+.desc{
+    background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
+    background-color: #bd7bd1;
+    border: 1px solid red;
+    display: block;
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+    margin: auto;
+}
+.logo img{
+ width: 256px;
+ height: 256px;
+
+}
+.texto{
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 24px;
+    line-height: 40px;
 }
