@@ -17,8 +17,6 @@ header .logo{
     display: flex;
     align-items: center;
     margin-left: 7%;
-    /* background-color: green; */
-    /* max-width: 40vw; */
 }
 
 header .logo #marca{
@@ -31,7 +29,6 @@ header .logo #escrito{
 }
 
 nav{
-    /* background-color: blue; */
     color: #f2f2f2;
     font-family: "Itim", cursive;
     font-size: 20px;
