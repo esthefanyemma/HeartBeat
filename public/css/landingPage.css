@@ -6,8 +6,6 @@
 }
 body *{
     font-family: "Fredoka", sans-serif;
-    border: 1px solid red;
-
 }
 .desc{
     padding-top: 10px;
@@ -44,7 +42,6 @@ body *{
 .conj{
     padding-left: 160px;
     padding-right: 160px;
-
     padding-block: 50px;
     width: 100%;
     display: flex;
@@ -62,14 +59,23 @@ body *{
     
 }
 .posts{
-    margin: 120px;
+    margin: 120px 120px;
     background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
     background-color: #bd7bd1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px; 
+    gap: 60px;  
+    padding-top: 60px;
+    padding-bottom: 60px; 
 }
 .postSeta{
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    background-color: #88c8ee;
+    border-radius: 12px;
 }
 .setaE img{
     width: 80px;
@@ -78,4 +84,53 @@ body *{
 .setaD img{
     width: 80px;
     height: 90px;
+}
+.setaD{
+    background-color: #fefefe00;
+    border: none;
+    outline: none;
+}
+.setaE{
+    background-color: #fefefe00;
+    border: none;
+    outline: none;
+}
+
+.botao1{
+    display: flex;
+    justify-content: center;
+}
+.botao1 button{
+    background-color: #fefefe;
+    color: #bd7bd1;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    transition: all 0.2s;
+}
+.botao1 button:hover{
+    transform: scale(1.2);
+}
+.postG{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.textoData{
+    font-size: 16px;
+    opacity: 50%;
+}
+.textoAutor{
+    font-size: 24px;
+}
+.autor{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.imgGrupo{
+    border-radius: 12px 12px 0px 0px;
 }
