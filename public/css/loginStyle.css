@@ -88,6 +88,7 @@ h1 {
     height: 60%;
   }
   h1{
+    margin-bottom: 40px;
     font-size: 28px;
   }
 }
@@ -112,14 +113,19 @@ h1 {
 
 @media (max-width: 400px) {
 
+    *{
+        box-sizing: content-box;
+    }
+
     .login-box {
         width: 80%;
-        height: 70%;
+        height: 55%;
+        padding-bottom: 0;
     }
 
   .login-box img {
-    width: 180px;
-    height: 140px;
+    width: 140px;
+    height: 130px;
   }
 
   form{
@@ -137,5 +143,37 @@ h1 {
   .btn {
     width: 80px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+
+    .login-box {
+        width: 80%;
+        height: 50%;
+        padding-bottom: 0;
+    }
+
+
+  .login-box img {
+    width: 130px;
+    height: 120px;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .textbox input {
+    width: 200px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 70px;
+    font-size: 18px;
   }
 }
