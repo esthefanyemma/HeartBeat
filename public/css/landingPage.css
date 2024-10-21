@@ -33,7 +33,7 @@ body *{
 }
 
 .grupos{
-
+    margin: 120px 0px;
     width: 100%;
     background-color: #fefefe;
     
@@ -56,7 +56,17 @@ body *{
     background-color: #88c8ee;
     width: 160px;
     height: 200px;
+    border-radius: 12px ;
     
+}
+.item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+}
+.item p{
+    text-align: center;
+    align-items: center;
 }
 .posts{
     margin: 120px 120px;
@@ -78,23 +88,30 @@ body *{
     border-radius: 12px;
 }
 .setaE img{
-    width: 80px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
 }
 .setaD img{
-    width: 80px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
 }
 .setaD{
     background-color: #fefefe00;
     border: none;
     outline: none;
+    transition: all 0.2s;
 }
 .setaE{
     background-color: #fefefe00;
     border: none;
     outline: none;
+    transition: all 0.2s;
 }
+.setaD:hover{
+    transform: scale(1.2);
+}
+.setaE:hover{
+    transform: scale(1.2);}
 
 .botao1{
     display: flex;
