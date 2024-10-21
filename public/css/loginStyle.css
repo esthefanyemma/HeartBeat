@@ -1,21 +1,17 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(to right, #bd7bd1, #ff9fdf, #88c8ee);
+  background: cover;
   margin: 0;
   display: flex;
   justify-content: center;
   height: 100vh;
   margin-top: 120px;
-  margin-bottom: 120px;
-}
-
-.container {
-  padding-right: 320px;
-  padding-left: 320px;
 }
 
 .login-box {
@@ -31,7 +27,7 @@ body {
 
 .login-box img {
   width: 320px;
-  height: 318px;
+  height: 300px;
   gap: 10px;
   padding-right: 18px;
   padding-left: 18px;
@@ -48,26 +44,35 @@ form {
 
 .textbox input {
   width: 444px;
-  height: 49px;
+  height: 45px;
   background-color: #f2f2f2;
   border-radius: 12px;
   border: 1px solid #f2f2f2;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .textbox input::placeholder {
-  color: #b3b3b3;
+  font-size: large;
   padding-left: 10px;
 }
 
 .btn {
   width: 126px;
-  height: 46px;
+  height: 40px;
   background-color: #f2f2f2;
   border-radius: 12px;
   border: none;
-  color: #C44CE8;
-  font-size: 18px;
-  font-weight: bold;
+  color: #c44ce8;
+  font-size: 28px;
   margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Itim";
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  font-family: "Fredoka";
 }
