@@ -76,3 +76,66 @@ h1 {
   margin-bottom: 50px;
   font-family: "Fredoka";
 }
+
+@media (max-width: 768px) {
+  .login-box img {
+    width: 220px;
+    height: 180px;
+  }
+  .login-box {
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+  }
+  h1{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-box img {
+    width: 200px;
+    height: 160px;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .textbox input {
+    width: 300px;
+  }
+  .btn {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+
+    .login-box {
+        width: 80%;
+        height: 70%;
+    }
+
+  .login-box img {
+    width: 180px;
+    height: 140px;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .textbox input {
+    width: 250px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 80px;
+    font-size: 20px;
+  }
+}
