@@ -6,8 +6,8 @@ body{
 }
 
 footer{
-    /* position: absolute;     Isso deu certo no pc mas no resto não tá deixando o footer totalmente no fim da página
-    bottom: 0;    */
+    position: absolute; 
+    bottom: 0;   
     font-family: "Itim", cursive;
     box-sizing: border-box;
     width: 100%;
@@ -30,8 +30,6 @@ footer a{
 
 footer .redeSocial{
     background-color: #f09fd5;
-    /* display: flex;
-    justify-content: center; */
     padding: 1% 0;
 }
 
@@ -39,7 +37,6 @@ footer .redeSocial{
 .redeSocial ul{
     display: flex;
     justify-content: center;
-    /* background-color: blue; */
     color: #f2f2f2;
     text-decoration: none;
     font-size: 30px;
@@ -51,10 +48,14 @@ footer .redeSocial{
     padding-right: 2%;
 }
 
-.redeSocial ul  li i a{
+.redeSocial ul li a{
     color: #f2f2f2;
     text-decoration: none;
     font-size: 30px;
+}
+
+.redeSocial a:hover{
+    cursor: pointer;
 }
 
 
@@ -63,7 +64,7 @@ footer .infos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 5% 1% 5%;
+    padding: 1% 5%;
 }
 
 .infos ul{
@@ -75,6 +76,11 @@ footer .infos {
 
 .infos li{
     font-size: 24px;
+}
+
+.infos li a{
+    text-decoration: none;
+    color: #f2f2f2;
 }
 
 .infos img{
