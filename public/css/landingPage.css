@@ -1,19 +1,24 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body *{
     font-family: "Fredoka", sans-serif;
+    border: 1px solid red;
+
 }
 .desc{
+    padding-top: 10px;
     background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
     background-color: #bd7bd1;
-    border: 1px solid red;
     display: block;
     text-align: center;
 }
 
 .logo{
     text-align: center;
-    margin: auto;
 }
 .logo img{
  width: 256px;
@@ -21,8 +26,56 @@ body *{
 
 }
 .texto{
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 120px;
     padding-right: 120px;
     font-size: 24px;
     line-height: 40px;
+}
+
+.grupos{
+
+    width: 100%;
+    background-color: #fefefe;
+    
+    justify-content: space-around;
+}
+.conj{
+    padding-left: 160px;
+    padding-right: 160px;
+
+    padding-block: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+    text-align: center;
+    font-size: 32px;
+}
+
+.item{
+    background-color: #88c8ee;
+    width: 160px;
+    height: 200px;
+    
+}
+.posts{
+    margin: 120px;
+    background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
+    background-color: #bd7bd1;
+}
+.postSeta{
+    display: flex;
+    justify-content: space-between;
+
+}
+.setaE img{
+    width: 80px;
+    height: 90px;
+}
+.setaD img{
+    width: 80px;
+    height: 90px;
 }
