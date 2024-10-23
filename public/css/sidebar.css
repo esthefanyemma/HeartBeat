@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body *{
+    font-family: "Fredoka", sans-serif;
+    color: #f0f0f0;
+}
+
+.sidebar{
+    background-color: #bd7bd1;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 100%;
+    
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logoimg{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoimg img{
+    width: 100%;
+    height: 100px;
+}
+.escrito{
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.escrito img{
+    width: 100%;
+    height: 50px;
+}
+.funcoes{
+    display: flex;
+    flex-direction: column;
+}
+.func{
+    display: flex;
+    flex-direction: row;
+}
+.icone{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+.icone img{
+    width: 100%;
+    height: 60px;
+}
+.texto{
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
