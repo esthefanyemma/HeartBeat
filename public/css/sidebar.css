@@ -6,11 +6,11 @@
 }
 body *{
     font-family: "Fredoka", sans-serif;
+    font-size: 24px;
     color: #f0f0f0;
 }
 
 .sidebar{
-    border: 1px solid red;
     background-color: #bd7bd1;
     display: flex;
     flex-direction: column;
@@ -49,15 +49,26 @@ body *{
 .func{
     display: flex;
     flex-direction: row;
+    padding-left: 10px;
 }
 .icone{
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
-    width: 60px;
-    margin-bottom: 10px;
+    width: 50px;
+    margin-bottom: 5px;
+}
+.icone2{
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    width: 48px;
+    margin-bottom: 5px;
 }
 .icone img{
+    width: 100%;
+    height: 60px;
+}
+.icone2 img{
     width: 100%;
     height: 60px;
 }
