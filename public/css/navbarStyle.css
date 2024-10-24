@@ -95,7 +95,10 @@ nav ul #login a{
     }
 
     .modalNav{
-        background-color: #f09fd5;
+        background-color: #ff9fdf;
+        /* background-image: linear-gradient(to bottom, #ff9fdf, hwb(0 0% 100% / 0.3)); */
+        font-family: "Itim", cursive;
+        font-size: 24px;
         position: absolute;
         height: 100%;
         right: 0;
