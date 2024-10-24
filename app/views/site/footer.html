@@ -29,13 +29,24 @@
             <img src="../../../public/assets/heartBeats-logo-com-nome.png" alt="Logo do Heart Beats">
             <div>
                 <ul>
-                    <li><a href="#">Missão</a></li>
-                    <li><a href="#">Visão</a></li>
-                    <li><a href="#">Valores</a></li>
+                    <li><a href="#" id="missao" onclick="openModal('missao')">Missão</a></li>
+                    <li><a href="#" id="visao" onclick="openModal('visao')">Visão</a></li>
+                    <li><a href="#" id="valores" onclick="openModal('valores')">Valores</a></li>
                 </ul>
             </div>
             <img src="../../../public/assets/logo-code.jpg" alt="Logo da Code JR" id="code">
         </div>
     </footer>
+
+    <!-- Modal -->
+     <div class="modal">
+        <div class="titulo">
+            <h1></h1>
+        </div>
+        <div class="texto">
+            <p></p>
+        </div>
+     </div>
 </body>
+    <script src="/public/js/footerScript.js"></script>
 </html>
