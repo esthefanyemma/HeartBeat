@@ -6,7 +6,6 @@
 
 body {
   background: linear-gradient(to right, #bd7bd1, #ff9fdf, #88c8ee);
-  background: cover;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -124,8 +123,8 @@ h1 {
     }
 
   .login-box img {
-    width: 140px;
-    height: 130px;
+    width: 150px;
+    height: 140px;
   }
 
   form{
