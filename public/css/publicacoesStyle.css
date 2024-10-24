@@ -1,0 +1,44 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: aquamarine;
+}
+
+.apresentacao{
+    background-color: blanchedalmond;
+}
+
+.container .apresentacao {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* justify-content: center ; */
+}
+
+.apresentacao .botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    gap: 10px;
+}
+
+.publicacoes table{
+    width: 100%;
+}
+
+.publicacoes .acoes {
+    display: flex;
+    gap: 10px;
+}
