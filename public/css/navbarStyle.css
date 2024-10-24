@@ -71,6 +71,10 @@ nav ul #login a{
     border-radius: 12px;
 }
 
+.modalNav{
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     header .logo #escrito {
         display: none;
@@ -88,6 +92,58 @@ nav ul #login a{
     header .logo #marca{
         height: 70px;
         padding: 5px;
+    }
+
+    .modalNav{
+        background-color: #f09fd5;
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        padding-top: 20px;
+        z-index: 3;
+    }
+
+    .modalNav ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .modalNav li{
+        list-style: none;
+        padding: 20px;  
+        display: flex;
+        justify-content: center;
+        /* width: 100%; */
+        /* border-bottom: 4px solid #bd7bd1; */
+    }
+
+    .modalNav a{
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+
+    .modalNav ul .tresBarras{
+        color: #f2f2f2;
+    }
+
+    .modalNav{
+        display: none;
+    }
+
+    .tela{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 30%;
+        position: absolute;
+        display: none;
+        z-index: 2;
     }
 }
 
