@@ -11,3 +11,32 @@ body{
     align-items: center;
 }
 
+.container-usuario{
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+table tr{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.acoes{
+    display: flex;
+    justify-content: center;
+}
