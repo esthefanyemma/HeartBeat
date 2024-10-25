@@ -12,72 +12,67 @@ body *{
 
 .sidebar{
     background-color: #bd7bd1;
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.side{
+    background-color: #bd7bd1;
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 100vh;
-    
-}
-.logo{
-    display: flex;
-    flex-direction: row;
-}
-.logoimg{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logoimg img{
-    width: 100%;
-    height: 100px;
-}
-.escrito{
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.escrito img{
-    width: 100%;
-    height: 50px;
+    width: fit-content;
+    height: 100vh; 
 }
 .funcoes{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 18px;
 }
 .func{
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
-}
-.icone{
-    display: flex;
-    flex-direction: row;
-    width: 50px;
-    margin-bottom: 5px;
-}
-.icone2{
-    padding: 4px;
-    display: flex;
-    flex-direction: row;
-    width: 48px;
-    margin-bottom: 5px;
-}
-.icone img{
-    width: 100%;
-    height: 60px;
-}
-.icone2 img{
-    width: 100%;
-    height: 60px;
+    align-items: center;
 }
 .texto{
-    padding-left: 8px;
+    padding-left: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+.icone{
+ transform: scale(1.2);
+}
+
+@media only screen and (max-width: 680px){
+    .icone{
+        transform: scale(1);
+    }
+    .texto p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .funcoes{
+        padding: 8px;
+    }
+    .icone{
+        transform: scale(0.8);
+    }
+    .texto{
+        padding-left: 6px;
+    }
+    .texto p{
+        font-size: 14px;
+    }
+
+}
+
 
 

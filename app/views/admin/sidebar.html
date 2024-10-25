@@ -4,6 +4,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 
     <link rel="stylesheet" href="../../../public/css/sidebar.css">
     <meta charset="UTF-8">
@@ -11,34 +14,53 @@
     <title>Sidebar</title>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <div class="logoimg"><img src=../../../public/assets/logo.png alt="Logo HeartBeats"></div>
-            <div class="escrito"><img src=../../../public/assets/escrito.png alt="Logo HeartBeats"></div>
-        </div>
+    <!-- MODAL FECHADO -->
+    <div class="side">
         <div class="funcoes">
             <div class="func">
-                <div class="icone"><img src="../../../public/assets/dashboard.png" alt=""></div>
-                <div class="texto"><p> Dashboard</p></div>
+                <i onclick="abrir()" class="icone bi bi-list"></i>            
             </div>
             <div class="func">
-                <div class="icone">
-                    <img src="../../../public/assets/publicacoes.png" alt=""></div>
-                    <div class="texto"><p> Publicações</p></div>
+                <i class="icone bi bi-grid"></i>                
             </div>
             <div class="func">
-                <div class="icone2">
-                    <img src="../../../public/assets/users.png" alt="">
-                    <div class="texto"><p> Usuários</p></div>
-                </div>
+                <i class="icone bi bi-pencil-square"></i> 
             </div>
             <div class="func">
-                <div class="icone2">
-                    <img src="../../../public/assets/Logout.png" alt="">
-                    <div class="texto"><p> Dashboard</p></div>
-                </div>
+                <i class="icone bi bi-people"></i>                
+            </div>
+            <div class="func">
+                <i class="icone bi bi-box-arrow-right"></i>                
             </div>
         </div>
     </div>
+    <!-- MODAL -->
+    <div class="sidebar">
+        <div class="funcoes">
+            <div class="func">
+                <i onclick="fechar()" class="icone bi bi-list"></i>            
+            </div>
+            <div class="func">
+                <i class="icone bi bi-grid"></i>                
+                <div class="texto"><p> Dashboard</p></div>
+            </div>
+            <div class="func">
+                <i class="icone bi bi-pencil-square"></i>                    
+                <div class="texto"><p> Publicações</p></div>
+            </div>
+            <div class="func">
+                <i class="icone bi bi-people"></i>                
+                <div class="texto"><p> Usuários</p></div>
+            </div>
+            <div class="func">
+                <i class="icone bi bi-box-arrow-right"></i>                
+                <div class="texto"><p> Logout</p></div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script src="../../../public/js/sidebar.js"></script>   
+
 </html>
