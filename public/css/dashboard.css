@@ -1,0 +1,77 @@
+body{
+    padding: 60px;
+    padding-top: 40px;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-tipo img{
+    height: 100%;
+    width: 120px;
+}
+
+.cabeçalho{
+    background-image: linear-gradient(to right, #BD7BD1 0% ,#FF9FDF 52%,#88C8EE 80%);
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+
+.logo-tipo{
+    display: grid;
+    place-items: center;
+}
+
+.logo-tipo h1{
+    font-family: Fredoka, sans-serif; 
+}
+
+
+a{
+    box-shadow: 1px 1px 10px #000000;
+    text-align: center;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+a:hover{
+    transform: scale(1.08);
+}
+
+.botoes-superiores{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    gap: 40px;
+}
+
+.botoes-superiores a{
+    background-color: #88C8EE;
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-family: Itim;  /*font-family deu errado*/
+    font-size: 32px;  /*esta meio grande com 40*/
+}
+
+.button-logout{
+    background-color: #FF9FDF;
+    border-radius: 12px;
+    font-family: Itim, sans-serif;  /*aqui a font-family deu certo*/
+    font-size: 32px;  /* esta meio grande*/
+    /**/
+    margin-left: auto;
+    margin-right: auto;  /*fiz isso para centralizar o ultimo botao*/
+    display: block;
+   /**/
+    padding: 30px 50px;
+    width: fit-content;
+    
+}
+
+.diminuir{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 40px;
+
+}
