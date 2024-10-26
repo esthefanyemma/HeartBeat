@@ -63,7 +63,7 @@ a:hover{
     margin-right: auto;  /*fiz isso para centralizar o ultimo botao*/
     display: block;
    /**/
-    padding: 30px 50px;
+    padding: 30px 46px;
     width: fit-content;
     
 }
@@ -74,4 +74,39 @@ a:hover{
     height: fit-content;
     gap: 40px;
 
+}
+
+@media screen and (max-width:600px) {
+    .logo-tipo h1{
+        font-size: 24px;
+    }
+
+    .logo-tipo img{
+        height: 100%;
+        width: 100px;
+    }
+
+    .botoes-superiores a{
+        font-size:22px;
+    }
+
+    .button-logout{
+        font-size: 22px;
+    }
+
+    .cabeçalho{
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width:522px) {
+    .botoes-superiores{   
+        gap: 30px;
+        flex-direction: column;
+
+    }
+    
+    .diminuir{
+        gap: 30px;
+    }
 }
