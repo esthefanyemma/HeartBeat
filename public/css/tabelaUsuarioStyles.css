@@ -21,11 +21,10 @@ body {
   );
   display: flex;
   align-items: center;
-  width: 1200px;
   gap: 550px;
   border-radius: 12px;
   padding: 20px 60px 20px 60px;
-  font-family: 'Itim', sans-serif;
+  font-family: "Itim", sans-serif;
   font-weight: 100;
 }
 
@@ -55,7 +54,7 @@ table {
   color: #ae1d7e;
   width: 100%;
   padding: 10px;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 table tr {
@@ -159,4 +158,231 @@ thead tr {
 button:hover {
   background-color: #f763c6;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .apresentacao {
+    gap: 400px;
+  }
+  .container-usuario {
+    width: 1000px;
+  }
+
+  thead tr {
+    display: flex;
+    justify-content: left;
+    gap: 170px;
+  }
+
+  .nome {
+    width: 80px;
+  }
+
+  .email {
+    width: 100px;
+  }
+
+  .acoes-tr {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .apresentacao {
+    gap: 300px;
+    width: 800px;
+  }
+  .container-usuario {
+    width: 800px;
+  }
+
+  thead tr {
+    display: flex;
+    justify-content: left;
+    gap: 100px;
+  }
+
+  .nome {
+    width: 80px;
+  }
+
+  .email {
+    width: 100px;
+  }
+
+  .acoes-tr {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .apresentacao {
+    gap: 100px;
+    width: 600px;
+    font-size: smaller;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .apresentacao h2 {
+    font-size: 17px;
+  }
+
+  .btn {
+    width: 80px;
+    font-size: 15px;
+  }
+
+  .container-usuario {
+    width: 600px;
+  }
+
+  thead tr {
+    display: flex;
+    justify-content: left;
+    gap: 35px;
+  }
+
+  .nome {
+    width: 80px;
+  }
+
+  .email {
+    width: 100px;
+  }
+
+  .acoes-tr {
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .apresentacao {
+    gap: 80px;
+    width: 400px;
+    padding: 5px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .apresentacao h2 {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 60px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .container-usuario {
+    width: 400px;
+  }
+
+  table tbody {
+    font-size: 15px;
+  }
+
+  thead tr {
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+  }
+
+  .acoes {
+    gap: 5px;
+  }
+
+  .nome {
+    width: 50px;
+  }
+
+  .email {
+    width: 60px;
+  }
+
+  .acoes-tr {
+    width: 160px;
+  }
+
+  .acoes .editar,
+  .deletar,
+  .visualizar {
+    width: 30px;
+    height: 20px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .apresentacao {
+    gap: 50px;
+    width: 300px;
+    padding: 5px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .apresentacao h2 {
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .container-usuario {
+    width: 300px;
+  }
+
+  table tbody {
+    font-size: 13px;
+    
+  }
+
+  thead tr {
+    display: flex;
+    justify-content: left;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .acoes {
+    gap: 5px;
+  }
+
+  .nome {
+    width: 50px;
+  }
+
+  .email {
+    width: 60px;
+  }
+
+  .acoes-tr {
+    width: 90px;
+  }
+
+  .acoes .editar,
+  .deletar,
+  .visualizar {
+    width: 30px;
+    height: 20px;
+  }
 }
