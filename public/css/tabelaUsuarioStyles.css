@@ -25,6 +25,8 @@ body {
   gap: 550px;
   border-radius: 12px;
   padding: 20px 60px 20px 60px;
+  font-family: 'Itim', sans-serif;
+  font-weight: 100;
 }
 
 .logo {
@@ -53,6 +55,7 @@ table {
   color: #ae1d7e;
   width: 100%;
   padding: 10px;
+  font-family: 'Fredoka', sans-serif;
 }
 
 table tr {
