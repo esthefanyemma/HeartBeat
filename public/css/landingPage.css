@@ -103,7 +103,10 @@ body *{
     flex-direction: column;
     align-items: start;
     justify-content: left;
-    
+    transition: all 0.2s;
+}
+.imagem:hover{
+    transform: scale(1.1);
 }
 .imagem p{
     padding-left: 12px;
@@ -166,10 +169,10 @@ body *{
 
 @media only screen and (max-width:1320px){
     .imagem{
-        width: 220px;
+        width: 240px;
     }
     .imagem img{
-        height: 220px;
+        height: 240px;
     }
     .imgGrupo{
         height: 50%;
