@@ -319,13 +319,12 @@ button:hover {
     width: 30px;
     height: 20px;
   }
-
 }
 
 @media (max-width: 400px) {
   .apresentacao {
     gap: 50px;
-    width: 300px;
+    width: 310px;
     padding: 5px;
   }
 
@@ -348,12 +347,11 @@ button:hover {
   }
 
   .container-usuario {
-    width: 300px;
+    width: 310px;
   }
 
   table tbody {
     font-size: 13px;
-    
   }
 
   thead tr {
@@ -384,5 +382,13 @@ button:hover {
   .visualizar {
     width: 30px;
     height: 20px;
+  }
+
+  .button {
+    padding: 4px 12px;
+  }
+
+  .seta {
+    padding: 4px 6px;
   }
 }
