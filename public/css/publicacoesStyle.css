@@ -1,44 +1,393 @@
-html{
+
+* {
     padding: 0;
     margin: 0;
-}
-
-main {
-    background-color: blueviolet;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f2f2f2;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container{
-    background-color: aquamarine;
-}
-
-.apresentacao{
-    background-color: blanchedalmond;
-}
-
-.container .apresentacao {
+  }
+  
+  .apresentacao {
+    background: linear-gradient(
+      to right,
+      rgba(189, 123, 209, 0.7),
+      rgba(255, 159, 223, 0.7),
+      rgba(136, 200, 238, 0.7)
+    );
     display: flex;
     align-items: center;
-    padding: 10px;
-    /* justify-content: center ; */
-}
-
-.apresentacao .botao {
+    gap: 550px;
+    border-radius: 12px;
+    padding: 20px 60px 20px 60px;
+    font-family: "Itim", sans-serif;
+    font-weight: 100;
+  }
+  
+  .logo {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 200px;
-    gap: 10px;
-}
-
-.publicacoes table{
-    width: 100%;
-}
-
-.publicacoes .acoes {
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  .container-usuario {
+    background-color: rgba(189, 123, 209, 0.3);
+    margin-top: 10px;
+    border-radius: 12px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  table {
+    color: #ae1d7e;
+    width: 100%;
+    padding: 10px;
+    font-family: "Fredoka", sans-serif;
+  }
+  
+  table tr {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  thead tr {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+   .id{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo{
+    width: 23%;
+    display: flex;
+    justify-content: center;
+  } 
+
+  .autor{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .data{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .acoes-tr{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .acoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-}
+    width: 100px;
+    height: 35px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    border: none;
+    color: rgba(136, 200, 238, 0.7);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Itim";
+  }
+  
+  .acoes .editar,
+  .deletar,
+  .visualizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 25px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .acoes i:hover{
+    transform: scale(1.15);
+  }
+  
+  .paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+  }
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 12px;
+    background-color: #f09fd5;
+    border: #f09fd5;
+    color: white;
+  }
+  .seta {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    background-color: #f09fd5;
+    border: #f09fd5;
+    color: white;
+    margin: 4px;
+  }
+  button:hover {
+    background-color: #f763c6;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1200px) {
+    .apresentacao {
+      gap: 400px;
+    }
+    .container-usuario {
+      width: 1000px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .apresentacao {
+      gap: 300px;
+      width: 800px;
+    }
+    .container-usuario {
+      width: 800px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .apresentacao {
+      gap: 100px;
+      width: 600px;
+      font-size: smaller;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+  
+    .apresentacao h2 {
+      font-size: 17px;
+    }
+  
+    .btn {
+      width: 80px;
+      font-size: 15px;
+    }
+  
+    .container-usuario {
+      width: 600px;
+      font-size: 14px;
+    }
+    
+    .acoes{
+      gap: 10px;
+    }
+
+    .data{
+      width: 18%;
+    }
+
+    .autor{
+      width: 28%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .apresentacao {
+      gap: 80px;
+      width: 500px;
+      padding: 5px;
+    }
+  
+    .logo {
+      gap: 10px;
+    }
+  
+    .logo img {
+      width: 70px;
+    }
+  
+    .apresentacao h2 {
+      font-size: 15px;
+    }
+  
+    .btn {
+      width: 60px;
+      height: 30px;
+      font-size: 13px;
+    }
+  
+    .container-usuario {
+      width: 500px;
+      font-size: 14px;
+    }
+
+    .acoes{
+      gap: 10px;
+    }
+
+    .acoes .editar,
+    .deletar,
+    .visualizar {
+      width: 30px;
+      height: 20px;
+    } 
+  }
+  
+  @media (max-width: 500px) {
+    .apresentacao {
+      gap: 150px;
+      width: 410px;
+      padding: 5px;
+    }
+  
+    .logo {
+      gap: 10px;
+    }
+  
+    .logo img {
+      width: 50px;
+    }
+  
+    .apresentacao h2 {
+      font-size: 13px;
+    }
+  
+    .btn {
+      width: 50px;
+      height: 25px;
+      font-size: 12px;
+    }
+  
+    .container-usuario {
+      width: 410px;
+      font-size: 12px;
+    }
+
+    .acoes-tr{
+      gap: 2px;
+    }
+  
+    .acoes .editar,
+    .deletar,
+    .visualizar {
+      width: 25px;
+      height: 15px;
+    }
+    .button {
+      padding: 4px 12px;
+    }
+  
+    .seta {
+      padding: 4px 6px;
+    }
+  }
+
+  @media(max-width:400px){
+    .apresentacao {
+      gap: 100px;
+      width: 310px;
+      padding: 5px;
+    }
+  
+    .logo {
+      gap: 10px;
+    }
+  
+    .logo img {
+      width: 50px;
+    }
+  
+    .apresentacao h2 {
+      font-size: 13px;
+    }
+  
+    .btn {
+      width: 60px;
+      height: 25px;
+      font-size: 12px;
+    }
+  
+    .container-usuario {
+      width: 310px;
+      font-size: 10px;
+    }
+  
+    .id{
+      width: 3%;
+    }
+
+    .titulo{
+      width: 18%;
+    }
+
+    .autor{
+      width: 22%;
+    }
+
+    .acoes-tr{
+      gap: 2%;
+    }
+
+    .acoes .editar,
+    .deletar,
+    .visualizar {
+      width: 20px;
+      height: 15px;
+      font-size: 12px;
+    }
+
+    .button {
+      padding: 4px 12px;
+    }
+  
+    .seta {
+      padding: 4px 6px;
+    }
+  }

@@ -1,57 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Publicações</title>
     <link rel="stylesheet" href="/public/css/publicacoesStyle.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="apresentacao">
-                <h2>Tabela de Publicações</h2>
-                <div class="botao">
-                    <p>Criar Publicação</p>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-            </div>
-            <div class="publicacoes">
-                <table style="border: 1px solid red;">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Título</th>
-                            <th>Autor</th>
-                            <th>Data de criação</th>
-                            <th>Botões</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Grande post</td>
-                            <td>Anônimo</td>
-                            <td>22/10/24</td>
-                            <td>
-                                <div class="acoes">
-                                    <div class="visualizar">
-                                        <i class="fa-solid fa-eye"></i>
-                                    </div>
-                                    <div class="editar">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-trash"></i>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="apresentacao">
+          <div class="logo">
+            <img src="/public/assets/HeartBeats_img.png" alt="Logo HeartBeats" />
+            <h2>Tabela de Usuarios</h2>
+          </div>
+          <div class="btn">
+            <p>Criar</p>
+            <i class="fa-solid fa-plus"></i>
+          </div>
         </div>
+        <div class="container-usuario">
+          <table>
+            <thead>
+              <tr style="border-bottom: 2px solid #bd7bd1">
+                <th class="id">ID</th>
+                <th class="titulo">Título</th>
+                <th class="autor">Autor</th>
+                <th class="data">Data de criação</th>
+                <th class="acoes-tr">Ações</th>
+              </tr>     
+            </thead>
+            <tbody>
+              <tr>
+                <td class="id">1</td>
+                <td class="titulo">Lindo Post</td>
+                <td class="autor">Anônimo</td>
+                <td class="data">20/02/2023</td>
+                <td class="acoes-tr">
+                  <div class="acoes">
+                    <div class="visualizar">
+                      <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="editar">
+                      <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <div class="deletar">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="id">1</td>
+                <td class="titulo">Lindo Post</td>
+                <td class="autor">Anônimo</td>
+                <td class="data">20/02/2023</td>
+                <td class="acoes-tr">
+                  <div class="acoes">
+                    <div class="visualizar">
+                      <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="editar">
+                      <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <div class="deletar">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="id">1</td>
+                <td class="titulo">Lindo Post</td>
+                <td class="autor">Anônimo</td>
+                <td class="data">20/02/2023</td>
+                <td class="acoes-tr">
+                  <div class="acoes">
+                    <div class="visualizar">
+                      <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="editar">
+                      <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <div class="deletar">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="id">1</td>
+                <td class="titulo">Lindo Post</td>
+                <td class="autor">Anônimo</td>
+                <td class="data">20/02/2023</td>
+                <td class="acoes-tr">
+                  <div class="acoes">
+                    <div class="visualizar">
+                      <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="editar">
+                      <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <div class="deletar">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="id">1</td>
+                <td class="titulo">Lindo Post</td>
+                <td class="autor">Anônimo</td>
+                <td class="data">20/02/2023</td>
+                <td class="acoes-tr">
+                  <div class="acoes">
+                    <div class="visualizar">
+                      <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="editar">
+                      <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <div class="deletar">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="paginacao">
+            <button onclick="changePage(-1)" class="seta">←</button>
+            <span class="page-number"><button class="button">1</button></span>
+            <span class="page-number"><button class="button">2</button></span>
+            <span class="page-number"><button class="button">3</button></span>
+            <button onclick="changePage(1)" class="seta">→</button>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
-    <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/654def639f.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
