@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  align-items: center;
 }
 
 .container {
@@ -59,7 +60,7 @@ body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  padding: 44px 50px;
+  padding: 20px 50px;
 }
 
 .containerAutor {
