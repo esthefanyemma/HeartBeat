@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/modal.css">
+    <title>Modal</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <button class="criar" onclick="abrir('cancelar')">
+                Deletar
+            </button>
+        </div>
+            <!--  modal -->
+        <form class="modal" id="cancelar">
+            <p class="cancelarTexto">
+                Tem certeza que deseja deletar este usuário?
+            </p>
+            <div class="botoes">
+                <button>Confirmar</button>
+                <button>Cancelar</button>
+             </div>
+            </form>
+
+    </main>
+</body>
+<script src="../../../public/js/modal.js"></script>
+</html>

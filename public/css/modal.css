@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #bd7bd1;
+    display: block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.criar{
+    width: 60px;
+    height: fit-content;
+}
+
+
+
+.modal{
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 12px;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    border-radius: 12px;
+}
+.botoes{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;    
+}
+.botoes button{
+    padding: 8px;
+    border-radius: 12px;
+    color: #f0f0f0;
+    background-color: #bd7bd1;
+    border: none;
+    transition: all 0.2s;
+}
+.botoes button:hover{
+    transform: scale(1.1);
+}
+
