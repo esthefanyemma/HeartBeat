@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;    
+    height: 100vh;
+}
+
+.modaldeletpost{
+    background-color: #FFFFFF;
+    width: 532px;
+    height: 318px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+}
+.modaldeletpost p{
+    font-size: 32px;
+    font-family: Fredoka,sans-serif;
+    text-align: center;
+}
+
+.botoesdeletpost{
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-modaldelet {
+    width: 220px;
+    height: 46px;
+    
+    background-color: #BD7BD1;
+    border-radius: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: Fredoka,sans-serif;
+    font-size: 32px;
+}
+
+.btn-modaldelet:hover{
+    transform: scale(1.08);
+}
