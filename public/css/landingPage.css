@@ -34,21 +34,23 @@ body *{
 }
 
 .grupos{
-    margin: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 0x 0px;
     width: 100%;
     background-color: #fefefe;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .conj{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0px 160px;
-    padding-block: 50px;
-    width: 100%;
+    width: fit-content;
     height: 100%;
     display: flex;
-    gap: 5%;
+    gap: 8%;
 }
 .titulo{
     text-align: center;
@@ -58,20 +60,21 @@ body *{
 .item{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     background-color: #fefefe;
-    width: 180px;
-    height: 100%;
-    border-radius: 12px ;
+    width: fit-content;
+    
     
 }
 .item img{
-    width: 100%;
-    height: 180px;
-    border-radius: 12px;
+    width: 260px;
+    height: 360px;
     object-fit: cover;
 }
 .item p{
+    width: 100%;
     text-align: center;
     align-items: center;
 }
@@ -106,7 +109,7 @@ body *{
     transition: all 0.2s;
 }
 .imagem:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .imagem p{
     padding-left: 12px;
@@ -148,12 +151,12 @@ body *{
     transition: all 0.2s;
 }
 .botao1 button:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .textoData{
     font-size: 16px;
-    opacity: 50%;
+    opacity: 80%;
 }
 .textoAutor{
     font-size: 20px;
@@ -178,8 +181,29 @@ body *{
         height: 50%;
     }
     .item img{
-        width: 140px;
-        height: 140px;
+        width: 200px;
+        height: 280px;
+    }
+    .posts{
+        margin: 60px 60px;
+    }
+    .grupos{
+        margin: 60px 0px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .imagem{
+        width: 240px;
+    }
+    .imagem img{
+        height: 240px;
+    }
+    .imgGrupo{
+        height: 50%;
+    }
+    .item img{
+        width: 160px;
+        height: 220px;
     }
     .posts{
         margin: 60px 60px;
@@ -198,6 +222,12 @@ body *{
     .imagem{
         width: 180px;
     }
+    .conj{
+        width: 100%;
+        padding: 10px;
+        padding-block: 20px;
+    }
+   
     .imagem img{
         height: 180px;
     }
@@ -206,7 +236,10 @@ body *{
     }
     .item img{
         width: 120px;
-        height: 120px;
+        height: 200px;
+    }
+    .item{
+        width: fit-content;
     }
 }
 
@@ -269,7 +302,7 @@ body *{
     }
     .item img{
         width: 80px;
-        height: 80px;
+        height: 120px;
     }
 }
 
@@ -279,6 +312,6 @@ body *{
     }
     .item img{
         width: 64px;
-        height: 64px;
+        height: 96px;
     }
 }
