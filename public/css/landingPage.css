@@ -69,8 +69,8 @@ body *{
     
 }
 .item img{
-    width: 220px;
-    height: 360px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
 }
 .item p{
