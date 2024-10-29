@@ -9,13 +9,14 @@ body{
 .modaldeletpost{
     background-color: #FFFFFF;
     width: 532px;
-    height: 318px;
+    height: 270px;
     border-radius: 12px;
+    border: 1px solid black;
     display: grid;
     place-items: center;
 }
 .modaldeletpost p{
-    font-size: 32px;
+    font-size: 24px;
     font-family: Fredoka,sans-serif;
     text-align: center;
 }
@@ -32,16 +33,76 @@ body{
 .btn-modaldelet {
     width: 220px;
     height: 46px;
-    
     background-color: #BD7BD1;
     border-radius: 12px;
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
     font-family: Fredoka,sans-serif;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .btn-modaldelet:hover{
     transform: scale(1.08);
+}
+
+@media screen and (max-width:490px) {
+    .modaldeletpost{
+        width: 400px;
+    }
+    
+    .btn-modaldelet{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .modaldeletpost p{
+        font-size: 24px;
+    }
+
+    .modaldeletpost{
+        width: 370px;
+    }
+    
+    .btn-modaldelet{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .modaldeletpost p{
+        font-size: 24px;
+    }
+    .modaldeletpost{
+        width: 300px;
+    }
+    
+    .btn-modaldelet{
+        width: 10px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .modaldeletpost{
+        width: 360px;
+    }
+    
+    .btn-modaldelet{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .modaldeletpost p{
+        font-size: 24px;
+    }
+    .modaldeletpost{
+        width: 270px;
+    }
+    
+    .btn-modaldelet{
+        width: 115px;
+        font-size: 24px;
+    }
 }
