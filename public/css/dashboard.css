@@ -12,14 +12,27 @@ body{
 }
 
 .cabeçalho{
+    display: flex;
+    flex-direction: row;
+    padding-left: 860px;
     background-image: linear-gradient(to right, #BD7BD1 0% ,#FF9FDF 52%,#88C8EE 80%);
     padding: 40px 20px;
     border-radius: 12px;
 }
 
+.material-icons{
+    transform: scale(1);
+}
+
 .logo-tipo{
     display: grid;
     place-items: center;
+    padding-left: auto;
+    width: 98%;
+}
+
+.divlogout{
+    padding-left: auto;
 }
 
 .logo-tipo h1{
@@ -35,7 +48,7 @@ a{
 }
 
 a:hover{
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .botoes-superiores{
@@ -49,21 +62,19 @@ a:hover{
     background-color: #88C8EE;
     padding: 20px 40px;
     border-radius: 12px;
-    font-family: Itim;  /*font-family deu errado*/
-    font-size: 32px;  /*esta meio grande com 40*/
+    font-family: Itim;  
+    font-size: 32px;  
 }
 
 .button-logout{
     background-color: #FF9FDF;
-    border-radius: 12px;
-    font-family: Itim, sans-serif;  /*aqui a font-family deu certo*/
-    font-size: 32px;  /* esta meio grande*/
-    /**/
+    border-radius: 6px;
+    font-family: Itim, sans-serif;  
+    font-size: 32px; 
     margin-left: auto;
-    margin-right: auto;  /*fiz isso para centralizar o ultimo botao*/
+    margin-right: 10px;
     display: block;
-   /**/
-    padding: 30px 46px;
+    padding: 12px 12px;
     width: fit-content;
     
 }
@@ -96,6 +107,7 @@ a:hover{
 
     .cabeçalho{
         padding: 20px 20px;
+        transform: scale(0.7);
     }
 }
 
@@ -103,10 +115,19 @@ a:hover{
     .botoes-superiores{   
         gap: 30px;
         flex-direction: column;
-
     }
-    
+
     .diminuir{
         gap: 30px;
+    }
+
+    .divlogout{
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-wisth:350px) {
+    .divlogout{
+        transform: scale(0.7);
     }
 }
