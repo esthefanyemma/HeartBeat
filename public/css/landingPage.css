@@ -50,7 +50,7 @@ body *{
     width: fit-content;
     height: 100%;
     display: flex;
-    gap: 8%;
+    gap: 5%;
 }
 .titulo{
     text-align: center;
@@ -64,12 +64,12 @@ body *{
     align-items: center;
     gap: 10px;
     background-color: #fefefe;
-    width: fit-content;
+    
     
     
 }
 .item img{
-    width: 260px;
+    width: 220px;
     height: 360px;
     object-fit: cover;
 }
@@ -99,7 +99,7 @@ body *{
 }
 
 .imagem{
-    width: 310px;
+    width: 260px;
     border-radius: 12px;
     background-color: #88c8ee;
     display: flex;
@@ -170,27 +170,6 @@ body *{
 
 
 
-@media only screen and (max-width:1320px){
-    .imagem{
-        width: 240px;
-    }
-    .imagem img{
-        height: 240px;
-    }
-    .imgGrupo{
-        height: 50%;
-    }
-    .item img{
-        width: 200px;
-        height: 280px;
-    }
-    .posts{
-        margin: 60px 60px;
-    }
-    .grupos{
-        margin: 60px 0px;
-    }
-}
 @media only screen and (max-width:1024px){
     .imagem{
         width: 240px;
