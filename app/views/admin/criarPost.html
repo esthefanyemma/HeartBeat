@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeartBeats - Modal criar post</title>
+    <link rel="stylesheet" href="/public/css/modalcriarpost.css">
 </head>
 <body>
     <div class="modalCriarPost">
-        <div class="titulo">
-
+        <div class="tituloModalCriar">
+            <h1>Criar Publicação</h1>
         </div>
         <div class="conteudoCriar">
             <div class="infosFixas">
                 <p>Nome do autor</p>
                 <p>28/10/2024</p>
             </div>
-            <label class="imagem">
-                <input type="file" accept="image/*" class="adcImage">
+            <label for="adcImage" class="imagem">
+                <i class="fa-solid fa-image"></i>
+                <span>Adicione uma imagem</span>
             </label>
+            <input type="file" accept="image/*" id="adcImage">
             <input type="text" name="Titulo" id="adcTitulo" placeholder="Digite o título da publicação">
             <input type="text" name="Descricao" id="adcDesc" placeholder="Digite a descrição da publicação">
             <div class="botoesCriar">
@@ -27,4 +30,5 @@
         </div>
     </div>
 </body>
+    <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
 </html>
