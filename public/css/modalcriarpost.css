@@ -11,7 +11,6 @@
     flex-direction: column;
     position: absolute;
     height: fit-content;
-    /* width: 400px; */
     width: 28%;
     background-color: #f2f2f2;
     z-index: 3;
@@ -57,7 +56,6 @@
     width: 100%;
 }
 
-
 #adcImage{
     display: none;
 }
@@ -86,20 +84,23 @@
     padding: 5px;
     font-family: "Fredoka", sans-serif;
     font-size: 14px;
+    
+}
+
+.conteudoCriar #adcTitulo:focus, .conteudoCriar #adcDesc:focus{
+    outline: 3px solid #9b28be;
+    border: none;
 }
 
 .conteudoCriar #adcDesc{
     width: 80%;
     border-radius: 12px;
     border: 3px solid #bd7bd1;
-    /* background-color: aliceblue; */
     padding: 4px;
     padding-bottom: 40px;
-    /* word-wrap: break-word; */
     resize: none;
     font-family: "Fredoka", sans-serif;
     font-size: 14px;
-    /* font-style: none; */
 }
 
 .botoesCriar button{
@@ -112,6 +113,11 @@
     transition: all 0.2s;
 }
 
+.botoesCriar button:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
 .conteudoCriar .botoesCriar{
     width: 100%;
     display: flex;
@@ -119,4 +125,65 @@
     align-items: center;
     gap: 20%;
     /* justify-content: space-around;    */
+}
+
+@media only screen and (max-width: 1100px){
+    .modalCriarPost{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .modalCriarPost{
+        width: 37%;
+    }
+
+    .imagem{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .modalCriarPost{
+        width: 46%;
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .modalCriarPost{
+        width: 60%;
+        left: 20%;
+    }
+
+    .modalCriarPost .tituloModalCriar{
+        font-size: 12px;
+    }
+
+    .modalCriarPost .conteudoCriar{
+        font-size: 12px;
+    }
+
+    .modalCriarPost .imagem{
+        font-size: 14px;
+    }
+
+    .modalCriarPost #adcTitulo{
+        font-size: 12px;
+    }
+
+    .modalCriarPost #adcDesc{
+        font-size: 12px;
+    }
+
+    .conteudoCriar button{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .modalCriarPost{
+        width: 66%;
+        left: 20%;
+    }
 }
