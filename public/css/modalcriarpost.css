@@ -12,12 +12,12 @@
     position: absolute;
     height: fit-content;
     /* width: 400px; */
-    width: 37%;
+    width: 28%;
     background-color: #f2f2f2;
     z-index: 3;
     border-radius: 12px;
-    left: 31%;
-    top: 31%;
+    left: 35%;
+    top: 25%;
     font-family: "Fredoka", sans-serif;
 }   
 
@@ -44,11 +44,19 @@
     align-items: center;
 }
 
+.infosFixas, .imagem, #adcTitulo, #adcDesc, .botoesCriar {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .conteudoCriar .infosFixas{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 38%;
     width: 100%;
 }
+
 
 #adcImage{
     display: none;
@@ -60,7 +68,7 @@
     font-family: "Fredoka", sans-serif;
     color: #bd7bd1;
     border-radius: 12px;
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,35 +83,40 @@
     width: 80%;
     border-radius: 12px;
     border: 3px solid #bd7bd1;
-    padding: 4px;
+    padding: 5px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
 }
 
 .conteudoCriar #adcDesc{
     width: 80%;
     border-radius: 12px;
     border: 3px solid #bd7bd1;
+    /* background-color: aliceblue; */
     padding: 4px;
+    padding-bottom: 40px;
+    /* word-wrap: break-word; */
+    resize: none;
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+    /* font-style: none; */
 }
 
 .botoesCriar button{
-    padding: 8px;
+    padding: 12px;
     border-radius: 12px;
     color: #f2f2f2;
     background-color: #bd7bd1;
+    font-size: 16px;
     border: none;
     transition: all 0.2s;
 }
 
-
-
-
-
-
-
-
-
 .conteudoCriar .botoesCriar{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 20%;
+    /* justify-content: space-around;    */
 }

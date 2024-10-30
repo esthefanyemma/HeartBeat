@@ -11,7 +11,7 @@
         <div class="tituloModalCriar">
             <h1>Criar Publicação</h1>
         </div>
-        <div class="conteudoCriar">
+        <form class="conteudoCriar">
             <div class="infosFixas">
                 <p>Nome do autor</p>
                 <p>28/10/2024</p>
@@ -22,12 +22,12 @@
             </label>
             <input type="file" accept="image/*" id="adcImage">
             <input type="text" name="Titulo" id="adcTitulo" placeholder="Digite o título da publicação">
-            <input type="text" name="Descricao" id="adcDesc" placeholder="Digite a descrição da publicação">
+            <textarea name="descricao" id="adcDesc" placeholder="Digite a descrição da publicação"></textarea>
             <div class="botoesCriar">
-                <button>Criar</button>
-                <button>Cancelar</button>
+                <button type="submit" class="botaoCriar">Criar</button>
+                <button class="botaoCancelar">Cancelar</button>
             </div>
-        </div>
+        </form>
     </div>
 </body>
     <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
