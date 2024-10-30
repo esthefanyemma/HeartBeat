@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #50e9e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body *{
+    font-family: "Fredoka", sans-serif;
+}
+.texto{
+    font-size: 24px;
+}
+.titulo{
+    font-size: 32px;
+}
+
+.modal_visualizarPost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    height:  fit-content;
+    gap: 20px;
+    background-color: #f0f0f0;
+}
+.desc_visualizacao{
+    display: flex;
+    flex-direction: row;
+    background-color: #bd7bd1;
+    color: #f0f0f0;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.esct_autor_data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+.imagem_post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem_post img{
+    width: 420px;
+    height: 210px;
+}
+.esct_post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px 20px 20px;
+}
