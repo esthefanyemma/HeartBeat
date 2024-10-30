@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #50e9e1;
+    background-color: #524f53;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,6 +28,7 @@ body *{
     height:  fit-content;
     gap: 20px;
     background-color: #f0f0f0;
+    z-index: 3;
 }
 .desc_visualizacao{
     display: flex;
@@ -50,8 +51,9 @@ body *{
     align-items: center;
 }
 .imagem_post img{
-    width: 420px;
-    height: 210px;
+    object-fit: cover;
+    width: 640px;
+    height: 280px;
 }
 .esct_post{
     display: flex;
@@ -60,4 +62,61 @@ body *{
     align-items: center;
     gap: 20px;
     padding: 0px 20px 20px 20px;
+}
+
+@media only screen and (max-width: 900px){
+    .texto{
+        font-size: 20px;
+    }
+    .titulo{
+        font-size: 28px;
+    }
+    .imagem_post img{
+        object-fit: cover;
+        width: 480px;
+        height: 220px;
+    }
+    
+}
+@media only screen and (max-width: 700px){
+    .texto{
+        font-size: 16px;
+    }
+    .titulo{
+        font-size: 24px;
+    }
+    .imagem_post img{
+        width: 340px;
+        height: 180px;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .texto{
+        font-size: 14px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .imagem_post img{
+        width: 280px;
+        height: 140px;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .texto{
+        font-size: 14px;
+    }
+    .titulo{
+        font-size: 18px;
+    }
+    .modal_visualizarPost{
+        gap: 10px;
+    }
+    .imagem_post img{
+        width: 240px;
+        height: 140px;
+    }
+    
 }
