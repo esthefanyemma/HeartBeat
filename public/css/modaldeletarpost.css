@@ -1,108 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
+    background-color: #bd7bd1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;    
     height: 100vh;
-}
 
-.modaldeletpost{
-    background-color: #FFFFFF;
-    width: 532px;
-    height: 270px;
-    border-radius: 12px;
-    border: 1px solid black;
-    display: grid;
-    place-items: center;
 }
-.modaldeletpost p{
-    font-size: 24px;
-    font-family: Fredoka,sans-serif;
-    text-align: center;
+body *{
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
 }
-
-.botoesdeletpost{
-    gap: 30px;
+.container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
 
 }
+.criar{
+    width: fit-content;
+    height: fit-content;
+}
 
-.btn-modaldelet {
-    width: 220px;
-    height: 46px;
-    background-color: #BD7BD1;
+
+.modal2{
+    display: none;
+    background-color: #f0f0f0;
+    position: absolute;
     border-radius: 12px;
-    color: #FFFFFF;
-    text-decoration: none;
+    padding: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+.cencelarTexto{
+    width: 100%;
+ }
+
+ .modal2 p{
     text-align: center;
-    font-family: Fredoka,sans-serif;
-    font-size: 24px;
+ }
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;    
+}
+.botoes button{
+    padding: 4px 18px 4px 18px;
+    border-radius: 12px;
+    color: #f0f0f0;
+    background-color: #bd7bd1;
+    border: none;
+    transition: all 0.2s;
+}
+.botoes button:hover{
+    transform: scale(1.05);
 }
 
-.btn-modaldelet:hover{
-    transform: scale(1.08);
-}
 
-@media screen and (max-width:490px) {
-    .modaldeletpost{
-        width: 400px;
+
+
+
+@media only screen and (max-width:950px){
+    .cancelarTexto{
+        font-size: 20px;
     }
-    
-    .btn-modaldelet{
-        width: 180px;
-    }
-}
-
-@media screen and (max-width:415px) {
-    .modaldeletpost p{
+    .botoes button{
         font-size: 24px;
     }
-
-    .modaldeletpost{
-        width: 370px;
-    }
-    
-    .btn-modaldelet{
-        width: 150px;
+    .modal2{
+        transform: scale(0.8);
     }
 }
 
-@media screen and (max-width:370px) {
-    .modaldeletpost p{
-        font-size: 24px;
-    }
-    .modaldeletpost{
-        width: 300px;
-    }
-    
-    .btn-modaldelet{
-        width: 10px;
-    }
-}
 
-@media screen and (max-width:580px) {
-    .modaldeletpost{
-        width: 360px;
-    }
-    
-    .btn-modaldelet{
-        width: 150px;
-    }
-}
+@media only screen and (max-width:650px){
 
-@media screen and (max-width:360px) {
-    .modaldeletpost p{
-        font-size: 24px;
+    .modal2{
+        transform: scale(0.7);
     }
-    .modaldeletpost{
-        width: 270px;
+    .cancelarTexto{
+        font-size: 20px;
     }
-    
-    .btn-modaldelet{
-        width: 115px;
-        font-size: 24px;
+    .botoes button{
+        font-size: 20px;
     }
-}
+
+} 
+@media only screen and (max-width:450px){
+
+    .modal2{
+        transform: scale(0.5);
+    }
+    .cancelarTexto{
+        font-size: 20px;
+    }
+    .botoes button{
+        font-size: 20px;
+    }
+
+} 

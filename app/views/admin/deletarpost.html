@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deletar Post</title>
     <link rel="stylesheet" href="/public/css/modaldeletarpost.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap">
+    <title>Modal</title>
 </head>
 <body>
-    <div class="modaldeletpost">
-        <p>Tem certeza que deseja deletar <br>esse post?</p>
-        <div class="botoesdeletpost">
-            <a href="" class="btn-modaldelet">Confirmar</a>
-            <a href="" class="btn-modaldelet">Cancelar</a>
+    <main>
+        <div class="container">
+            <button class="criar" onclick="abrir('cancelar2')">
+                Deletar
+            </button>
         </div>
-    </div>
+    </main>
+                <form class="modal2" id="cancelar2">
+                    <p class="cancelarTexto">
+                        Tem certeza que deseja deletar este post?
+                    </p>
+                    <div class="botoes">
+                        <button>Confirmar</button>
+                        <button>Cancelar</button>
+                     </div>
+                    </form>
 </body>
+<script src="/public/js/modal.js"></script>
 </html>
