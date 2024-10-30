@@ -60,11 +60,20 @@
   table tr {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0px 0px 0px;
-    padding: 10px 0;
+    /* opcao caso seja duas cores */
+
+    /* margin: 10px 0px 0px 0px; */
+    padding: 20px 0;        
     width: 100%;
+
+    /* opção caso seja melhor fazer só a linha */
+    /* border-bottom: 1px solid #bd7bd1; */
   }
-  
+
+  tbody .linha2{
+    background-color: rgba(189, 123, 209, 0.35);
+  }
+
   thead tr {
       display: flex;
       justify-content: space-between;
@@ -310,6 +319,10 @@
       font-size: 12px;
     }
 
+    .autor{
+      width: 22%;
+    }
+
     .acoes-tr{
       gap: 2px;
     }
@@ -368,7 +381,7 @@
     }
 
     .autor{
-      width: 22%;
+      width: 20%;
     }
 
     .acoes-tr{
@@ -380,7 +393,7 @@
     .visualizar {
       width: 20px;
       height: 15px;
-      font-size: 12px;
+      font-size: 10px;
     }
 
     .button {
