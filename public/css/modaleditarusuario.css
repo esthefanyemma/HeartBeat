@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: #BD7BD1;
+    width: 552px;
+    height: 100px;
+    border-radius: 6px;
+}
+
+.modaledit{
+    width: 552px;
+    height: 650px;
+    margin: 4rem;    
+}
+
+.img-entrada{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: aqua;
+    /*background-image: ; tem que colocar uma imagem de fundo generica--ajuda*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-entrada label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-entrada:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    transform: scale(1.05);
+}
+
+.info-usuario{
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2{
+    font-size: 32px;
+    font-family: Itim,sans-serif;
+    
+}
+
+p{
+    font-family: Itim,sans-serif;
+    font-size: 24px;
+    /*color: ; a cor do email tem um gradiente--ajuda*/
+}
+
+.campodeentrada{
+    margin-top: 40px;
+}
+
+.formularios{
+    margin: 20px;
+}
+
+.nomecampos{
+    display: block;
+    font-size: 20px;
+    font-family: Inter,sans-serif;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 12px;
+    border: 4px solid #BD7BD1;
+    font-size: 24px;
+}
+
+input:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+button{
+    width: 143px;
+    height: 46px;
+    font-size: 32px;
+    font-family: Itim,sans-serif;
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #BD7BD1;
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btns-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+label{
+    overflow: hidden;
+}
+
+.img-inp{
+    display: none;
+}
