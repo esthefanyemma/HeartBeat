@@ -30,7 +30,8 @@ body *{
 
 
 .modal2{
-    display: none;
+    display: flex;
+    flex-direction: column;
     background-color: #f0f0f0;
     position: absolute;
     border-radius: 12px;
