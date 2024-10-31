@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.modalVerUser{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: fit-content;
+    width: 28%;
+    background-color: #f2f2f2;
+    z-index: 3;
+    border-radius: 12px;
+    left: 35%;
+    top: 25%;
+    font-family: "Fredoka", sans-serif;
+} 
+
+header{
+    width: 100%;
+    background-color: #bd7bd1;
+    height: 100px;
+}
