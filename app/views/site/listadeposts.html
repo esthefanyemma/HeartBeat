@@ -13,12 +13,15 @@
     />
   </head>
   <body>
-    <div id="divBusca">
-      <img src="/public/assets/barrapesquisar.png" alt="" />
-      <input type="text" id="txtBusca" placeholder="Pesquisar" />
-    </div>
+    
     <div class="posts">
-      <p class="titulo">LISTA DE POSTS</p>
+      <div class="topo">
+        <div id="divBusca">
+          <img src="/public/assets/barrapesquisar.png" alt="" />
+          <input type="text" id="txtBusca" placeholder="Pesquisar" />
+        </div>
+        <p class="titulo">LISTA DE POSTS</p>
+      </div>
       <div class="postG">
         <form class="postLista1">
           <div class="imagem">
@@ -115,14 +118,15 @@
           </div>
         </form>
       </div>
+      <div class="paginação">
+        <button onclick="changePage(-1)" class="seta">←</button>
+        <span class="page-number"><button class="button">1</button></span>
+        <span class="page-number"><button class="button">2</button></span>
+        <span class="page-number"><button class="button">3</button></span>
+        <button onclick="changePage(1)" class="seta">→</button>
+      </div>
     </div>
-    <div class="paginação">
-      <button onclick="changePage(-1)" class="seta">←</button>
-      <span class="page-number"><button class="button">1</button></span>
-      <span class="page-number"><button class="button">2</button></span>
-      <span class="page-number"><button class="button">3</button></span>
-      <button onclick="changePage(1)" class="seta">→</button>
-    </div>
+    
   </body>
   <script src="/public/js/listadeposts.js"></script>
 </html>

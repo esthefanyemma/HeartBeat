@@ -1,10 +1,16 @@
+.topo{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  gap: 10%;
+}
 
 #divBusca {
   background-color: #f09fd5;
   border-radius: 12px;
   width: 300px;
   height: 32px;
-  margin: 100px 0 20px 100px;
+  margin: 30px 0 20px 100px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -46,9 +52,10 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 12px;
-  background-color: #f09fd5;
+  background-color: #F09FD5;
   border: #f09fd5;
   color: white;
+  box-shadow: 1px 1px 10px #000000;
 }
 .seta {
   padding-top: 4px;
@@ -60,6 +67,7 @@
   border: #f09fd5;
   color: white;
   margin: 4px;
+  box-shadow: 1px 1px 10px #000000;
 }
 button:hover {
   background-color: #f763c6;
@@ -72,9 +80,16 @@ button:hover {
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);    ativar no final 
+}
+
+
 body *{
   font-family: "Fredoka", sans-serif;
 }
+
 .desc{
   padding-bottom: 20px;
   background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
@@ -122,6 +137,9 @@ height: 25%;
 .titulo{
   text-align: center;
   font-size: 32px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .item{
@@ -146,8 +164,8 @@ height: 25%;
 }
 .posts{
   margin: 120px 120px;
-  background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
-  background-color: #bd7bd1;
+ 
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,7 +269,35 @@ height: 25%;
 
 
 
-
+@media only screen and (max-width:1280px){
+  .imagem{
+      width: 260px;
+  }
+  .imagem img{
+      height: 220px;
+  }
+  .imgGrupo{
+      height: 50%;
+  }
+  .item img{
+      width: 140px;
+      height: 140px;
+  }
+  .posts{
+      margin: 60px 60px;
+  }
+  .grupos{
+      margin: 60px 0px;
+  }
+  #divBusca{
+    width: 200px;
+  height: 32px;
+  margin: 30px 0 20px 50px;
+  }
+  .topo{
+    gap: 12%;
+  }
+}
 
 @media only screen and (max-width:1320px){
   .imagem{
@@ -272,6 +318,14 @@ height: 25%;
   }
   .grupos{
       margin: 60px 0px;
+  }
+  #divBusca{
+    width: 200px;
+  height: 32px;
+  margin: 30px 0 20px 50px;
+  }
+  .topo{
+    gap: 15%;
   }
 }
 @media only screen and (max-width:853px){
@@ -298,6 +352,14 @@ height: 25%;
   .elipse {
     height: 35px;
     width: 35px;
+  }
+  #divBusca{
+    width: 150px;
+  height: 32px;
+  margin: 30px 0 20px 40px;
+  }
+  .topo{
+    gap: 10%;
   }
 }
 
