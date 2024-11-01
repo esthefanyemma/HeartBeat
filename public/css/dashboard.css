@@ -1,5 +1,6 @@
 body{
-    padding: 60px;
+    padding: 2rem;
+    padding-right: 4rem;
     padding-top: 40px;
     gap: 60px;
     display: flex;
@@ -27,7 +28,7 @@ body{
 .logo-tipo{
     display: grid;
     place-items: center;
-    padding-left: auto;
+    padding-left: 40px;
     width: 98%;
 }
 
@@ -88,6 +89,9 @@ a:hover{
 }
 
 @media screen and (max-width:600px) {
+    .logo-tipo{
+       padding-left: 60px;
+    }
     .logo-tipo h1{
         font-size: 24px;
     }
@@ -106,8 +110,9 @@ a:hover{
     }
 
     .cabeçalho{
+        width: 100%;
         padding: 20px 20px;
-        transform: scale(0.7);
+        transform: scale(1.1);
     }
 }
 
@@ -124,10 +129,17 @@ a:hover{
     .divlogout{
         transform: scale(0.8);
     }
+
+    .logo-tipo{
+        padding-left: 65px;
+     }
 }
 
 @media screen and (max-wisth:350px) {
     .divlogout{
         transform: scale(0.7);
+    }
+    .button-logout{
+        margin-right: 10px;
     }
 }
