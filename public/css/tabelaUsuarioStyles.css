@@ -50,6 +50,42 @@ body {
   flex-direction: column;
 }
 
+.container-busca {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+}
+
+#divBusca {
+  background-color: #f2f2f2;
+  border-radius:12px;          
+  width: 250px;;
+  height: 32px;
+  margin: 20px 0 0px 0px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}
+
+#txtBusca {
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 14px;
+  border: none;
+  height: 32px;
+  width: 250px;
+  outline: none;
+}
+
+#divBusca img {
+  width: 25px;
+  padding-left: 10px;
+}
+
 table {
   color: #ae1d7e;
   width: 100%;
@@ -273,6 +309,11 @@ button:hover {
   .acoes-tr {
     width: 200px;
   }
+
+  #divBusca {
+    width: 200px;
+  } 
+
 }
 
 @media (max-width: 600px) {
@@ -336,6 +377,11 @@ button:hover {
     width: 30px;
     height: 20px;
   }
+
+  #divBusca {
+    width: 150px;
+  }
+
 }
 
 @media (max-width: 400px) {
