@@ -100,7 +100,10 @@ table tr {
   margin: 10px 0px 0px 0px;
   padding: 10px;
   gap: 10px;
+  border-bottom: #BD7BD1 1px solid;
 }
+
+
 
 thead tr {
   display: flex;
