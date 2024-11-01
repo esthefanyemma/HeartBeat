@@ -5,12 +5,16 @@
   gap: 10%;
 }
 
+.topo p{
+  font-family: "Fredoka";
+}
+
 #divBusca {
   background-color: #f09fd5;
   border-radius:12px;          
   width: 300px;
   height: 32px;
-  margin: 20px 0 20px 100px;
+  margin: 20px 0 20px 150px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -265,6 +269,14 @@ height: 25%;
   padding: 10px;
 }
 
+
+@media screen and (max-width: 1440px){
+
+  #divBusca{
+    margin: 20px 0 20px 100px;
+  }
+  
+}
 
 
 @media only screen and (max-width:1280px){
