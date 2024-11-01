@@ -18,7 +18,7 @@ header{
 
 .modaledit{
     width: 552px;
-    height: 650px;
+    height: 100vh;
     margin: 4rem;   
 }
 
@@ -47,8 +47,7 @@ header{
 }
 
 .img-entrada:hover{
-    
-    transform: scale(1.08);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -56,6 +55,11 @@ header{
     transform: scale(1.35);
     position: absolute;
     color: #F2F2F2;
+    opacity: 0;
+}
+
+.img-entrada:hover .material-symbols-outlined {
+    opacity: 1;
 }
 
 .info-usuario{
@@ -96,10 +100,10 @@ input{
     border-radius: 12px;
     border: 4px solid #BD7BD1;
     font-size: 24px;
+    outline: none;
 }
 
 input:hover{
-    transform: scale(1.01);
     cursor: pointer;
 }
 
