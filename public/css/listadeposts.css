@@ -7,7 +7,7 @@
 
 #divBusca {
   background-color: #f09fd5;
-  border-radius: 12px;
+  border-radius:12px;          
   width: 300px;
   height: 32px;
   margin: 30px 0 20px 100px;
@@ -38,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding-top: 95px;
 }
 .page-number {
   display: flex;
@@ -51,7 +51,7 @@
   padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 12px;
+  border-radius: 12px;                       
   background-color: #F09FD5;
   border: #f09fd5;
   color: white;
@@ -62,7 +62,7 @@
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 8px;
+  border-radius: 8px;                                  
   background-color: #f09fd5;
   border: #f09fd5;
   color: white;
@@ -149,13 +149,13 @@ height: 25%;
   background-color: #fefefe;
   width: 180px;
   height: 100%;
-  border-radius: 12px ;
+  border-radius: 12px ;                                
   
 }
 .item img{
   width: 100%;
   height: 180px;
-  border-radius: 12px;
+  border-radius: 12px;                                
   object-fit: cover;
 }
 .item p{
@@ -164,12 +164,9 @@ height: 25%;
 }
 .posts{
   margin: 120px 120px;
- 
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 12px; 
   gap: 60px;  
   padding-top: 60px;
   padding-bottom: 60px; 
@@ -184,17 +181,18 @@ height: 25%;
 
 .imagem{
   width: 320px;
-  border-radius: 12px;
+  border-radius: 6px;                                          
   background-color: #88c8ee;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: left;
   transition: all 0.2s;
+  box-shadow: 1px 1px 10px #000000;  
 }
 
 .imagem:hover{
-  transform: scale(1.1);
+  transform: scale(1.03);
   cursor: pointer;
 }
 
@@ -208,7 +206,7 @@ height: 25%;
   align-items: center;
   width: 100%;
   height: 310px;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 6px 6px 0px 0px;                                
   object-fit: cover;
 }
 
@@ -232,7 +230,7 @@ height: 25%;
   color: #bd7bd1;
   font-size: 16px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 12px;                       
   border: none;
   outline: none;
   transition: all 0.2s;
@@ -290,12 +288,12 @@ height: 25%;
       margin: 60px 0px;
   }
   #divBusca{
-    width: 200px;
+  width: 200px;
   height: 32px;
-  margin: 30px 0 20px 50px;
+  margin: 30px 0 20px 40px;
   }
   .topo{
-    gap: 12%;
+    gap: 10%;
   }
 }
 
@@ -322,12 +320,57 @@ height: 25%;
   #divBusca{
     width: 200px;
   height: 32px;
-  margin: 30px 0 20px 50px;
+  margin: 30px 0 20px 150px;
+  }
+  .topo{
+    gap: 10%;
+  }
+}
+
+@media only screen and (max-width:1024px){
+  #divBusca{
+  width: 200px;
+  height: 32px;
+  margin: 30px 0 20px 10px;
   }
   .topo{
     gap: 15%;
   }
+  .topo p{
+    font-size: 36px;
+  }
 }
+
+@media only screen and (max-width:980px){
+  .imagem{
+      width: 260px;
+  }
+  .imagem img{
+      height: 220px;
+  }
+  .imgGrupo{
+      height: 50%;
+  }
+  .item img{
+      width: 140px;
+      height: 140px;
+  }
+  .posts{
+      margin: 60px 60px;
+  }
+  .grupos{
+      margin: 60px 0px;
+  }
+  #divBusca{
+  width: 200px;
+  height: 32px;
+  margin: 30px 0 20px 10px;
+  }
+  .topo{
+    gap: 10%;
+  }
+}
+
 @media only screen and (max-width:853px){
   .textoAutor{
       font-size: 18px;
@@ -359,9 +402,45 @@ height: 25%;
   margin: 30px 0 20px 40px;
   }
   .topo{
-    gap: 10%;
+    gap: 9%;
   }
 }
+
+@media only screen and (max-width:590px){
+  .textoAutor{
+      font-size: 18px;
+  }
+  .texto{
+      font-size: 20px;
+  }
+  .imagem{
+      width: 180px;
+  }
+  .imagem img{
+      height: 180px;
+  }
+  .imgGrupo{
+      height: 100%;
+  }
+  .item img{
+      width: 120px;
+      height: 120px;
+  }
+  .elipse {
+    height: 35px;
+    width: 35px;
+  }
+  #divBusca{
+  width: 150px;
+  height: 32px;
+  margin: 30px 0 20px 4px;
+  }
+  .topo{
+    margin-left: 1px;
+    gap: 5%;
+  }
+}
+
 
 @media only screen and (max-width:540px){
   .texto{
@@ -426,13 +505,106 @@ height: 25%;
   }
 
   #divBusca {
-      width: 200px;
-      margin: 20px 0 20px 20px;
+      width: 100px;
+      margin: 20px 0 20px 10px;
   }
 
+  .topo{
+    gap: 5%;
+    margin-bottom: 30px;
+  }
+  .topo p{
+    font-size: 24px;
+  }
+  #txtBusca{
+    font-size: 14px;
+  }
   .elipse {
     height: 30px;
     width: 30px;
+  }
+
+}
+
+@media only screen and (max-width:450px){
+  .texto{
+      font-size: 16px;
+  }
+  .textoAutor{
+      font-size: 14px;
+  }
+  .textoData{
+      font-size: 12px;
+  }
+  .titulo{
+      font-size: 16px;
+  }
+  .desc p{
+      margin: 10px 60px;
+  }
+  .item{
+      width: 80px;
+  }
+  .item p{
+      font-size: 16px;
+  }
+  .botao1{
+      transform: scale(0.5);
+  }
+
+ .grupos{
+  margin: 20px 0px;
+ }
+  .conj{
+      padding: 20px;
+  }
+  .posts{
+      margin: 10px;
+      padding: 20px;
+      gap: 12px;
+  }
+  .postG{
+      gap: 30px;
+  }
+  .autor{
+      padding: 6px;
+  }
+  .postLista1{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  }
+  .imagem{
+      width: 240px;
+  }
+  .imagem img{
+      height: 220px;
+  }
+  .imgGrupo{
+      height: 220px;
+  }
+  .item img{
+      width: 80px;
+      height: 80px;
+  }
+
+  #divBusca {
+      width: 100px;
+      margin: 20px 0 20px 5px;
+  }
+
+  .topo{
+    gap: 6%;
+  }
+  .topo p{
+    font-size: 18px;
+  }
+  .elipse {
+    height: 30px;
+    width: 30px;
+  }
+  #txtBusca{
+    font-size: 14px;
   }
 
 }
