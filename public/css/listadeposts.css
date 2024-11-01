@@ -10,7 +10,7 @@
   border-radius:12px;          
   width: 300px;
   height: 32px;
-  margin: 30px 0 20px 100px;
+  margin: 20px 0 20px 100px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -82,11 +82,11 @@ button:hover {
 }
 
 body{
-  background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);    ativar no final 
+  background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);   /* ativar no final  */
 }
 
 
-body *{
+body {
   font-family: "Fredoka", sans-serif;
 }
 
@@ -331,7 +331,7 @@ height: 25%;
   #divBusca{
   width: 200px;
   height: 32px;
-  margin: 30px 0 20px 10px;
+  margin: 30px 0 20px 20px;
   }
   .topo{
     gap: 15%;
@@ -372,6 +372,11 @@ height: 25%;
 }
 
 @media only screen and (max-width:853px){
+
+  .topo p{
+    font-size: 30px;
+  }
+
   .textoAutor{
       font-size: 18px;
   }
@@ -399,7 +404,7 @@ height: 25%;
   #divBusca{
     width: 150px;
   height: 32px;
-  margin: 30px 0 20px 40px;
+  margin: 20px 0 20px 0px;
   }
   .topo{
     gap: 9%;
@@ -527,6 +532,11 @@ height: 25%;
 }
 
 @media only screen and (max-width:450px){
+
+  .topo{  
+    flex-direction: column;
+  }
+
   .texto{
       font-size: 16px;
   }
@@ -589,8 +599,8 @@ height: 25%;
   }
 
   #divBusca {
-      width: 100px;
-      margin: 20px 0 20px 5px;
+      width: 150px;
+      margin: 20px 100px 50px 5px;
   }
 
   .topo{
