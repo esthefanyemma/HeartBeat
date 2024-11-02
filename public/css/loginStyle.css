@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #bd7bd1, #ff9fdf, #88c8ee);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 398px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+}
+
+.login-box img {
+  width: 320px;
+  height: 300px;
+  gap: 10px;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 508px;
+  height: 318px;
+}
+
+.textbox input {
+  width: 444px;
+  height: 45px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+}
+
+.textbox input::placeholder {
+  font-size: large;
+  padding-left: 10px;
+}
+
+.btn {
+  width: 126px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  border: none;
+  color: #c44ce8;
+  font-size: 28px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Itim";
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  font-family: "Fredoka";
+}
+
+@media (max-width: 768px) {
+  .login-box img {
+    width: 220px;
+    height: 180px;
+  }
+  .login-box {
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+  }
+  h1{
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-box img {
+    width: 200px;
+    height: 160px;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .textbox input {
+    width: 300px;
+  }
+  .btn {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+
+    *{
+        box-sizing: content-box;
+    }
+
+    .login-box {
+        width: 80%;
+        height: 55%;
+        padding-bottom: 0;
+    }
+
+  .login-box img {
+    width: 150px;
+    height: 140px;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .textbox input {
+    width: 250px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 80px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+
+    .login-box {
+        width: 80%;
+        height: 50%;
+        padding-bottom: 0;
+    }
+
+
+  .login-box img {
+    width: 130px;
+    height: 120px;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .textbox input {
+    width: 200px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 70px;
+    font-size: 18px;
+  }
+}
