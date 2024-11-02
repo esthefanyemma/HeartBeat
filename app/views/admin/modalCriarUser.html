@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
 </head>
 <body>
-   <div class="modaledit-CU">
+    <button onclick="abrirModal(`criarUser`)">dedsd</button>
+   <div class="modaledit-CU modal" id="criarUser">
       <div class="img-entrada-CU">
         <label>
             <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
@@ -38,10 +39,11 @@
             </div>
             <div class="btns-edit-CU">
                 <button  type="submit">Criar</button>
-                <button  type="button" onclick="fecharModal()">Cancelar</button>
+                <button  type="button" onclick="fechaModal()">Cancelar</button>
             </div>
            </div>
         </form>
    </div>
+    <script src="/public/js/modal.js"></script>
 </body>
 </html>
