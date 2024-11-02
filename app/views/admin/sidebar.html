@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="../../../public/css/sidebar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+</head>
+<body>
+    <!-- MODAL FECHADO -->
+    <div class="side">
+        <div class="funcoes">
+            <div class="func">
+                <i id="menu" onclick="abrir()" class="icone bi bi-list"></i>            
+            </div>
+            <div class="func">
+                <i class="icone bi bi-grid"></i>                
+            </div>
+            <div class="func">
+                <i class="icone bi bi-pencil-square"></i> 
+            </div>
+            <div class="func">
+                <i class="icone bi bi-people"></i>                
+            </div>
+            <div class="func">
+                <i class="icone bi bi-box-arrow-right"></i>                
+            </div>
+        </div>
+    </div>
+    <!-- MODAL ABERTO-->
+    <div class="sidebar">
+        <div class="funcoes">
+            <div class="func">
+                <i id="X" onclick="fechar()" class="bi bi-x-lg"></i>            
+            </div>
+            <div class="func">
+                <i class="icone bi bi-grid"></i>                
+                <div class="texto"><p> Dashboard</p></div>
+            </div>
+            <div class="func">
+                <i class="icone bi bi-pencil-square"></i>                    
+                <div class="texto"><p> Publicações</p></div>
+            </div>
+            <div class="func">
+                <i class="icone bi bi-people"></i>                
+                <div class="texto"><p> Usuários</p></div>
+            </div>
+            <div class="func">
+                <i class="icone bi bi-box-arrow-right"></i>                
+                <div class="texto"><p> Logout</p></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="../../../public/js/sidebar.js"></script>   
+
+</html>
