@@ -18,8 +18,11 @@ header{
 
 .modaledit{
     width: 552px;
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 2% ;
     margin: 4rem;   
+    background-color: #F2F2F2;
+    border-radius: 6px;
 }
 
 .img-entrada{
