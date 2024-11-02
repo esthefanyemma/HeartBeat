@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-.modalCriarPost{
+.modalEditarPost{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -20,7 +20,7 @@
     font-family: "Fredoka", sans-serif;
 }   
 
-.modalCriarPost .tituloModalCriar{
+.modalEditarPost .tituloModalEditar{
     background-color: #bd7bd1;
     display: flex;
     justify-content: center;
@@ -33,22 +33,22 @@
     border-top-right-radius: 12px;
 }
 
-.tituloModalCriar h1{
+.tituloModalEditar h1{
     margin: 0;
 }
 
-.modalCriarPost .conteudoCriar {
+.modalEditarPost .conteudoEditar {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.infosFixas, .imagem, #adcTitulo, #adcDesc, .botoesCriar {
+.infosFixasEditar, .imagemEditar, #adcTituloEditar, #adcDescEditar, .botoesEditar {
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.conteudoCriar .infosFixas{
+.conteudoEditar .infosFixasEditar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,11 +56,11 @@
     width: 100%;
 }
 
-#adcImage{
+#adcImageEditar{
     display: none;
 }
 
-.imagem{
+.imagemEditar{
     background-color: #a4a0a059;
     font-size: 24px;
     font-family: "Fredoka", sans-serif;
@@ -77,7 +77,7 @@
     padding-bottom: 27px;
 }
 
-.conteudoCriar #adcTitulo{
+.conteudoEditar #adcTituloEditar{
     width: 80%;
     border-radius: 12px;
     border: 3px solid #bd7bd1;
@@ -87,12 +87,12 @@
     
 }
 
-.conteudoCriar #adcTitulo:focus, .conteudoCriar #adcDesc:focus{
+.conteudoEditar #adcTituloEditar:focus, .conteudoEditar #adcDescEditar:focus{
     outline: 3px solid #9b28be;
     border: none;
 }
 
-.conteudoCriar #adcDesc{
+.conteudoEditar #adcDescEditar{
     width: 80%;
     border-radius: 12px;
     border: 3px solid #bd7bd1;
@@ -103,7 +103,7 @@
     font-size: 14px;
 }
 
-.botoesCriar button{
+.botoesEditar button{
     padding: 12px;
     border-radius: 12px;
     color: #f2f2f2;
@@ -113,12 +113,12 @@
     transition: all 0.2s;
 }
 
-.botoesCriar button:hover{
+.botoesEditar button:hover{
     scale: 1.05;
     cursor: pointer;
 }
 
-.conteudoCriar .botoesCriar{
+.conteudoEditar .botoesEditar{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -127,61 +127,61 @@
 }
 
 @media only screen and (max-width: 1100px){
-    .modalCriarPost{
+    .modalEditarPost{
         width: 35%;
     }
 }
 
 @media only screen and (max-width: 900px){
-    .modalCriarPost{
+    .modalEditarPost{
         width: 28%;
     }
 
-    .imagem{
+    .imagemEditar{
         font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 800px){
-    .modalCriarPost{
+    .modalEditarPost{
         width: 46%;
         left: 30%;
     }
 }
 
 @media only screen and (max-width: 500px){
-    .modalCriarPost{
+    .modalEditarPost{
         width: 60%;
         left: 20%;
     }
 
-    .modalCriarPost .tituloModalCriar{
+    .modalEditarPost .tituloModalEditar{
         font-size: 12px;
     }
 
-    .modalCriarPost .conteudoCriar{
+    .modalEditarPost .conteudoEditar{
         font-size: 12px;
     }
 
-    .modalCriarPost .imagem{
+    .modalEditarPost .imagemEditar{
         font-size: 14px;
     }
 
-    .modalCriarPost #adcTitulo{
+    .modalEditarPost #adcTituloEditar{
         font-size: 12px;
     }
 
-    .modalCriarPost #adcDesc{
+    .modalEditarPost #adcDescEditar{
         font-size: 12px;
     }
 
-    .conteudoCriar button{
+    .conteudoEditar button{
         font-size: 12px;
     }
 }
 
 @media only screen and (max-width: 800px){
-    .modalCriarPost{
+    .modalEditarPost{
         width: 66%;
         left: 20%;
     }
