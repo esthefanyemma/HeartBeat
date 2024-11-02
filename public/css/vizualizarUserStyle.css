@@ -24,7 +24,7 @@
     width: 28%;
     background-color: #f2f2f2;
     z-index: 3;
-    border-radius: 12px;
+    border-radius: 6px;
     left: 35%;
     top: 25%;
     font-family: "Fredoka", sans-serif;
@@ -34,8 +34,8 @@ header{
     width: 100%;
     background-color: #bd7bd1;
     height: 90px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .imagemUser{
