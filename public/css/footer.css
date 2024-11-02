@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    position: absolute; 
+    bottom: 0;   
+    font-family: "Itim", cursive;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer .redeSocial{
+    background-color: #f09fd5;
+    padding: 1% 0;
+}
+
+
+.redeSocial ul{
+    display: flex;
+    justify-content: center;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-left: 3%;
+}
+
+.redeSocial ul li{
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.redeSocial ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.redeSocial a:hover{
+    cursor: pointer;
+}
+
+
+footer .infos {
+    background-color: #bd7bd1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+.infos ul{
+    display: flex;
+    justify-content: space-between;
+    color: #f2f2f2;
+    gap: 25%;
+}
+
+.infos li{
+    font-size: 24px;
+}
+
+.infos li a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.infos img{
+    height: 80px;
+}
+
+.infos #code{
+    height: 80px;
+    border-radius: 12px;
+}
+
+
+
+/* Modais */
+
+.modal{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: fit-content;
+    /* width: 400px; */
+    width: 30%;
+    background-color: #f2f2f2;
+    z-index: 3;
+    border-radius: 12px;
+    bottom: 10%;
+    left: 38%;
+
+}
+
+.modal .titulo{
+    background-color: #bd7bd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Itim", cursive;
+    color: #f2f2f2;
+    font-weight: normal;
+    font-size: 18px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.titulo h1{
+    margin: 0;
+}
+
+.modal .texto{
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 20px;
+    text-align:justify;
+}
+
+.tela{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 30%;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+@media screen and (max-width: 767px){
+    .redeSocial {
+        width: 100%;
+    }
+
+    .redeSocial ul{
+        font-size: 24px;
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .infos{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .infos li{
+        font-size: 14px;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .infos ul{
+        justify-content: center;
+        gap: 15%;
+    }
+
+    .infos img{
+        height: 60px;
+    }
+
+    .infos #code{
+        height: 53px;
+    }
+
+    .modal{
+        width: 60%;
+        left: 25%;
+        bottom: 7%;
+    }
+}

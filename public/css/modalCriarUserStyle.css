@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.titulo-CU{
+    background-color: #BD7BD1;
+    width: 552px;
+    height: 100px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.modaledit-CU{
+    display: none;
+    position: absolute;
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    width: 552px;
+    height: 650px;
+    margin: 4rem;   
+    z-index: 10;
+}
+
+.img-entrada-CU{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-entrada-CU img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.escuro{
+    background: no-repeat center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/pencil-alt.svg);
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.escuro:hover{
+    display: block;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.escuro img{
+    width: 20%;
+    height: 20%;
+}
+
+.img-entrada-CU label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-entrada-CU:hover{
+    
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.info-usuario-CU{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 70px;
+}
+
+.campodeentrada-CU{
+    margin-top: 40px;
+}
+
+.formularios-CU{
+    margin: 20px;
+}
+
+.nomecampos-CU{
+    display: block;
+    font-size: 20px;
+    font-family: Inter,sans-serif;
+}
+
+.formularios-CU input{
+    width: 400px;
+    height: 40px;
+    border-radius: 12px;
+    border: 4px solid #BD7BD1;
+    font-size: 24px;
+    padding-left: 5px;
+    outline: none;
+}
+
+
+.btns-edit-CU button{
+    width: 143px;
+    height: 46px;
+    font-size: 32px;
+    font-family: Itim,sans-serif;
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #BD7BD1;
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+}
+
+.btns-edit-CU button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btns-edit-CU{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.img-entrada-CU label{
+    overflow: hidden;
+}
+
+.img-inp-CU{
+    display: none;
+}
+
+@media screen and (max-width:560px) {
+    .modaledit-CU{
+    width: 470px;
+    height: 600px;
+    }
+
+    .titulo-CU{
+        width: 470px;
+        height: 100px;
+    }
+
+    .img-entrada-CU{
+        width: 80px;
+        height: 80px;
+        margin-top: 50px;
+    }
+
+    .formularios-CU input{
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+        border: 3px solid #BD7BD1;
+    }
+
+    .btns-edit-CU button{
+        width: 123px;
+        height: 36px;
+        font-size: 28px;
+    }
+
+    .nomecampos-CU{
+        font-size: 18px;
+    }
+
+    .campodeentrada-CU{
+        margin-left: 20px;
+    }
+
+    .material-symbols-outlined{
+        transform: scale(1.25);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .modaledit-CU{
+    width: 400px;
+    height: 520px;
+    }
+
+    .titulo-CU{
+        width: 400px;
+        height: 100px;
+    }
+
+    .img-entrada-CU{
+        width: 70px;
+        height: 70px;
+        margin-top: 60px;
+    }
+
+    .escuro img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .formularios-CU input{
+        width: 250px;
+        height: 25px;
+        font-size: 18px;
+        border: 2px solid #BD7BD1;
+    }
+
+    .btns-edit-CU button{
+        width: 113px;
+        height: 30px;
+        font-size: 24px;
+    }
+
+    .nomecampos-CU{
+        font-size: 16px;
+    }
+
+    .campodeentrada-CU{
+        margin-left: 5px;
+    }
+
+    .info-usuario-CU{
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+
+    .material-symbols-outlined{
+        transform: scale(1.15);
+    }
+}
+
+@media screen and (max-width:430px) {
+    .modaledit-CU{
+    width: 320px;
+    height: 440px;
+    }
+
+    .titulo-CU{
+        width: 320px;
+        height: 80px;
+    }
+
+    .img-entrada-CU{
+        width: 60px;
+        height: 60px;
+        margin-top: 45px;
+        margin-left: 20px;
+    }
+
+    .formularios-CU input{
+        width: 210px;
+        height: 22px;
+        font-size: 14px;
+        border: 2px solid #BD7BD1;
+    }
+
+    .btns-edit-CU button{
+        width: 90px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    .nomecampos-CU{
+        font-size: 16px;
+    }
+
+    .campodeentrada-CU{
+        margin-top: 15px;
+        margin-left: 1px;
+    }
+
+    .info-usuario-CU{
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .btns-edit-CU{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .modaledit-CU{
+    width: 280px;
+    height: 410px;
+    }
+
+    .titulo-CU{
+        width: 280px;
+        height: 70px;
+    }
+
+    .img-entrada-CU{
+        width: 55px;
+        height: 55px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .formularios-CU input{
+        width: 200px;
+        height: 20px;
+        font-size: 14px;
+        border: 2px solid #BD7BD1;
+    }
+
+    .btns-edit-CU button{
+        width: 75px;
+        height: 25px;
+        font-size: 18px;
+    }
+
+    .nomecampos-CU{
+        font-size: 16px;
+    }
+
+    .campodeentrada-CU{
+        margin-top: 15px;
+        margin-left: 1px;
+    }
+
+    .info-usuario-CU{
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .btns-edit-CU{
+        margin-left: 0px;
+        gap: 10px;
+    }
+
+    .material-symbols-outlined{
+        transform: scale(1.15);
+    }
+}

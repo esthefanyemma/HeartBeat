@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #bd7bd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+body *{
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.criar{
+    width: fit-content;
+    height: fit-content;
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    z-index: 3;
+}
+
+.modal_deletar{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.cencelarTexto{
+    width: 100%;
+ }
+
+ .modal_deletar p{
+    text-align: center;
+ }
+
+.botoes_del{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;    
+}
+.botoes_del button{
+    padding: 4px 18px 4px 18px;
+    border-radius: 12px;
+    color: #f0f0f0;
+    background-color: #bd7bd1;
+    border: none;
+    transition: all 0.2s;
+}
+.botoes_del button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+@media only screen and (max-width:950px){
+    .cancelarTexto{
+        font-size: 20px;
+    }
+    .botoes_del button{
+        font-size: 24px;
+    }
+    .modal_deletar{
+        transform: scale(0.8);
+    }
+}
+
+
+@media only screen and (max-width:650px){
+
+    .modal_deletar{
+        transform: scale(0.7);
+    }
+    .cancelarTexto{
+        font-size: 20px;
+    }
+    .botoes_del button{
+        font-size: 20px;
+    }
+
+} 
+@media only screen and (max-width:450px){
+
+    .modal_deletar{
+        transform: scale(0.5);
+    }
+    .cancelarTexto{
+        font-size: 20px;
+    }
+    .botoes_del button{
+        font-size: 20px;
+    }
+
+} 

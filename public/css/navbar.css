@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #bd7bd1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+}
+
+header .logo #marca{
+    height: 90px;
+    margin-right: 50px;
+}
+
+header .logo #escrito{
+    height: 60px;
+}
+
+nav{
+    color: #f2f2f2;
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    margin-right: 9%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    margin: 20px;
+}
+
+nav a{
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+}
+
+/* Adicionei um hoover na navbar */
+nav a:hover{
+    font-size: 22px;
+}
+
+nav ul .tresBarras{
+    display: none;
+}
+
+nav ul #login a{
+    padding: 5px;
+    background-color: #f2f2f2;
+    color: #bd7bd1;
+    border-radius: 12px;
+}
+
+.modalNav{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    header .logo #escrito {
+        display: none;
+    }
+
+    nav li{
+        display: none;
+        font-size: 24px;
+    }
+
+    nav li.tresBarras {
+        display: flex;
+    }
+
+    header .logo #marca{
+        height: 70px;
+        padding: 5px;
+    }
+
+    .modalNav{
+        background-color: #f09fd5;
+        background-color: #ff9fdf;
+        /* background-image: linear-gradient(to bottom, #ff9fdf, hwb(0 0% 100% / 0.3)); */
+        font-family: "Itim", cursive;
+        font-size: 24px;
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        padding-top: 20px;
+        z-index: 3;
+    }
+
+    .modalNav ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .modalNav li{
+        list-style: none;
+        padding: 20px;  
+        display: flex;
+        justify-content: center;
+        /* width: 100%; */
+        /* border-bottom: 4px solid #bd7bd1; */
+    }
+
+    .modalNav a{
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+
+    .modalNav ul .tresBarras{
+        color: #f2f2f2;
+    }
+
+    .modalNav{
+        display: none;
+    }
+
+    .tela{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 30%;
+        position: absolute;
+        display: none;
+        z-index: 2;
+    }
+}

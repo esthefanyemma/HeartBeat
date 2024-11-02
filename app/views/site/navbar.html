@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Beat - Navbar</title>
+    <link rel="stylesheet" href="../../../public/css/navbar.css">
+    <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="tela"></div>
+    <header>
+        <div class="logo">
+            <img src="../../../public/assets/heartBeats-logo-com-nome.png" alt="Logo do Heart Beats" id="marca">
+            <img src="../../../public/assets/heartBeats-escrito.png" alt="Heart Beats escrito" id="escrito">
+        </div>
+        <nav>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Publicações</a></li>
+                <li id="login"><a href="#">Login</a></li>
+                <li class="tresBarras" onclick="openNav()"><i class="fa-solid fa-bars"><a href="#"></a></i></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Modal -->
+     <div id="modalNav" class="modalNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Publicações</a></li>
+            <li id="login"><a href="#">Login</a></li>
+            <li class="tresBarras" onclick="closeNav()"><i class="fa-solid fa-xmark"><a href="#"></a></i></li>
+        </ul>
+     </div>
+</body>
+    <script src="/public/js/NavbarScript.js"></script>
+</html>

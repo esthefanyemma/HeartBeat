@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body *{
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    color: #f0f0f0;
+}
+
+.sidebar{
+    background-color: #bd7bd1;
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.side{
+    background-color: #bd7bd1;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh; 
+}
+.funcoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 18px;
+}
+.func{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.texto{
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#menu{
+    transform: scale(1.5);
+}
+#X{
+    transform: scale(1.2);
+
+}
+
+@media only screen and (max-width: 680px){
+    .icone{
+        transform: scale(0.9);
+    }
+    .texto p{
+        font-size: 16px;
+    }
+    #menu{
+        transform: scale(1.4);
+    }
+    #X{
+        transform: scale(1.1);
+
+    }
+}
+@media only screen and (max-width: 480px){
+    .funcoes{
+        padding: 8px;
+    }
+    .icone{
+        transform: scale(0.8);
+    }
+    .texto{
+        padding-left: 6px;
+    }
+    .texto p{
+        font-size: 14px;
+    }
+    #menu{
+        transform: scale(1.3);
+    }
+    #X{
+        transform: scale(1);
+
+    }
+
+}
+
+
+
