@@ -1,5 +1,6 @@
 .topo{
   display: flex;
+  width: 100%;
   align-items: center;
   gap: 8%;
 }
@@ -85,14 +86,9 @@ button:hover {
 }
 
 body{
-  background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);  
+  background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
+  font-family: "Fredoka", sans-serif;  
 }
-
-
-body {
-  font-family: "Fredoka", sans-serif;
-}
-
 .desc{
   padding-bottom: 20px;
   background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
@@ -268,6 +264,12 @@ height: 25%;
   padding: 10px;
 }
 
+
+@media screen and (min-width: 1800px){
+  .topo{
+    padding-left: 8%;
+  }
+}
 
 @media screen and (max-width: 1440px){
 
