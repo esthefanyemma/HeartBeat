@@ -131,11 +131,12 @@ a:hover{
     }
 
     .logo-tipo{
-        padding-left: 65px;
+        padding-left: 48px;
      }
 }
 
 @media screen and (max-wisth:350px) {
+   
     .divlogout{
         transform: scale(0.7);
     }
