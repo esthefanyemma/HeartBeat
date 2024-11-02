@@ -13,7 +13,7 @@ header{
     background-color: #BD7BD1;
     width: 552px;
     height: 100px;
-    border-radius: 6px;
+    border-radius: 6px 6px 0px 0px;
 }
 
 .modaledit{
