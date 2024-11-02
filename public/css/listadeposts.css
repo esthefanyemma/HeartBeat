@@ -1,20 +1,20 @@
 .topo{
   display: flex;
-  width: 100%;
+  width: 80%;
+  justify-content: space-between;
   align-items: center;
-  gap: 8%;
 }
 
 .topo p{
   font-family: "Fredoka";
+  width: fit-content;
 }
 
 #divBusca {
   background-color: #f09fd5;
   border-radius:12px;          
-  width: 300px;
+  width: 25%;
   height: 32px;
-  margin: 20px 0 20px 150px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -22,6 +22,11 @@
   position: relative;
   z-index: 10;
 }
+
+.invisivel{
+  width: 25%;
+}
+
 
 #txtBusca {
   background-color: transparent;
@@ -134,6 +139,7 @@ height: 25%;
   gap: 5%;
 }
 .titulo{
+  width: 42%;
   text-align: center;
   font-size: 32px;
   display: flex;
@@ -162,18 +168,20 @@ height: 25%;
   align-items: center;
 }
 .posts{
-  margin: 120px 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 60px;  
   padding-top: 60px;
   padding-bottom: 60px; 
 }
 .postG{
+  width: 80%;
+  max-width: 1400px;
   gap: 60px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -265,21 +273,6 @@ height: 25%;
 }
 
 
-@media screen and (min-width: 1800px){
-  .topo{
-    padding-left: 8%;
-  }
-}
-
-@media screen and (max-width: 1440px){
-
-  #divBusca{
-    margin: 20px 0 20px 100px;
-  }
-  
-}
-
-
 @media only screen and (max-width:1280px){
   .imagem{
       width: 260px;
@@ -301,13 +294,9 @@ height: 25%;
       margin: 60px 0px;
   }
   #divBusca{
-  width: 200px;
   height: 32px;
-  margin: 30px 0 20px 40px;
   }
-  .topo{
-    gap: 10%;
-  }
+
 }
 
 @media only screen and (max-width:1320px){
@@ -331,24 +320,18 @@ height: 25%;
       margin: 60px 0px;
   }
   #divBusca{
-    width: 200px;
   height: 32px;
-  margin: 30px 0 20px 150px;
   }
   .topo{
-    gap: 10%;
+    gap: 2%;
   }
 }
 
 @media only screen and (max-width:1024px){
   #divBusca{
-  width: 200px;
   height: 32px;
-  margin: 30px 0 20px 20px;
   }
-  .topo{
-    gap: 12%;
-  }
+ 
   .topo p{
     font-size: 30px;
   }
@@ -375,19 +358,14 @@ height: 25%;
       margin: 60px 0px;
   }
   #divBusca{
-  width: 200px;
   height: 32px;
-  margin: 30px 0 20px 10px;
-  }
-  .topo{
-    gap: 10%;
   }
 }
 
 @media only screen and (max-width:853px){
 
   .topo p{
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .textoAutor{
@@ -397,7 +375,7 @@ height: 25%;
       font-size: 20px;
   }
   .imagem{
-      width: 180px;
+      width: 210px;
   }
   .imagem img{
       height: 180px;
@@ -415,13 +393,14 @@ height: 25%;
     width: 35px;
   }
   #divBusca{
-    width: 150px;
   height: 32px;
-  margin: 20px 0 20px 0px;
+  width: 40%;
   }
-  .topo{
-    gap: 9%;
+
+  .invisivel{
+    width: 40%;
   }
+
 }
 
 @media only screen and (max-width:590px){
@@ -449,9 +428,7 @@ height: 25%;
     width: 35px;
   }
   #divBusca{
-  width: 150px;
   height: 32px;
-  margin: 30px 0 20px 4px;
   }
   .topo{
     margin-left: 1px;
@@ -522,11 +499,6 @@ height: 25%;
       height: 80px;
   }
 
-  #divBusca {
-      width: 100px;
-      margin: 20px 0 20px 10px;
-  }
-
   .topo{
     gap: 5%;
     margin-bottom: 30px;
@@ -546,8 +518,13 @@ height: 25%;
 
 @media only screen and (max-width:450px){
 
+  #divBusca{
+    width: 60%;
+    margin-top: 5%;
+  }
+
   .topo{  
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .texto{
@@ -610,12 +587,6 @@ height: 25%;
       width: 80px;
       height: 80px;
   }
-
-  #divBusca {
-      width: 150px;
-      margin: 20px 100px 50px 5px;
-  }
-
   .topo{
     gap: 6%;
   }
