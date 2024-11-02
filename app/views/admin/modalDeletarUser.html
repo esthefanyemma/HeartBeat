@@ -11,14 +11,17 @@
     <title>Modal</title>
 </head>
 <body>
-    <form class="modal_deletar" id="deletar">
-        <p class="cancelarTexto">
-            Tem certeza que deseja deletar este usuário?
-        </p>
-        <div class="botoes_del">
-            <button>Confirmar</button>
-            <button>Cancelar</button>
-            </div>
-        </form>
+    <div class="modal" id="deletarusuario">
+        <form class="modal_deletar">
+            <p class="cancelarTexto">
+                Tem certeza que deseja deletar este usuário?
+            </p>
+            <div class="botoes_del">
+                <button type="submit">Confirmar</button>
+                <button type="button" onclick="fechaModal()">Cancelar</button>
+                </div>
+            </form>
+    </div>
+        <script src="/public/js/modal.js"></script>
 </body>
 </html>

@@ -16,17 +16,21 @@
     z-index: 2;
 }
 
+.modalv{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 28%;
+    top: 30%;
+    left: 35%;
+}
+
 .modalVerUser{
     display: flex;
     flex-direction: column;
-    position: absolute;
     height: fit-content;
-    width: 28%;
     background-color: #f2f2f2;
-    z-index: 3;
     border-radius: 6px;
-    left: 35%;
-    top: 25%;
     font-family: "Fredoka", sans-serif;
 } 
 
@@ -101,32 +105,32 @@ header{
 }
 
 @media only screen and (max-width: 1100px){
-    .modalVerUser{
+    .modalv{
         width: 35%;
     }
 }
 @media only screen and (max-width: 900px){
-    .modalVerUser{
+    .modalv{
         width: 37%;
         left: 32%;
     }
 }
 @media only screen and (max-width: 850px){
-    .modalVerUser{
+    .modalv{
         width: 46%;
         left: 30%;
     }
 }
 
 @media only screen and (max-width: 750px){
-    .modalVerUser{
+    .modalv{
         width: 55%;
         left: 25%;
     }
 }
 
 @media only screen and (max-width: 500px){
-    .modalVerUser{
+    .modalv{
         width: 60%;
         left: 20%;
     }
@@ -156,7 +160,7 @@ header{
 
 }
 @media only screen and (max-width: 400px){
-    .modalVerUser{
+    .modalv{
         width: 76%;
         left: 14%;
     }

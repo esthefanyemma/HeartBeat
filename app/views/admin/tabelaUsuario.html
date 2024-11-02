@@ -26,7 +26,7 @@
             <img src="../../../public/assets/Logo.png" alt="Logo HeartBeats" />
             <h2>Tabela de Usuarios</h2>
           </div>
-          <div class="btn">
+          <div class="btn" onclick="abrirModal('criarUser')">
             <p>Criar</p>
             <i class="fa-solid fa-plus"></i>
           </div>
@@ -54,13 +54,13 @@
                 <td>email@gmail.com</td>
                 <td>
                   <div class="acoes">
-                    <div class="visualizar">
+                    <div class="visualizar" onclick="abrirModal('verusuario')">
                       <i class="fa-solid fa-eye"></i>
                     </div>
-                    <div class="editar">
+                    <div class="editar" onclick="abrirModal('editarusuario')">
                       <i class="fa-solid fa-pencil"></i>
                     </div>
-                    <div class="deletar">
+                    <div class="deletar" onclick="abrirModal('deletarusuario')">
                       <i class="fa-solid fa-trash"></i>
                     </div>
                   </div>

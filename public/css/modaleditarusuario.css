@@ -17,12 +17,15 @@ header{
 }
 
 .modaledit{
+    display: none;
     width: 552px;
     height: fit-content;
     padding-bottom: 2% ;
     margin: 4rem;   
     background-color: #F2F2F2;
     border-radius: 6px;
+    top: 0;
+    position: absolute;
 }
 
 .img-entrada{

@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/public/css/vizualizarUserStyle.css">
 </head>
 <body>
-    <div class="fundoVisualizar"></div>
-    <div class="modalVerUser">
+    <button onclick="abrirModal('verusuario')" >abrir</button>
+    <div class="modal modalv" id="verusuario">
+        <div class="modalVerUser">
         <div class="imagemUser">
             <img src="/public/assets/foto-user.jpg" alt="">
         </div>
@@ -21,9 +22,13 @@
             </div>
         </div>
         <div class="containerBotao">
-            <button class="btnVerUser">Sair</button>
+            <button onclick="fechaModal()" class="btnVerUser">Sair</button>
         </div>
     </div>
+    </div>
+    <div class="fundoVisualizar"></div>
+
 </body>
+<script src="/public/js/modal.js"></script>
     <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
 </html>
