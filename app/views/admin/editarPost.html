@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartBeats - Modal criar post</title>
+    <link rel="stylesheet" href="/public/css/modalEditarPost.css">
+</head>
+<body>
+    <div class="modalCriarPost">
+        <div class="tituloModalCriar">
+            <h1>Editar Publicação</h1>
+        </div>
+        <form class="conteudoCriar">
+            <div class="infosFixas">
+                <p>Nome do autor</p>
+                <p>28/10/2024</p>
+            </div>
+            <label for="adcImage" class="imagem" >
+                <i class="fa-solid fa-image"></i>
+                <span>Adicione uma imagem</span>
+            </label>
+            <input type="file" accept="image/*" id="adcImage" autofocus>
+            <input type="text" name="Titulo" id="adcTitulo" placeholder="Digite o título da publicação">
+            <textarea name="descricao" id="adcDesc" placeholder="Digite a descrição da publicação"></textarea>
+            <div class="botoesCriar">
+                <button type="submit" class="botaoCriar">Salvar</button>
+                <button class="botaoCancelar">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+    <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
+</html>
