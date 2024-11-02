@@ -10,14 +10,14 @@ body{
     height: 100vh;
 }
 
-header{
+.titulo-CU{
     background-color: #BD7BD1;
     width: 552px;
     height: 100px;
     border-radius: 6px 6px 0px 0px;
 }
 
-.modaledit{
+.modaledit-CU{
     background-color: #F2F2F2;
     border-radius: 12px;
     width: 552px;
@@ -25,7 +25,7 @@ header{
     margin: 4rem;   
 }
 
-.img-entrada{
+.img-entrada-CU{
     width: 120px;
     height: 120px;
     position: relative;
@@ -40,7 +40,7 @@ header{
     overflow: hidden;
 }
 
-img{
+.img-entrada-CU img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -74,7 +74,7 @@ img{
     height: 20%;
 }
 
-.img-entrada label{
+.img-entrada-CU label{
     width: 100%;
     height: 100%;
     display: flex;
@@ -83,13 +83,13 @@ img{
     cursor: pointer;
 }
 
-.img-entrada:hover{
+.img-entrada-CU:hover{
     
     transform: scale(1.08);
     cursor: pointer;
 }
 
-.info-usuario{
+.info-usuario-CU{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -99,32 +99,21 @@ img{
     gap: 70px;
 }
 
-h2{
-    font-size: 32px;
-    font-family: Itim,sans-serif;
-}
-
-p{
-    font-family: Itim,sans-serif;
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.68);
-}
-
-.campodeentrada{
+.campodeentrada-CU{
     margin-top: 40px;
 }
 
-.formularios{
+.formularios-CU{
     margin: 20px;
 }
 
-.nomecampos{
+.nomecampos-CU{
     display: block;
     font-size: 20px;
     font-family: Inter,sans-serif;
 }
 
-input{
+.formularios-CU input{
     width: 400px;
     height: 40px;
     border-radius: 12px;
@@ -135,7 +124,7 @@ input{
 }
 
 
-button{
+.btns-edit-CU button{
     width: 143px;
     height: 46px;
     font-size: 32px;
@@ -148,12 +137,12 @@ button{
     border: none;
 }
 
-button:hover{
+.btns-edit-CU button:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.btns-edit{
+.btns-edit-CU{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,57 +150,49 @@ button:hover{
 }
 
 
-label{
+.img-entrada-CU label{
     overflow: hidden;
 }
 
-.img-inp{
+.img-inp-CU{
     display: none;
 }
 
 @media screen and (max-width:560px) {
-    .modaledit{
+    .modaledit-CU{
     width: 470px;
     height: 600px;
     }
 
-    header{
+    .titulo-CU{
         width: 470px;
         height: 100px;
     }
 
-    .img-entrada{
+    .img-entrada-CU{
         width: 80px;
         height: 80px;
         margin-top: 50px;
     }
 
-    h2{
-        font-size: 28px;   
-    }
-    
-    p{
-        font-size: 20px;
-    }
-
-    input{
+    .formularios-CU input{
         width: 300px;
         height: 30px;
         font-size: 20px;
         border: 3px solid #BD7BD1;
     }
 
-    button{
+    .btns-edit-CU button{
         width: 123px;
         height: 36px;
         font-size: 28px;
     }
 
-    .nomecampos{
+    .nomecampos-CU{
         font-size: 18px;
     }
 
-    .campodeentrada{
+    .campodeentrada-CU{
         margin-left: 20px;
     }
 
@@ -221,17 +202,17 @@ label{
 }
 
 @media screen and (max-width:480px) {
-    .modaledit{
+    .modaledit-CU{
     width: 400px;
     height: 520px;
     }
 
-    header{
+    .titulo-CU{
         width: 400px;
         height: 100px;
     }
 
-    .img-entrada{
+    .img-entrada-CU{
         width: 70px;
         height: 70px;
         margin-top: 60px;
@@ -242,36 +223,28 @@ label{
         height: 15px;
     }
 
-    h2{
-        font-size: 28px;   
-    }
-    
-    p{
-        font-size: 20px;
-    }
-
-    input{
+    .formularios-CU input{
         width: 250px;
         height: 25px;
         font-size: 18px;
         border: 2px solid #BD7BD1;
     }
 
-    button{
+    .btns-edit-CU button{
         width: 113px;
         height: 30px;
         font-size: 24px;
     }
 
-    .nomecampos{
+    .nomecampos-CU{
         font-size: 16px;
     }
 
-    .campodeentrada{
+    .campodeentrada-CU{
         margin-left: 5px;
     }
 
-    .info-usuario{
+    .info-usuario-CU{
         margin-top: 60px;
         margin-left: 40px;
     }
@@ -282,117 +255,101 @@ label{
 }
 
 @media screen and (max-width:430px) {
-    .modaledit{
+    .modaledit-CU{
     width: 320px;
     height: 440px;
     }
 
-    header{
+    .titulo-CU{
         width: 320px;
         height: 80px;
     }
 
-    .img-entrada{
+    .img-entrada-CU{
         width: 60px;
         height: 60px;
         margin-top: 45px;
         margin-left: 20px;
     }
 
-    h2{
-        font-size: 22px;   
-    }
-    
-    p{
-        font-size: 18px;
-    }
-
-    input{
+    .formularios-CU input{
         width: 210px;
         height: 22px;
         font-size: 14px;
         border: 2px solid #BD7BD1;
     }
 
-    button{
+    .btns-edit-CU button{
         width: 90px;
         height: 25px;
         font-size: 20px;
     }
 
-    .nomecampos{
+    .nomecampos-CU{
         font-size: 16px;
     }
 
-    .campodeentrada{
+    .campodeentrada-CU{
         margin-top: 15px;
         margin-left: 1px;
     }
 
-    .info-usuario{
+    .info-usuario-CU{
         margin-top: 35px;
         margin-left: 0px;
     }
 
-    .btns-edit{
+    .btns-edit-CU{
         gap: 10px;
     }
 }
 
 @media screen and (max-width:350px) {
-    .modaledit{
+    .modaledit-CU{
     width: 280px;
     height: 410px;
     }
 
-    header{
+    .titulo-CU{
         width: 280px;
         height: 70px;
     }
 
-    .img-entrada{
+    .img-entrada-CU{
         width: 55px;
         height: 55px;
         margin-top: 40px;
         margin-left: 20px;
     }
 
-    h2{
-        font-size: 20px;   
-    }
-    
-    p{
-        font-size: 16px;
-    }
-
-    input{
+    .formularios-CU input{
         width: 200px;
         height: 20px;
         font-size: 14px;
         border: 2px solid #BD7BD1;
     }
 
-    button{
+    .btns-edit-CU button{
         width: 75px;
         height: 25px;
         font-size: 18px;
     }
 
-    .nomecampos{
+    .nomecampos-CU{
         font-size: 16px;
     }
 
-    .campodeentrada{
+    .campodeentrada-CU{
         margin-top: 15px;
         margin-left: 1px;
     }
 
-    .info-usuario{
+    .info-usuario-CU{
         margin-top: 35px;
         margin-left: 0px;
     }
 
-    .btns-edit{
+    .btns-edit-CU{
         margin-left: 0px;
         gap: 10px;
     }
