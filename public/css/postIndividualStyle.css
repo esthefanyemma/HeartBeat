@@ -3,7 +3,12 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background: linear-gradient(
+    to right,
+    rgba(189, 123, 209, 0.7),
+    rgba(255, 159, 223, 0.7),
+    rgba(136, 200, 238, 0.7)
+  );
   margin: 0;
   padding: 0;
   display: flex;
@@ -25,13 +30,8 @@ body {
   padding-right: 100px;
 }
 .containerImage {
-  background: linear-gradient(
-    to right,
-    rgba(189, 123, 209, 0.7),
-    rgba(255, 159, 223, 0.7),
-    rgba(136, 200, 238, 0.7)
-  );
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
   height: 45%;
   width: 50%;
   display: flex;
@@ -48,13 +48,8 @@ body {
 }
 
 .containerPost {
-  background: linear-gradient(
-    to left,
-    rgba(189, 123, 209, 0.7),
-    rgba(255, 159, 223, 0.7),
-    rgba(136, 200, 238, 0.7)
-  );
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
   width: 50%;
   height: 45%;
   display: flex;
@@ -133,25 +128,13 @@ body {
   }
 
   .containerImage {
-    background: linear-gradient(
-      to left,
-      rgba(189, 123, 209, 0.7),
-      rgba(255, 159, 223, 0.7),
-      rgba(136, 200, 238, 0.7)
-    );
     width: 100%;
     border-radius: 12px 12px 0px 0px;
+    padding: 2%;
   }
 
 
-
   .containerPost {
-    background: linear-gradient(
-      to left,
-      rgba(189, 123, 209, 0.7),
-      rgba(255, 159, 223, 0.7),
-      rgba(136, 200, 238, 0.7)
-    );
     justify-content: center;
     width: 100%;
     border-radius: 0px 0px 12px 12px;
@@ -182,6 +165,11 @@ body {
   .containerPost {
     width: 150%;
   }
+
+  .containerPost{
+    padding: 10px 20px;
+  }
+
 }
 
 @media (max-width: 400px) {
