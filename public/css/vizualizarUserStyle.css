@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fundoVisualizar{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 30%;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+.modalv{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 28%;
+    top: 30%;
+    left: 35%;
+}
+
+.modalVerUser{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    font-family: "Fredoka", sans-serif;
+} 
+
+header{
+    width: 100%;
+    background-color: #bd7bd1;
+    height: 90px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.imagemUser{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  /*mantem o conteúdo dentro do círculo*/
+    margin-top: 40px;
+    margin-left: 10%;
+}
+
+.imagemUser img{
+    width: 100%;
+    height: auto;   
+    aspect-ratio: 1/1;
+    object-fit: cover;      /*img é redimensionada proporcionalmente pra caber no contêiner*/
+ }
+
+.conteudoVerUser .infosVerUser {
+    padding-top: 70px;
+    padding-left: 5%;
+    padding-bottom: 10px;
+}
+
+.infosVerUser *{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.infosVerUser h1{
+    margin:15px 0 10px 0;
+    padding: 0;
+    font-size: 32px;
+}
+
+.modalVerUser .containerBotao{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.containerBotao button{
+    width: 25%;
+    height: 36px;
+    font-size: 24px;
+    font-family: "Itim", serif;
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #BD7BD1;
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.containerBotao button:hover{
+    scale: 1.05;
+}
+
+@media only screen and (max-width: 1100px){
+    .modalv{
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .modalv{
+        width: 37%;
+        left: 32%;
+    }
+}
+@media only screen and (max-width: 850px){
+    .modalv{
+        width: 46%;
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .modalv{
+        width: 55%;
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .modalv{
+        width: 60%;
+        left: 20%;
+    }
+
+    .imagemUser{
+        width: 100px;
+        height: 100px;
+    }
+
+    .conteudoVerUser .infosVerUser {
+        padding-top: 50px;
+    }
+
+    .infosVerUser *{
+        font-size: 14px;
+    }
+    
+    .infosVerUser h1{
+        font-size: 28px;
+    }
+
+    .containerBotao button{
+        width: 25%;
+        height: 30px;
+        font-size: 20px;
+    }
+
+}
+@media only screen and (max-width: 400px){
+    .modalv{
+        width: 76%;
+        left: 14%;
+    }
+}

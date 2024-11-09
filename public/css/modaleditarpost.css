@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.modalEditarPost{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: fit-content;
+    width: 28%;
+    background-color: #f2f2f2;
+    z-index: 3;
+    border-radius: 12px;
+    left: 35%;
+    top: 25%;
+    font-family: "Fredoka", sans-serif;
+}   
+
+.modalEditarPost .tituloModalEditar{
+    background-color: #bd7bd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Itim", cursive;
+    color: #f2f2f2;
+    font-weight: normal;
+    font-size: 16px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.tituloModalEditar h1{
+    margin: 0;
+}
+
+.modalEditarPost .conteudoEditar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infosFixasEditar, .imagemEditar, #adcTituloEditar, #adcDescEditar, .botoesEditar {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.conteudoEditar .infosFixasEditar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38%;
+    width: 100%;
+}
+
+#adcImageEditar{
+    display: none;
+}
+
+.imagemEditar{
+    background-color: #a4a0a059;
+    font-size: 24px;
+    font-family: "Fredoka", sans-serif;
+    color: #bd7bd1;
+    border-radius: 12px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.conteudoEditar #adcTituloEditar{
+    width: 80%;
+    border-radius: 12px;
+    border: 3px solid #bd7bd1;
+    padding: 5px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+    
+}
+
+.conteudoEditar #adcTituloEditar:focus, .conteudoEditar #adcDescEditar:focus{
+    outline: 3px solid #9b28be;
+    border: none;
+}
+
+.conteudoEditar #adcDescEditar{
+    width: 80%;
+    border-radius: 12px;
+    border: 3px solid #bd7bd1;
+    padding: 4px;
+    padding-bottom: 40px;
+    resize: none;
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+}
+
+.botoesEditar button{
+    padding: 12px;
+    border-radius: 12px;
+    color: #f2f2f2;
+    background-color: #bd7bd1;
+    font-size: 16px;
+    border: none;
+    transition: all 0.2s;
+}
+
+.botoesEditar button:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.conteudoEditar .botoesEditar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+@media only screen and (max-width: 1100px){
+    .modalEditarPost{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .modalEditarPost{
+        width: 28%;
+    }
+
+    .imagemEditar{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .modalEditarPost{
+        width: 46%;
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .modalEditarPost{
+        width: 60%;
+        left: 20%;
+    }
+
+    .modalEditarPost .tituloModalEditar{
+        font-size: 12px;
+    }
+
+    .modalEditarPost .conteudoEditar{
+        font-size: 12px;
+    }
+
+    .modalEditarPost .imagemEditar{
+        font-size: 14px;
+    }
+
+    .modalEditarPost #adcTituloEditar{
+        font-size: 12px;
+    }
+
+    .modalEditarPost #adcDescEditar{
+        font-size: 12px;
+    }
+
+    .conteudoEditar button{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .modalEditarPost{
+        width: 66%;
+        left: 20%;
+    }
+}
