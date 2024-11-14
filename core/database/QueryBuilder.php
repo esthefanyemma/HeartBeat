@@ -28,4 +28,18 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+
+    public function criar($parametros){
+        $sql = sprintf('INSERT INTO USERS %s VALUES %s ', implode(', ', array_keys($parametros)), ':' . implode(', :' , array_keys($parametros)) );
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parametros);
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 }

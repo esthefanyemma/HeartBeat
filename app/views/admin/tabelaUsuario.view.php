@@ -19,6 +19,15 @@
     />
   </head>
   <body>
+    <?php foreach($users as $user):  ?>
+    <?php 
+      require 'modalCriarUser.view.php';
+      require 'modalDeletarUser.view.php';
+      require 'modaleditarusuario.view.php';
+      require 'visualizarUser.view.php';
+    ?>
+    <?php endforeach; ?>
+
     <div class="overlay" onclick="fechaModal()"></div>
     <main>
         <div class="apresentacao">
