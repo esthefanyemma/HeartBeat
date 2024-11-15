@@ -1,4 +1,5 @@
 function abrirModal(id) {
+    console.log("Entrou")
     document.getElementById(id).style.display = 'block';
     document.querySelector(`.overlay`).style.display = 'block';
 }

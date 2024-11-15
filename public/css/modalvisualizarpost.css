@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,11 +15,11 @@ body{
 }
 body *{
     font-family: "Fredoka", sans-serif;
-}
+} */
 .texto{
     font-size: 16px;
 }
-.titulo{
+.tituloVP{
     font-size: 32px;
     font-family: "Itim", cursive;
     font-weight: 700 ;
@@ -33,15 +33,29 @@ body *{
 }
 
 .modal_visualizarPost{
-    display: flex;
+    display: none;
     flex-direction: column;
+    position: absolute;
     justify-content: center;
     width: 28%;
     height:  fit-content;
     gap: 12px;
     border-radius: 6px;
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
     z-index: 3;
+    font-family: "Fredoka", sans-serif;
+
+    /* display: none;
+    flex-direction: column;
+    
+    height: fit-content;
+    width: 28%;
+    background-color: #f2f2f2;
+    z-index: 3;
+    border-radius: 12px;
+    left: 35%;
+    top: 25%; */
+    
 }
 .desc_visualizacao{
     display: flex;
@@ -88,7 +102,7 @@ body *{
     .texto{
         font-size: 14px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 24px;
     }
     .tituloPost{
@@ -108,7 +122,7 @@ body *{
     .texto{
         font-size: 12px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 24px;
     }
     .tituloPost{
@@ -128,7 +142,7 @@ body *{
     .texto{
         font-size: 10px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 20px;
     }
     .tituloPost{
@@ -147,7 +161,7 @@ body *{
     .texto{
         font-size: 11px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 18px;
     }
     .tituloPost{

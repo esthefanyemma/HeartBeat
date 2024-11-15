@@ -67,6 +67,11 @@
                     </div>
                   </div>
                 </td>
+
+                  <!-- Modais -->
+                  <?php require(__DIR__.'/../admin/visualizarPost.html');?>
+                  <?php require(__DIR__.'/../admin/editarPost.html');?>
+
                 <?php endforeach;?>
               </tr>
             </tbody>
@@ -86,5 +91,5 @@
     src="https://kit.fontawesome.com/654def639f.js"
     crossorigin="anonymous"
   ></script>
-  <script src="/public/js/TabelaPubli.js"></script>
+  <script src="/public/js/modal.js"></script>
 </html>

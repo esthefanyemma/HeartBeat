@@ -6,8 +6,42 @@
     margin: 0;
 }
 
+/* Fora */
+/* .modalv{  
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 28%;
+    top: 30%;
+    left: 35%;
+}
+
+/* Dentro 
+.modalVerUser{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    font-family: "Fredoka", sans-serif;
+}  */
+
+
+
+
+/* Dentro */
 .modalEditarPost{
     display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    font-family: "Fredoka", sans-serif;
+    width: 100%;
+}
+/* Fora */
+.novoModal{
+    /* display: none;
     flex-direction: column;
     position: absolute;
     height: fit-content;
@@ -17,10 +51,17 @@
     border-radius: 12px;
     left: 35%;
     top: 25%;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Fredoka", sans-serif; */
+
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 28%;
+    top: 25%;
+    left: 35%;
 }   
 
-.modalEditarPost .tituloModalEditar{
+.tituloModalEditar{
     background-color: #bd7bd1;
     display: flex;
     justify-content: center;
@@ -29,15 +70,15 @@
     color: #f2f2f2;
     font-weight: normal;
     font-size: 16px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .tituloModalEditar h1{
     margin: 0;
 }
 
-.modalEditarPost .conteudoEditar {
+.conteudoEditar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +89,7 @@
     margin-top: 10px;
 }
 
-.conteudoEditar .infosFixasEditar{
+.infosFixasEditar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,13 +168,13 @@
 }
 
 @media only screen and (max-width: 1100px){
-    .modalEditarPost{
+    .novoModal{
         width: 35%;
     }
 }
 
 @media only screen and (max-width: 900px){
-    .modalEditarPost{
+    .novoModal{
         width: 28%;
     }
 
@@ -143,35 +184,35 @@
 }
 
 @media only screen and (max-width: 800px){
-    .modalEditarPost{
+    .novoModal{
         width: 46%;
         left: 30%;
     }
 }
 
 @media only screen and (max-width: 500px){
-    .modalEditarPost{
+    .novoModal{
         width: 60%;
         left: 20%;
     }
 
-    .modalEditarPost .tituloModalEditar{
+    .tituloModalEditar{
         font-size: 12px;
     }
 
-    .modalEditarPost .conteudoEditar{
+    .conteudoEditar{
         font-size: 12px;
     }
 
-    .modalEditarPost .imagemEditar{
+    .imagemEditar{
         font-size: 14px;
     }
 
-    .modalEditarPost #adcTituloEditar{
+     #adcTituloEditar{
         font-size: 12px;
     }
 
-    .modalEditarPost #adcDescEditar{
+     #adcDescEditar{
         font-size: 12px;
     }
 
@@ -181,7 +222,7 @@
 }
 
 @media only screen and (max-width: 800px){
-    .modalEditarPost{
+    .novoModal{
         width: 66%;
         left: 20%;
     }
