@@ -8,7 +8,7 @@ use Exception;
 class UserController{
     public function index()
     {
-        App::get('database')->selectAll('users');
+        $users = App::get('database')->selectAll('users');
         return view('admin/tabelaUsuario',compact('users') );
     }
     public function criar(){
@@ -20,12 +20,11 @@ class UserController{
              'password'=> $_POST['senha'],
              //'image'=> $caminhodeimagem
         ];
-        var_dump($parametros);
         App::get('database')->criar($parametros);
-        return 0;
+        header("Location: /usuarios");
     }
 
-    public function editar(){
+  /*  public function editar(){
         $parametros =[
             'name'=> $_POST['nome'],
             'email'=> $_POST['email'],
@@ -34,7 +33,7 @@ class UserController{
         $id= $_POST['id'];
         App::get('database')->atualizar('users',$id ,$parametros);
         header('Location: /usuarios');
-    }
+    }*/
 }
 
 ?>

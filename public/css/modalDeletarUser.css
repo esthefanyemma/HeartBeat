@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #bd7bd1;
     display: flex;
     justify-content: center;
     align-items: center;

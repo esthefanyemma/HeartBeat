@@ -43,7 +43,7 @@ class QueryBuilder
         }
     }
 
-    public function atualizar($table, $id, $parametros){
+    /*public function atualizar($table, $id, $parametros){
 
         try {
             $stmt = $this->pdo->prepare($sql);
@@ -55,5 +55,5 @@ class QueryBuilder
             die($e->getMessage());
         }
 
-    }
+    }*/
 }

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
 </head>
 <body>
-    <button onclick="abrirModal('editarusuario')">teste</button>
    <div class="modaledit modal" id="editarusuario">
       <div class="img-entrada">
         <label>

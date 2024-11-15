@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/public/css/vizualizarUserStyle.css">
 </head>
 <body>
-    <button onclick="abrirModal('verusuario')" >abrir</button>
     <div class="modal modalv" id="verusuario">
         <div class="modalVerUser">
         <div class="imagemUser">

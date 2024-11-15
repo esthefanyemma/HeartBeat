@@ -30,11 +30,11 @@
                         </div>
                         <div class="formularios-CU" >
                             <label class="nomecampos-CU">Email:</label>
-                            <input type="text" name="email" placeholder="heartbeats@exemplo.com" required>
+                            <input type="email" name="email" placeholder="heartbeats@exemplo.com" required>
                         </div>
                         <div class="formularios-CU" >
                             <label class="nomecampos-CU">Senha:</label>
-                            <input type="text" name="senha" placeholder="***********" required>
+                            <input type="password" name="senha" placeholder="***********" required>
                         </div>
             </div>
             <div class="btns-edit-CU">
