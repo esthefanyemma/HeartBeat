@@ -20,6 +20,7 @@ class UserController{
              'password'=> $_POST['senha'],
              //'image'=> $caminhodeimagem
         ];
+        var_dump($parametros);
         App::get('database')->criar($parametros);
         return 0;
     }

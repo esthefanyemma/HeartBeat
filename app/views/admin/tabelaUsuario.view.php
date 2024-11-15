@@ -19,9 +19,9 @@
     />
   </head>
   <body>
+    <?php require 'modalCriarUser.view.php'; ?>
     <?php foreach($users as $user):  ?>
     <?php 
-      require 'modalCriarUser.view.php';
       require 'modalDeletarUser.view.php';
       require 'modaleditarusuario.view.php';
       require 'visualizarUser.view.php';
@@ -36,7 +36,7 @@
             <h2>Tabela de Usuarios</h2>
           </div>
           <div class="btn" onclick="abrirModal('criarUser')">
-            <p>Criar</p>
+            <button>Criar</button>
             <i class="fa-solid fa-plus"></i>
           </div>
         </div>
@@ -57,10 +57,11 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach($users as $user):   ?>
               <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
+                <td><?=$user->id ?></td>
+                <td><?=$user->name ?></td>
+                <td><?=$user->email ?></td>
                 <td>
                   <div class="acoes">
                     <div class="visualizar" onclick="abrirModal('verusuario')">
@@ -75,168 +76,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar" onclick="abrirModal('verusuario')">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar" onclick="abrirModal('editarusuario')">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar" onclick="abrirModal('deletarusuario')">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Anônimo</td>
-                <td>email@gmail.com</td>
-                <td>
-                  <div class="acoes">
-                    <div class="visualizar">
-                      <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="editar">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
           <div class="paginacao">

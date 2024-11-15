@@ -44,7 +44,6 @@ class QueryBuilder
     }
 
     public function atualizar($table, $id, $parametros){
-        $sq
 
         try {
             $stmt = $this->pdo->prepare($sql);
