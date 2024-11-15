@@ -42,4 +42,19 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+
+    public function atualizar($table, $id, $parametros){
+        $sq
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parametros);
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+
+    }
 }
