@@ -29,6 +29,7 @@ class UserController{
             'name'=> $_POST['nome'],
             'email'=> $_POST['email'],
             'password'=> $_POST['senha'],
+            'image'=>'oi',
         ];
         $id= $_POST['id'];
         App::get('database')->atualizar('users',$id ,$parametros);
