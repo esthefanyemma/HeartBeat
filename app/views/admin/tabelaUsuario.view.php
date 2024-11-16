@@ -21,11 +21,8 @@
   <body>
     <?php require 'modalCriarUser.view.php'; ?>
     <?php foreach($users as $user):  ?>
-    <?php 
-      require 'modalDeletarUser.view.php';
-      require 'modaleditarusuario.view.php';
-      require 'visualizarUser.view.php';
-    ?>
+    <?php ?>
+    
     <?php endforeach; ?>
 
     <div class="overlay" onclick="fechaModal()"></div>
@@ -64,7 +61,7 @@
                 <td><?=$user->email ?></td>
                 <td>
                   <div class="acoes">
-                    <div class="visualizar" onclick="abrirModal('verusuario')">
+                    <div class="visualizar" onclick="abrirModal('verusuario<?= $user->id?>')">
                       <i class="fa-solid fa-eye"></i>
                     </div>
                     <div class="editar" onclick="abrirModal('editarusuario')">
@@ -76,6 +73,9 @@
                   </div>
                 </td>
               </tr>
+              <?php require 'modalDeletarUser.view.php';?>
+              <?php  require 'modaleditarusuario.view.php';?>
+              <?php  require 'visualizarUser.view.php';?>
               <?php endforeach; ?>
             </tbody>
           </table>

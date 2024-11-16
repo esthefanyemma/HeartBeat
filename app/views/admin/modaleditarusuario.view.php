@@ -24,8 +24,8 @@
         
            </header>
            <div class="info-usuario">
-            <h2>Anonimo da Silva</h2>
-            <p>email@gmail.com</p>
+            <h2><?=$user->name ?></h2>
+            <p><?=$user->email ?></p>
             <div class="campodeentrada">
                         <div class="formularios" >
                             <label class="nomecampos">Nome:</label>

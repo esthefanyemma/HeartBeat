@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/public/css/vizualizarUserStyle.css">
 </head>
 <body>
-    <div class="modal modalv" id="verusuario">
-    <?php foreach($users as $user):   ?>
+    <div class="modal modalv"  id="verusuario<?= $user->id?>">
         <div class="modalVerUser">
         <div class="imagemUser">
             <img src="/public/assets/foto-user.jpg" alt="">
@@ -25,7 +24,6 @@
             <button onclick="fechaModal()" class="btnVerUser">Sair</button>
         </div>
     </div>
-    <?php endforeach; ?>
     </div>
     <div class="fundoVisualizar"></div>
 
