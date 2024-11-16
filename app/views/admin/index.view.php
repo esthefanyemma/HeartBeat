@@ -19,15 +19,17 @@
     />
   </head>
   <body>
+    <div class="overlay"></div>
     <main class="mainTabela">
         <div class="apresentacao">
           <div class="logo">
             <img src="/public/assets/HeartBeats_img.png" alt="Logo HeartBeats" />
             <h2>Tabela de Publicações</h2>
           </div>
-          <div class="btn">
+          <div class="btn" onclick="abrirModal('modalCriarPost')">
             <p>Criar</p>
             <i class="fa-solid fa-plus"></i>
+            <?php require(__DIR__.'/../admin/criarPost.html');?>
           </div>
         </div>
         <div class="container-usuario">

@@ -40,19 +40,29 @@ body *{
     top: 25%;
     font-family: "Fredoka", sans-serif; */
 
+.modaldp{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 28%;
+    top: 30%;
+    left: 35%;
+}
+
+
+
 
 .modal2{
-    display: none;
+    display: flex;
     flex-direction: column;
+    height: fit-content;
     background-color: #f2f2f2;
-    width: 28%;
-    position: absolute;
     border-radius: 6px;
+    font-family: "Fredoka", sans-serif;
     padding: 20px;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    z-index: 3;
 }
 .cencelarTexto{
     width: 100%;
@@ -62,14 +72,14 @@ body *{
     text-align: center;
  }
 
-.botoes{
+.botoesdp{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     gap: 30px;    
 }
-.botoes button{
+.botoesdp button{
     padding: 4px 18px 4px 18px;
     border-radius: 12px;
     color: #f0f0f0;
@@ -77,7 +87,7 @@ body *{
     border: none;
     transition: all 0.2s;
 }
-.botoes button:hover{
+.botoesdp button:hover{
     transform: scale(1.05);
 }
 
@@ -89,10 +99,10 @@ body *{
     .cancelarTexto{
         font-size: 20px;
     }
-    .botoes button{
+    .botoesdp button{
         font-size: 24px;
     }
-    .modal2{
+    .modaldp{
         transform: scale(0.8);
     }
 }
@@ -100,26 +110,26 @@ body *{
 
 @media only screen and (max-width:650px){
 
-    .modal2{
+    .modaldp{
         transform: scale(0.7);
     }
     .cancelarTexto{
         font-size: 20px;
     }
-    .botoes button{
+    .botoesdp button{
         font-size: 20px;
     }
 
 } 
 @media only screen and (max-width:450px){
 
-    .modal2{
+    .modaldp{
         transform: scale(0.5);
     }
     .cancelarTexto{
         font-size: 20px;
     }
-    .botoes button{
+    .botoesdp button{
         font-size: 20px;
     }
 

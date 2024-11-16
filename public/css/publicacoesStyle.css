@@ -4,11 +4,25 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+  .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 30%;
+    position: absolute;
+    display: none;
+    z-index: 2;
+  }
   
   body {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
+    /* padding: 30px; */
+  }
+
+  .mainTabela{
     padding: 30px;
   }
 
@@ -87,7 +101,7 @@
     align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     position: relative;
-    z-index: 2;
+    z-index: 1;
     color: #bd7bd1;
   }
 
