@@ -10,5 +10,5 @@ use App\Core\Router;
     $router->post('usuarios/criar', 'UserController@criar');
     //sla
     $router->post('usuarios/editar', 'UserController@editar');
-    $router->post('users/deleta', 'UserControlle@deleta');
+    $router->post('usuarios/deleta', 'UserController@deleta');
 ?>

@@ -11,8 +11,9 @@
     <title>Modal</title>
 </head>
 <body>
-    <div class="modal" id="deletarusuario">
-        <form class="modal_deletar">
+    <div class="modal" id="deletarusuario<?= $user->id?>">
+        <form class="modal_deletar" method="POST" action="/usuarios/deleta">
+            <input type="hidden" name="id" value="<?= $user->id?>">
             <p class="cancelarTexto">
                 Tem certeza que deseja deletar este usuário?
             </p>

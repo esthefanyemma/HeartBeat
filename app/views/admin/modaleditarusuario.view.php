@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
 </head>
 <body>
-   <div class="modaledit modal" id="editarusuario">
+   <div class="modaledit modal" id="editarusuario<?= $user->id?>">
       <div class="img-entrada">
         <label>
             <input type="file" accept="image/*" class="img-inp">
@@ -18,7 +18,8 @@
                 </span>
                 <img src="/public/assets/Ellipse 1.png" alt="">
         </label>
-        <form method="post">
+        <form method="POST" action="/usuarios/editar">
+            <input type="hidden" name="id" value="<?php echo $user->id ?>">
        </div>
            <header>
         
@@ -33,11 +34,11 @@
                         </div>
                         <div class="formularios" >
                             <label class="nomecampos">Email:</label>
-                            <input type="text" name="email" placeholder="Seu Email" required>
+                            <input type="email" name="email" placeholder="Seu Email" required>
                         </div>
                         <div class="formularios" >
                             <label class="nomecampos">Senha:</label>
-                            <input type="text" name="senha" placeholder="Senha" required>
+                            <input type="password" name="senha" placeholder="Senha" required>
                         </div>
             </div>
             <div class="btns-edit">

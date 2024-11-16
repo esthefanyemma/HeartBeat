@@ -64,10 +64,10 @@
                     <div class="visualizar" onclick="abrirModal('verusuario<?= $user->id?>')">
                       <i class="fa-solid fa-eye"></i>
                     </div>
-                    <div class="editar" onclick="abrirModal('editarusuario')">
+                    <div class="editar" onclick="abrirModal('editarusuario<?= $user->id?>')">
                       <i class="fa-solid fa-pencil"></i>
                     </div>
-                    <div class="deletar" onclick="abrirModal('deletarusuario')">
+                    <div class="deletar" onclick="abrirModal('deletarusuario<?= $user->id?>')">
                       <i class="fa-solid fa-trash"></i>
                     </div>
                   </div>
