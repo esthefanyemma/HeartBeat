@@ -17,7 +17,8 @@
             <input type="file" accept="image/*" class="img-inp-CU">
     
         </label>
-        <form id="criarUser" action="usuarios/criar">
+        <form id="criarUser" action="usuarios/criar"
+        method="post">
        </div>
            <header class="titulo-CU">
            </header>

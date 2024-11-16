@@ -18,7 +18,7 @@ class UserController{
              'name'=> $_POST['nome'],
              'email'=> $_POST['email'] ,
              'password'=> $_POST['senha'],
-             //'image'=> $caminhodeimagem
+             'image'=>'oi',
         ];
         App::get('database')->criar($parametros);
         header("Location: /usuarios");

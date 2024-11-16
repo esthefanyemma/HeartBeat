@@ -30,7 +30,7 @@ class QueryBuilder
     }
 
     public function criar($parametros){
-        $sql = sprintf('INSERT INTO USERS %s VALUES %s ', implode(', ', array_keys($parametros)), ':' . implode(', :' , array_keys($parametros)) );
+        $sql = sprintf('INSERT INTO USERS (%s) VALUES (%s) ', implode(', ', array_keys($parametros)), ':' . implode(', :' , array_keys($parametros)) );
 
         try {
             $stmt = $this->pdo->prepare($sql);
