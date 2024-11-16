@@ -71,6 +71,8 @@
                   <!-- Modais -->
                   <?php require(__DIR__.'/../admin/visualizarPost.html');?>
                   <?php require(__DIR__.'/../admin/editarPost.html');?>
+                  <?php require(__DIR__.'/../admin/deletarpost.html');?>
+                  
 
                 <?php endforeach;?>
               </tr>

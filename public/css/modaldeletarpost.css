@@ -1,9 +1,9 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-body{
+/* body{
     background-color: #bd7bd1;
     display: flex;
     justify-content: center;
@@ -26,21 +26,33 @@ body *{
 .criar{
     width: fit-content;
     height: fit-content;
-}
+} */
+
+/* display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: fit-content;
+    width: 28%;
+    background-color: #f2f2f2;
+    z-index: 3;
+    border-radius: 6px;
+    left: 35%;
+    top: 25%;
+    font-family: "Fredoka", sans-serif; */
 
 
 .modal2{
-    display: flex;
+    display: none;
     flex-direction: column;
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
+    width: 28%;
     position: absolute;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 20px;
     gap: 30px;
     justify-content: center;
     align-items: center;
     z-index: 3;
-
 }
 .cencelarTexto{
     width: 100%;
