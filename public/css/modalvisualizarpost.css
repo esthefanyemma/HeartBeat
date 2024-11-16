@@ -1,21 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-/* *{
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-    background-color: #524f53;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-body *{
-    font-family: "Fredoka", sans-serif;
-} */
 
 .texto{
     font-size: 16px;
@@ -45,17 +33,8 @@ body *{
     background-color: #f2f2f2;
     z-index: 3;
     font-family: "Fredoka", sans-serif;
-
-    /* display: none;
-    flex-direction: column;
-    
-    height: fit-content;
-    width: 28%;
-    background-color: #f2f2f2;
-    z-index: 3;
-    border-radius: 12px;
     left: 35%;
-    top: 25%; */
+    top: 25%;
     
 }
 .desc_visualizacao{

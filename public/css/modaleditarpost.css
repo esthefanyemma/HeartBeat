@@ -6,30 +6,6 @@
     margin: 0;
 }
 
-/* Fora */
-/* .modalv{  
-    display: none;
-    position: absolute;
-    z-index: 3;
-    width: 28%;
-    top: 30%;
-    left: 35%;
-}
-
-/* Dentro 
-.modalVerUser{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    background-color: #f2f2f2;
-    border-radius: 6px;
-    font-family: "Fredoka", sans-serif;
-}  */
-
-
-
-
-/* Dentro */
 .modalEditarPost{
     display: flex;
     flex-direction: column;
@@ -38,21 +14,11 @@
     border-radius: 6px;
     font-family: "Fredoka", sans-serif;
     width: 100%;
+    left: 35%;
+    top: 25%;
 }
 /* Fora */
 .novoModal{
-    /* display: none;
-    flex-direction: column;
-    position: absolute;
-    height: fit-content;
-    width: 28%;
-    background-color: #f2f2f2;
-    z-index: 3;
-    border-radius: 12px;
-    left: 35%;
-    top: 25%;
-    font-family: "Fredoka", sans-serif; */
-
     display: none;
     position: absolute;
     z-index: 3;
