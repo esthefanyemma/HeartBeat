@@ -43,7 +43,15 @@ class QueryBuilder
         }
     }
 
-    /*public function atualizar($table, $id, $parametros){
+    public function atualizar($table, $id, $parametros){
+        $sql = sprintf ('UPDATE %s SET %s WHERE id = %s',
+        $table,
+        implode(', ', array_map(function($parametros){
+            return $parametros . ' = :' . $parametros;
+        }, array_keys($parametros))),
+        $id
+    );
+
 
         try {
             $stmt = $this->pdo->prepare($sql);
@@ -55,5 +63,24 @@ class QueryBuilder
             die($e->getMessage());
         }
 
-    }*/
+    }
+    
+
+    public function deletar($table, $id){
+            $sql = sprintf ('DELETE FROM %s WHERE %s',
+            $table,
+            $id
+        );
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
 }

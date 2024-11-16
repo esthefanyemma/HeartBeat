@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
 </head>
 <body>
-    <!-- <button onclick="abrirModal(`criarUser`)">dedsd</button>-->
    <div class="modaledit-CU modal" id="criarUser">
       <div class="img-entrada-CU">
         <label>

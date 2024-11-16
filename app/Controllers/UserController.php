@@ -24,7 +24,7 @@ class UserController{
         header("Location: /usuarios");
     }
 
-  /*  public function editar(){
+    public function editar(){
         $parametros =[
             'name'=> $_POST['nome'],
             'email'=> $_POST['email'],
@@ -33,7 +33,13 @@ class UserController{
         $id= $_POST['id'];
         App::get('database')->atualizar('users',$id ,$parametros);
         header('Location: /usuarios');
-    }*/
+    }
+
+    public function deleta(){
+        $id = $_POST['deletarusuario'];
+        App::get('database')->deletar('users', $id);
+        header('Location: /usuarios');
+    }
 }
 
 ?>
