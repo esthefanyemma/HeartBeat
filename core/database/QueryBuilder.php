@@ -44,7 +44,7 @@ class QueryBuilder
     }
 
     public function atualizar($table, $id, $parametros){
-        $sql = sprintf ('UPDATE %s SET %s WHERE id = %s',
+        $sql = sprintf ('UPDATE (%s) SET (%s) WHERE id = %s',
         $table,
         implode(', ', array_map(function($parametros){
             return $parametros . ' = :' . $parametros;
@@ -67,7 +67,7 @@ class QueryBuilder
     
 
     public function deletar($table, $id){
-            $sql = sprintf ('DELETE FROM %s WHERE %s',
+            $sql = sprintf ('DELETE FROM (%s) WHERE (%s)',
             $table,
             $id
         );

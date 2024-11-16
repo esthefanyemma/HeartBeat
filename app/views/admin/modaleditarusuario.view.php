@@ -18,7 +18,7 @@
                 </span>
                 <img src="/public/assets/Ellipse 1.png" alt="">
         </label>
-        <form>
+        <form method="post">
        </div>
            <header>
         
