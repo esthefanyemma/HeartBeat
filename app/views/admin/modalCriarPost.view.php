@@ -11,18 +11,18 @@
         <div class="tituloModalCriar">
             <h1>Criar Publicação</h1>
         </div>
-        <form class="conteudoCriar">
+        <form class="conteudoCriar" method="POST" action="/posts/create">
             <div class="infosFixas">
                 <p>Nome do autor</p>
-                <p>28/10/2024</p>
+                <p>Data de agors</p>
             </div>
             <label for="adcImage" class="imagemCriar" title="Clique para adicionar uma imagem" >
                 <i class="fa-solid fa-image"></i>
                 <span>Adicione uma imagem</span>
             </label>
-            <input type="file" accept="image/*" id="adcImage" autofocus>
-            <input type="text" name="Titulo" id="adcTitulo" placeholder="Digite o título da publicação">
-            <textarea name="descricao" id="adcDesc" placeholder="Digite a descrição da publicação" ></textarea>
+            <input type="file" accept="image/*" id="adcImage" name="image" autofocus required>
+            <input type="text" name="title" id="adcTitulo" placeholder="Digite o título da publicação" required>
+            <textarea name="description" id="adcDesc" placeholder="Digite a descrição da publicação" required></textarea>
             <div class="botoesCriar">
                 <button type="submit" class="botaoCriar">Criar</button>
                 <button class="botaoCancelar" onclick="fechaModal()" >Cancelar</button>

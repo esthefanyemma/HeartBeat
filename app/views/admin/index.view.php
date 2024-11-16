@@ -50,21 +50,21 @@
               </tr>     
             </thead>
             <tbody>
+              <?php foreach($posts as $post):?>
               <tr>
-                <?php foreach($posts as $post):?>
                 <td class="id"><?php echo $post->id; ?></td>
                 <td class="titulo"><?php echo $post->title; ?></td>
                 <td class="autor"><?php echo $post->author; ?></td> <!-- Tem que ver melhor isso aqui para aparecer o nome do autor e não o id -->         
                 <td class="data"><?php echo $post->date; ?></td>
                 <td class="acoes-tr">
                   <div class="acoes">
-                    <div class="visualizar" onclick="abrirModal('modalVerPost')">
+                    <div class="visualizar" onclick="abrirModal('modalVerPost<?= $post->id?>')">
                       <i class="fa-solid fa-eye"></i>
                     </div>
-                    <div class="editar" onclick="abrirModal('modalEditPost')">
+                    <div class="editar" onclick="abrirModal('modalEditPost<?= $post->id?>')">
                       <i class="fa-solid fa-pencil"></i>
                     </div>
-                    <div class="deletar" onclick="abrirModal('cancelar2')">
+                    <div class="deletar" onclick="abrirModal('cancelar2<?= $post->id?>')">
                       <i class="fa-solid fa-trash"></i>
                     </div>
                   </div>
@@ -76,8 +76,9 @@
                   <?php require(__DIR__.'/../admin/modalDeletarPost.view.php');?>
                   
 
-                <?php endforeach;?>
+                
               </tr>
+              <?php endforeach;?>
             </tbody>
           </table>
           <div class="paginacao">

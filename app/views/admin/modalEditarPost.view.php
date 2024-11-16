@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="/public/css/modalEditarPost.css">
 </head>
 <body>
-    <div class="novoModal modal" id="modalEditPost">
+    <div class="novoModal modal" id="modalEditPost<?= $post->id?>">
         <div class="modalEditarPost">
             <div class="tituloModalEditar">
                 <h1>Editar Publicação</h1>
             </div>
             <div class="conteudoEditar">
-                <form >
+                <form method="POST" action="/posts/edit">
                     <div class="infosFixasEditar">
-                        <p>Nome do autor</p>
-                        <p>28/10/2024</p>
+                        <p><?= $post->author?></p>
+                        <p><?= $post->date?></p>
                     </div>
                     <label for="adcImageEditar" class="imagemEditar" >
                         <i class="fa-solid fa-image"></i>
                         <span>Adicione uma imagem</span>
                     </label>
-                    <input type="file" accept="image/*" id="adcImageEditar" autofocus>
-                    <input type="text" name="Titulo" id="adcTituloEditar" placeholder="Digite o título da publicação">
-                    <textarea name="descricao" id="adcDescEditar" placeholder="Digite a descrição da publicação"></textarea>
+                    <input type="file" accept="image/*" id="adcImageEditar" autofocus name="image">
+                    <input type="text" name="title" id="adcTituloEditar" placeholder="<?= $post->title?>">
+                    <textarea id="adcDescEditar" placeholder='<?= $post->description?>' name="description"></textarea>
+                    <input type="hidden" value="<?= $post->id?>" name="id">
                     <div class="botoesEditar">
                         <button type="submit" class="botaoEditar">Salvar</button>
                         <button class="botaoCancelarEditar" onclick="fechaModal()">Cancelar</button>

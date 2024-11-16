@@ -11,14 +11,14 @@
     <title>Modal</title>
 </head>
 <body>
-    <div class="modaldp modal" id="cancelar2">
+    <div class="modaldp modal" id="cancelar2<?= $post->id?>">
         <div class="modal2">
-            <form >
+            <form method="post" action>
                 <p class="cancelarTexto">
                     Tem certeza que deseja deletar este post?
                 </p>
                 <div class="botoesdp">
-                    <button>Confirmar</button>
+                    <button type="submit">Confirmar</button>
                     <button onclick="fechaModal()">Cancelar</button>
                 </div>
             </form>

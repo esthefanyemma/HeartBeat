@@ -10,7 +10,7 @@
     <title>Visualizar Post</title>
 </head>
 <body>
-    <div class="modal_visualizarPost modal" id="modalVerPost">
+    <div class="modal_visualizarPost modal" id="modalVerPost<?= $post->id?>">
         <form >
             <div class="desc_visualizacao">
                 <h1 class="tituloVP">
@@ -20,19 +20,15 @@
             </div>
 
                 <div class="esct_autor_data">
-                    <p class="texto">Nome do Autor</p>
-                    <p class="texto">30/10/2024</p>
+                    <p class="texto"><?= $post->author?></p>
+                    <p class="texto"><?= $post->date ?></p>
                 </div>
                 <div class="imagem_post">
                     <img src="/public/assets/Frame 7.png" alt="">
                 </div>
                 <div class="esct_post">
-                    <p class="tituloPost">Titulo</p>
-                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cumque ipsum delectus fugit eligendi nam id commodi 
-                        molestiae unde nemo provident odit, quam, porro modi odio perspiciatis eius non ipsam.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cumque ipsum delectus fugit eligendi nam id commodi 
-                        molestiae unde nemo provident odit, quam, porro modi odio perspiciatis eius non ipsam.
-                    </p>
+                    <p class="tituloPost"><?= $post->title ?></p>
+                    <p class="texto"> <?= $post->description ?></p>
                 </div>
         </form>
     </div>
