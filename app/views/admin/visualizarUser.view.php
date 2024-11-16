@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="modal modalv" id="verusuario">
+    <?php foreach($users as $user):   ?>
         <div class="modalVerUser">
         <div class="imagemUser">
             <img src="/public/assets/foto-user.jpg" alt="">
@@ -15,15 +16,16 @@
         <div class="conteudoVerUser">
             <header></header>
             <div class="infosVerUser">
-                <h1>Anônimo da Silva</h1>
-                <p>#1234</p>
-                <span><i class="fa-regular fa-envelope"></i> email@gmail.com</span>
+                <h1><?=$user->name ?></h1>
+                <p>#<?=$user->id ?></p>
+                <span><i class="fa-regular fa-envelope"></i><?=$user->email ?></span>
             </div>
         </div>
         <div class="containerBotao">
             <button onclick="fechaModal()" class="btnVerUser">Sair</button>
         </div>
     </div>
+    <?php endforeach; ?>
     </div>
     <div class="fundoVisualizar"></div>
 
