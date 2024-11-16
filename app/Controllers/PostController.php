@@ -47,6 +47,15 @@ class PostController
         header('Location: /posts');
     }
 
+    public function delete()
+    {
+        $id = $_POST['id'];
+
+        App::get('database')->delete('posts', $id);
+
+        header('Location: /posts');
+    }
+
 
 }
 

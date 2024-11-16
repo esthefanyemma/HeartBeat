@@ -13,13 +13,14 @@
 <body>
     <div class="modaldp modal" id="cancelar2<?= $post->id?>">
         <div class="modal2">
-            <form method="post" action>
+            <form method="POST" action="/posts/delete">
                 <p class="cancelarTexto">
                     Tem certeza que deseja deletar este post?
                 </p>
+                <input type="hidden" name="id" value="<?= $post->id?>">
                 <div class="botoesdp">
                     <button type="submit">Confirmar</button>
-                    <button onclick="fechaModal()">Cancelar</button>
+                    <button onclick="fechaModal()" type="button">Cancelar</button>
                 </div>
             </form>
         </div>
