@@ -30,11 +30,11 @@
             <div class="campodeentrada">
                         <div class="formularios" >
                             <label class="nomecampos">Nome:</label>
-                            <input type="text" name="nome" placeholder="Seu nome" required>
+                            <input type="text" name="nome" placeholder="Seu nome" value="<?=$user->name ?>" required>
                         </div>
                         <div class="formularios" >
                             <label class="nomecampos">Email:</label>
-                            <input type="email" name="email" placeholder="Seu Email" required>
+                            <input type="email" name="email" placeholder="Seu Email" value="<?=$user->email ?>" required>
                         </div>
                         <div class="formularios" >
                             <label class="nomecampos">Senha:</label>
