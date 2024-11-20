@@ -21,7 +21,7 @@ body{
 
 .titulo-CU{
     background-color: #BD7BD1;
-    width: 552px;
+    width: 100%;
     height: 100px;
     border-radius: 6px 6px 0px 0px;
 }
@@ -170,10 +170,52 @@ body{
     display: none;
 }
 
+@media screen and (max-width:1450px) {
+    .modaledit-CU{
+        width: 440px;
+        height: 500px;
+        }
+        .titulo-CU{
+            width: 100%;
+            height: 60px;
+        }
+    
+        .img-entrada-CU{
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+        }
+    
+        .formularios-CU input{
+            width: 240px;
+            height: 30px;
+            font-size: 16px;
+            border: 3px solid #BD7BD1;
+        }
+    
+        .btns-edit-CU button{
+            width: 100px;
+            height: 36px;
+            font-size: 24px;
+        }
+    
+        .nomecampos-CU{
+            font-size: 14px;
+        }
+    
+        .campodeentrada-CU{
+            margin-left: 12px;
+        }
+    
+        .material-symbols-outlined{
+            transform: scale(1.15);
+        }
+    }
+
 @media screen and (max-width:560px) {
     .modaledit-CU{
     width: 470px;
-    height: 600px;
+    height: 500px;
     }
 
     .titulo-CU{

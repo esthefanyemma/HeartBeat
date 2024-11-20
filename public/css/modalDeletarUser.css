@@ -30,19 +30,28 @@ body *{
 .modal{
     display: none;
     position: absolute;
-    z-index: 3;
-}
-
-.modal_deletar{
-    display: flex;
-    flex-direction: column;
+    width: 300px;
+    height: fit-content;
     background-color: #f0f0f0;
     border-radius: 12px;
     padding: 20px;
     gap: 30px;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+}
 
+.modal_deletar{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
 .cencelarTexto{
     width: 100%;

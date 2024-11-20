@@ -20,8 +20,8 @@
             <div class="botoes_del">
                 <button type="submit">Confirmar</button>
                 <button type="button" onclick="fechaModal()">Cancelar</button>
-                </div>
-            </form>
+            </div>
+        </form>
     </div>
         <script src="/public/js/modal.js"></script>
 </body>
