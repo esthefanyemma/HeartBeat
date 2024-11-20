@@ -38,7 +38,7 @@
                         </div>
                         <div class="formularios" >
                             <label class="nomecampos">Senha:</label>
-                            <input type="password" name="senha" placeholder="Senha" required>
+                            <input type="password" name="senha" placeholder="Senha" value="<?=$user->password ?>" required>
                         </div>
             </div>
             <div class="btns-edit">
