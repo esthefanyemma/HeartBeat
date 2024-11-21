@@ -21,9 +21,13 @@
 
                 <div class="esct_autor_data">
                     <p class="texto"><?= $post->author?></p>
-                    <p class="texto"><?= $post->date ?></p>
+                    <p class="texto"><?php 
+                    $horario = new DateTime($post->date);
+                    echo $horario->format('d/m/y H:i');
+                ?></p>
                 </div>
                 <div class="imagem_post">
+                    <!-- <img src="<?= $post->image?>" alt="Imagem da publicação"> -->
                     <img src="/public/assets/Frame 7.png" alt="">
                 </div>
                 <div class="esct_post">

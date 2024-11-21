@@ -64,6 +64,15 @@
     }
     .modaldp{
         transform: scale(0.8);
+        width: 50%;
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .modaldp{
+        width: 60%;
+        left: 25%;
     }
 }
 
@@ -72,6 +81,8 @@
 
     .modaldp{
         transform: scale(0.7);
+        width: 70%;
+        left: 16%;
     }
     .cancelarTexto{
         font-size: 20px;
@@ -81,10 +92,20 @@
     }
 
 } 
-@media only screen and (max-width:450px){
+
+@media only screen and (max-width: 500px){
+    .modaldp{
+        width: 80%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width:400px){
 
     .modaldp{
         transform: scale(0.5);
+        width: 100%;
+        left: 5%;
     }
     .cancelarTexto{
         font-size: 20px;

@@ -16,15 +16,18 @@
                 <form method="POST" action="/posts/edit">
                     <div class="infosFixasEditar">
                         <p><?= $post->author?></p>
-                        <p><?= $post->date?></p>
+                        <p><?php 
+                            $horario = new DateTime($post->date);
+                            echo $horario->format('d/m/y H:i');
+                        ?></p>
                     </div>
                     <label for="adcImageEditar" class="imagemEditar" >
                         <i class="fa-solid fa-image"></i>
                         <span>Adicione uma imagem</span>
                     </label>
                     <input type="file" accept="image/*" id="adcImageEditar" autofocus name="image">
-                    <input type="text" name="title" id="adcTituloEditar" placeholder="<?= $post->title?>">
-                    <textarea id="adcDescEditar" placeholder='<?= $post->description?>' name="description"></textarea>
+                    <input type="text" name="title" id="adcTituloEditar" placeholder="<?= $post->title?>" required>
+                    <textarea id="adcDescEditar" placeholder='<?= $post->description?>' name="description" required></textarea>
                     <input type="hidden" value="<?= $post->id?>" name="id">
                     <div class="botoesEditar">
                         <button type="submit" class="botaoEditar">Salvar</button>

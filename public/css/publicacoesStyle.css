@@ -15,15 +15,10 @@
     z-index: 2;
   }
   
-  body {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    /* padding: 30px; */
-  }
-
   .mainTabela{
     padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .apresentacao {
@@ -35,7 +30,9 @@
     );
     display: flex;
     align-items: center;
-    gap: 550px;
+    justify-content: space-between;
+    /* gap: 550px; */
+    /* gap: 45%; */
     border-radius: 12px;
     padding: 20px 60px 20px 60px;
     font-family: "Itim", sans-serif;
@@ -237,29 +234,40 @@
   }
   
   @media (max-width: 1200px) {
-    .apresentacao {
-      gap: 400px;
-    }
-    .container-usuario {
-      width: 1000px;
+    .mainTabela{
+      margin-left: 5%;
+      margin-right: 5%;
     }
   }
   
   @media (max-width: 1000px) {
-    .apresentacao {
-      gap: 300px;
-      width: 800px;
+    .mainTabela{
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    .container-usuario {
-      width: 800px;
+
+  }
+
+  @media (max-width: 900px){
+    .mainTabela{
+      margin-left: 7%;
+      margin-right: 7%;
     }
   }
   
   @media (max-width: 800px) {
+
+    .mainTabela{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
     .apresentacao {
-      gap: 100px;
-      width: 600px;
+      /* gap: 100px; */
+      /* width: 600px; */
       font-size: smaller;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   
     .logo img {
@@ -276,7 +284,7 @@
     }
   
     .container-usuario {
-      width: 600px;
+      /* width: 600px; */
       font-size: 14px;
     }
 
@@ -298,11 +306,6 @@
   }
   
   @media (max-width: 600px) {
-    .apresentacao {
-      gap: 80px;
-      width: 500px;
-      padding: 5px;
-    }
   
     .logo {
       gap: 10px;
@@ -323,7 +326,7 @@
     }
   
     .container-usuario {
-      width: 500px;
+      /* width: 500px; */
       font-size: 14px;
     }
 
@@ -345,9 +348,9 @@
   
   @media (max-width: 500px) {
     .apresentacao {
-      gap: 150px;
-      width: 410px;
-      padding: 5px;
+      /* gap: 150px; */
+      /* width: 410px; */
+      padding: 10px;
     }
   
     .logo {
@@ -366,10 +369,11 @@
       width: 50px;
       height: 25px;
       font-size: 12px;
+      gap: 5px;
     }
   
     .container-usuario {
-      width: 410px;
+      /* width: 410px; */
       font-size: 12px;
     }
 
@@ -401,9 +405,15 @@
   }
 
   @media(max-width:400px){
+
+    .mainTabela{
+      margin-left: 0.1%;
+      margin-right: 0.1%;
+    }
+
     .apresentacao {
-      gap: 100px;
-      width: 310px;
+      /* gap: 100px; */
+      /* width: 310px; */
       padding: 5px;
     }
   
@@ -412,21 +422,21 @@
     }
   
     .logo img {
-      width: 50px;
+      width: 45px;
     }
   
     .apresentacao h2 {
-      font-size: 13px;
+      font-size: 10px;
     }
   
     .btn {
-      width: 60px;
-      height: 25px;
-      font-size: 12px;
+      width: 50px;
+      height: 20px;
+      font-size: 10px;
     }
   
     .container-usuario {
-      width: 310px;
+      /* width: 310px; */
       font-size: 10px;
     }
 

@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <div class="overlay"></div>
+    <div class="overlay" onclick="fechaModal()"></div>
     <main class="mainTabela">
         <div class="apresentacao">
           <div class="logo">
@@ -55,7 +55,11 @@
                 <td class="id"><?php echo $post->id; ?></td>
                 <td class="titulo"><?php echo $post->title; ?></td>
                 <td class="autor"><?php echo $post->author; ?></td> <!-- Tem que ver melhor isso aqui para aparecer o nome do autor e não o id -->         
-                <td class="data"><?php echo $post->date; ?></td>
+                <!-- <td class="data"><?php echo $post->date; ?></td> -->
+                <td class="data"><?php 
+                    $horario = new DateTime($post->date);
+                    echo $horario->format('d/m/y');
+                ?></td>
                 <td class="acoes-tr">
                   <div class="acoes">
                     <div class="visualizar" onclick="abrirModal('modalVerPost<?= $post->id?>')">

@@ -7,6 +7,7 @@ function abrirModal(id) {
 function fechaModal() { 
     document.querySelectorAll('.modal').forEach((modal) => {
         modal.style.display = 'none';
+        console.log("Chamou")
     });
     document.querySelector(`.overlay`).style.display = 'none';
 }
