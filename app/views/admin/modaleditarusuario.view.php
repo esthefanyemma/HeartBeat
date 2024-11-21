@@ -42,8 +42,8 @@
                         </div>
             </div>
             <div class="btns-edit">
-                <button  type="submit">Salvar </button>
-                <button type="button" onclick="fechaModal()">Cancelar</button>
+                <button  class="btnEdit" type="submit">Salvar </button>
+                <button class="btnEdit" type="button" onclick="fechaModal()">Cancelar</button>
             </div>
            </div>
         </form>

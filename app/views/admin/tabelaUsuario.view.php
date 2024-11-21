@@ -33,7 +33,7 @@
             <h2>Tabela de Usuarios</h2>
           </div>
           <div class="btn" onclick="abrirModal('criarUser')">
-            <button>Criar</button>
+            <p>Criar</p>
             <i class="fa-solid fa-plus"></i>
           </div>
         </div>
