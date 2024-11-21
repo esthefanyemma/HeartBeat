@@ -422,6 +422,15 @@ button:hover {
   #divBusca {
     width: 150px;
   }
+  .button {
+    padding: 2px 0px;
+    width: 40px;
+  }
+
+  .seta {
+    padding: 0px 0px;
+    width: 30px;
+  }
 
 }
 
