@@ -145,7 +145,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .botoesCriar button:hover{
@@ -177,9 +177,9 @@
     }
 }
 
-@media only screen and (max-width: 800px){
-    .modalCriarPost{
-        width: 46%;
+@media screen and (max-width: 800px){
+    body .modalCriarPost{
+        width: 45%;
         left: 30%;
     }
 }
@@ -216,13 +216,14 @@
 }
 
 @media only screen and (max-width: 400px){
-    .modalCriarPost{
-        width: 100%;
+    body .modalCriarPost{
+        width: 70%;
         left: 15%;
     }
 
     .botoesCriar button{
         font-size: 10px;
+        width: 30%;
     }
 
     .tituloModalCriar{
