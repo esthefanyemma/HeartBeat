@@ -14,10 +14,12 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table)
+    public function selectAll($table, $inicio = null, $rows_cont = null)
     {
         $sql = "select * from {$table}";
-
+        if($inicio >= 0 && $rows_cont > 0){
+            $sql .= " LIMIT {$inicio},{$rows_cont}";
+        }
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
@@ -76,6 +78,21 @@ class QueryBuilder
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute(compact('id'));
 
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function contAll($table)
+    {
+        $sql = "select (*) from {$table}";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return intval( $stmt->fetch(PDO::FETCH_NUM)(0));
 
         } catch (Exception $e) {
             die($e->getMessage());

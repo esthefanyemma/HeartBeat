@@ -8,8 +8,25 @@ use Exception;
 class UserController{
     public function index()
     {
+        $page=1;
+        if(isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])){
+            $page = intval($_GET['paginacaoNumero']);
+            if($page <= 0){
+                return redirect('admin/usuarios');
+            }
+        }
+        $itensPage = 10;
+        $inicio = $itensPage * $page - $itensPage;
+        $rows_cont = App::get('database')->contAll('users' , $inicio, $itensPage);
+
+        $total_pages = ceil($rows_cont / $itensPage);
+
+        if($inicio > $rows_cont)
+        return redirect('admin/usuarios');
+
+
         $users = App::get('database')->selectAll('users');
-        return view('admin/tabelaUsuario',compact('users') );
+        return view('admin/tabelaUsuario',compact('users','page', 'total_pages') );
     }
     public function criar(){
         //$nomeimagem = sha1(uniqid($_FILES[]))
