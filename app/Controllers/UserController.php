@@ -15,17 +15,16 @@ class UserController{
                 return redirect('admin/usuarios');
             }
         }
-        $itensPage = 3;
+        $itensPage = 10;
         $inicio = $itensPage * $page - $itensPage;
-        $rows_cont = App::get('database')->countAll('users' , $inicio, $itensPage);
+        $rows_count = App::get('database')->countAll('users');
 
-        $total_pages = ceil($rows_cont / $itensPage);
+        if($inicio > $rows_count){
+            return redirect('admin/usuarios');
+        }
+        $users = App::get('database')->selectAll('users', $inicio, $itensPage);
+        $total_pages = ceil($rows_count / $itensPage);
 
-        if($inicio > $rows_cont)
-        return redirect('admin/usuarios');
-
-
-        $users = App::get('database')->selectAll('users');
         return view('admin/tabelaUsuario',compact('users','page', 'total_pages') );
     }
     public function criar(){

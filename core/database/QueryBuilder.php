@@ -14,11 +14,11 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table, $inicio = null, $rows_cont = null)
+    public function selectAll($table, $inicio = null, $rows_count = null)
     {
         $sql = "select * from {$table}";
-        if($inicio >= 0 && $rows_cont > 0){
-            $sql .= " LIMIT {$inicio},{$rows_cont}";
+        if($inicio >= 0 && $rows_count > 0){
+            $sql .= " LIMIT {$inicio}, {$rows_count}";
         }
         try {
             $stmt = $this->pdo->prepare($sql);

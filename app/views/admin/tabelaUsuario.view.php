@@ -80,12 +80,12 @@
             </tbody>
           </table>
           <div class="paginacao">
-            <a href="?paginacaoNumero=<?= $page - 1?>" class="seta <?= $page <= 1 ? "disablet" : "" ?> ">←</a>
+            <a href="?paginacaoNumero=<?= $page - 1?>" class="seta <?= $page <= 1 ? "disabled" : "" ?> ">←</a>
             <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
             <span class="page-number <?= $page_number == $page ? "active" : "" ?>"><a class="button"
             href="?paginacaoNumero=<?= $page_number?>"><?= $page_number ?> </a></span>
             <?php endfor ?>            
-            <a href="?paginacaoNumero=<?= $page + 1?>" class="seta <?= $page >= $total_pages ? "disablet" : "" ?> ">→</a>
+            <a href="?paginacaoNumero=<?= $page + 1?>" class="seta <?= $page >= $total_pages ? "disabled" : "" ?> ">→</a>
           </div>
         </div>
       </div>
