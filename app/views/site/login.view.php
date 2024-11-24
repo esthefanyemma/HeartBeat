@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../../../public/css/loginStyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,17 +20,14 @@
   </head>
   <body>
       <div class="login-box">
-        <div class="logo">
-          <img
-            src="../../../public/assets/heartBeats-logo-com-nome.png"
-            alt="Logo Heartbeats"
-          />
+        <div class="logo-login">
+          <img src="../../../public/assets/heartBeats-logo-com-nome.png" alt="Logo Heartbeats"/>
         </div>
         <form action="/login" method="POST">
           <h1>Login</h1>
           <div class="mensagem-erro">
             <?php 
-              session_start();
+              // session_start();
               if(isset($_SESSION['mensagem-erro'])){
                 echo $_SESSION['mensagem-erro'];
               }
@@ -43,7 +40,7 @@
           <div class="textbox">
             <input type="password" name="password" placeholder="Senha" />
           </div>
-          <input type="submit" class="btn" value="Entrar" />
+          <input type="submit" class="btn-entrar" value="Entrar" />
         </form>
       </div>
   </body>

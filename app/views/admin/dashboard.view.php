@@ -28,7 +28,7 @@
         </div>
         <div class="divlogout">
             <form action="/logout" method="POST">
-                <button class="button-logout">
+                <button class="button-logout" type="submit">
                     <span class="material-icons">
                     logout
                     </span>
