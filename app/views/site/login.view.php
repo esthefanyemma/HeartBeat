@@ -26,8 +26,17 @@
             alt="Logo Heartbeats"
           />
         </div>
-        <form action="login" method="POST">
+        <form action="/login" method="POST">
           <h1>Login</h1>
+          <div class="mensagem-erro">
+            <?php 
+              session_start();
+              if(isset($_SESSION['mensagem-erro'])){
+                echo $_SESSION['mensagem-erro'];
+              }
+              unset($_SESSION['mensagem-erro']);
+            ?>
+          </div>
           <div class="textbox">
             <input type="text" name="email" placeholder="Email" />
           </div>

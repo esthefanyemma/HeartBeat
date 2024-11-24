@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['id'])){
+        header('Location: /login');
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,10 +27,13 @@
                 <h1>DASHBOARD</h1>
         </div>
         <div class="divlogout">
-            <a class="button-logout">
-                <span class="material-icons">
-                logout
-                </span></a>
+            <form action="/logout" method="POST">
+                <button class="button-logout">
+                    <span class="material-icons">
+                    logout
+                    </span>
+                </button>
+            </form>    
         </div>
     </div>
     <div class="diminuir">
