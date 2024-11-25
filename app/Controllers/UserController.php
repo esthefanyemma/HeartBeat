@@ -30,9 +30,10 @@ class UserController{
     public function criar(){
         $temporario = $_FILES['imagem']['tmp_name'];
         $nomeimagem =  sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-        $destinoimagem = "../public/imagens";
+        $destinoimagem = "../public/imagens/";
         move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
         $caminhodaimagem = "../public/imagens/" . $nomeimagem;
+        die(var_dump($_FILES));
         $parametros=[
              'name'=> $_POST['nome'],
              'email'=> $_POST['email'] ,

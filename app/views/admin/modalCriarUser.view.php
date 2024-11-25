@@ -17,7 +17,7 @@
     
         </label> -->
         <form id="criarUser" action="usuarios/criar"
-        method="post">
+        method="post"  enctype="multipart/form-data"> 
        </div>
            <header class="titulo-CU">
            </header>

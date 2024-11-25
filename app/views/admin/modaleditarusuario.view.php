@@ -18,7 +18,7 @@
                 </span>
                 <img src="" alt="">
         </label> -->
-        <form method="POST" action="/usuarios/editar">
+        <form method="POST" enctype="multipart/form-data" action="/usuarios/editar">
             <input type="hidden" name="id" value="<?php echo $user->id ?>">
        </div>
            <header>
