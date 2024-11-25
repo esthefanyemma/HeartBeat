@@ -10,6 +10,7 @@
 </head>
 <body>
    <div class="modaledit modal" id="editarusuario<?= $user->id?>">
+       <form method="POST" enctype="multipart/form-data" action="/usuarios/editar">
       <div class="img-entrada">
        <!-- <label>
             <input type="file" accept="image/*" class="img-inp">
@@ -18,8 +19,7 @@
                 </span>
                 <img src="" alt="">
         </label> -->
-        <form method="POST" enctype="multipart/form-data" action="/usuarios/editar">
-            <input type="hidden" name="id" value="<?php echo $user->id ?>">
+        <img src="<?= $user->image ?>" alt="">
        </div>
            <header>
         

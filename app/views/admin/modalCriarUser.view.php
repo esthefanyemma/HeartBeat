@@ -10,22 +10,21 @@
 </head>
 <body>
    <div class="modaledit-CU modal" id="criarUser">
-      <div class="img-entrada-CU">
-      <label>
-          <!--  <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
+       <form id="criarUser" action="usuarios/criar" method="post"  enctype="multipart/form-data"> 
+       <div class="img-entrada-CU">
+       <div>
+                    <input type="file" name="imagem" >
+                </div>
+       <!-- <label>
+           <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
             <input type="file" name="imagem"  class="img-inp-CU">
     
         </label> -->
-        <form id="criarUser" action="usuarios/criar"
-        method="post"  enctype="multipart/form-data"> 
        </div>
            <header class="titulo-CU">
            </header>
            <div class="info-usuario-CU">
             <div class="campoEntrada-CU">
-                <div>
-                    <input type="file" name="imagem" >
-                </div>
                         <div class="formularios-CU" >
                             <label class="nomecampos-CU">Nome:</label>
                             <input type="text" name="nome" placeholder="HeartBeats Da Silva" required>
