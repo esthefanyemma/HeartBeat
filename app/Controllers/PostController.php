@@ -54,9 +54,7 @@ class PostController
         App::get('database')->delete('posts', $id);
 
         header('Location: /posts');
-    }
-
-
+    }    
 }
 
 ?>

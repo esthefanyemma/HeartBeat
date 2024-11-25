@@ -77,4 +77,23 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+
+    public function join($author)
+    {
+        $sql = sprintf('SELECT users.name FROM users INNER JOIN posts ON %s = users.id',
+                        $author
+        );
+
+        echo "Estou na join";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+            echo $stmt->fetchAll(PDO::FETCH_CLASS);
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 }
