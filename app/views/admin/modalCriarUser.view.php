@@ -11,12 +11,11 @@
 <body>
    <div class="modaledit-CU modal" id="criarUser">
       <div class="img-entrada-CU">
-        <label>
-            <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
-            <img src="/public/assets/profile-picture-973460_1280.webp" alt="">
-            <input type="file" accept="image/*" class="img-inp-CU">
+      <label>
+          <!--  <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
+            <input type="file" name="imagem"  class="img-inp-CU">
     
-        </label>
+        </label> -->
         <form id="criarUser" action="usuarios/criar"
         method="post">
        </div>
@@ -24,6 +23,9 @@
            </header>
            <div class="info-usuario-CU">
             <div class="campoEntrada-CU">
+                <div>
+                    <input type="file" name="imagem" >
+                </div>
                         <div class="formularios-CU" >
                             <label class="nomecampos-CU">Nome:</label>
                             <input type="text" name="nome" placeholder="HeartBeats Da Silva" required>

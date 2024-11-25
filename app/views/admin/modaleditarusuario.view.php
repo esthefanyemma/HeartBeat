@@ -11,13 +11,13 @@
 <body>
    <div class="modaledit modal" id="editarusuario<?= $user->id?>">
       <div class="img-entrada">
-        <label>
+       <!-- <label>
             <input type="file" accept="image/*" class="img-inp">
             <span class="material-symbols-outlined">
                 edit
                 </span>
-                <img src="/public/assets/Ellipse 1.png" alt="">
-        </label>
+                <img src="" alt="">
+        </label> -->
         <form method="POST" action="/usuarios/editar">
             <input type="hidden" name="id" value="<?php echo $user->id ?>">
        </div>
@@ -28,6 +28,9 @@
             <h2><?=$user->name ?></h2>
             <p><?=$user->email ?></p>
             <div class="campodeentrada">
+                <div>
+                    <input type="file" name="imagem" value="<?= $user->image?>" src="<?= $user->image?>" >
+                </div>
                         <div class="formularios" >
                             <label class="nomecampos">Nome:</label>
                             <input type="text" name="nome" placeholder="Seu nome" value="<?=$user->name ?>" required>

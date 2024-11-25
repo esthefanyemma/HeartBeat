@@ -10,7 +10,7 @@
     <div class="modal modalv"  id="verusuario<?= $user->id?>">
         <div class="modalVerUser">
         <div class="imagemUser">
-            <img src="/public/assets/foto-user.jpg" alt="">
+            <img src="<?= $user->image ?>" alt="">
         </div>
         <div class="conteudoVerUser">
             <header></header>
