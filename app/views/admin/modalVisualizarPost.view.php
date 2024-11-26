@@ -20,7 +20,7 @@
             </div>
 
                 <div class="esct_autor_data">
-                    <p class="texto"><?= $post->author?></p>
+                    <p class="texto"><?= $user->name?></p>
                     <p class="texto"><?php 
                     $horario = new DateTime($post->date);
                     echo $horario->format('d/m/y H:i');

@@ -13,7 +13,7 @@
         </div>
         <form class="conteudoCriar" method="POST" action="/posts/create">
             <div class="infosFixas">
-                <p>Nome do autor</p>
+                <p><?= $user->name?></p>
                 <p><?php 
                     $timezone = new DateTimeZone('America/Sao_Paulo');
                     $agora = new DateTime('now', $timezone);
@@ -27,6 +27,7 @@
             <input type="file" accept="image/*" id="adcImage" name="image" autofocus required>
             <input type="text" name="title" id="adcTitulo" placeholder="Digite o título da publicação" required>
             <textarea name="description" id="adcDesc" placeholder="Digite a descrição da publicação" required></textarea>
+            <input type="hidden" value="<?= $user->id?>" name="userID">
             <div class="botoesCriar">
                 <button type="submit" class="botaoCriar">Criar</button>
                 <button type="button" class="botaoCancelar" onclick="fechaModal()" >Cancelar</button>

@@ -11,14 +11,15 @@ class PostController
     public function index()
     {
         $posts = App::get('database')->selectAll('posts');  //Função feita no query builder que tem q passar a tabela de post
+        $users = App::get('database')->selectAll('users');
 
-        return view('admin/index', compact('posts'));  //Passa os dados para a view *mudar depois aq e no view pra quando criar o index no admin*
+        return view('admin/index', compact('posts', 'users'));  //Passa os dados para a view *mudar depois aq e no view pra quando criar o index no admin*
     }
 
     public function create()
     {
         $parametros = [
-            'author'=>1,
+            'author'=>$_POST['userID'],
             'image' =>$_POST['image'],
             'title' =>$_POST['title'],
             'description' =>$_POST['description']
@@ -34,7 +35,7 @@ class PostController
     public function edit()
     {
         $parametros = [
-            'author'=>1,
+            'author'=>$_POST['userID'],
             'image' =>$_POST['image'],
             'title' =>$_POST['title'],
             'description' =>$_POST['description'],

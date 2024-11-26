@@ -29,7 +29,9 @@
           <div class="btn" onclick="abrirModal('modalCriarPost')">
             <p>Criar</p>
             <i class="fa-solid fa-plus"></i>
+            <?php foreach($users as $user): ?>
             <?php require(__DIR__.'/../admin/modalCriarPost.view.php');?>
+            <?php endforeach?>
           </div>
         </div>
         <div class="container-usuario">
@@ -54,7 +56,7 @@
               <tr>
                 <td class="id"><?php echo $post->id; ?></td>
                 <td class="titulo"><?php echo $post->title; ?></td>
-                <td class="autor"><?php echo $post->author; ?></td> <!-- Tem que ver melhor isso aqui para aparecer o nome do autor e não o id -->         
+                <td class="autor"><?php foreach($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td> <!-- Tem que ver melhor isso aqui para aparecer o nome do autor e não o id -->         
                 <!-- <td class="data"><?php echo $post->date; ?></td> -->
                 <td class="data"><?php 
                     $horario = new DateTime($post->date);
@@ -75,8 +77,10 @@
                 </td>
 
                   <!-- Modais -->
+                   <?php foreach($users as $user):?>
                   <?php require(__DIR__.'/../admin/modalVisualizarPost.view.php');?>
                   <?php require(__DIR__.'/../admin/modalEditarPost.view.php');?>
+                  <?php endforeach?>
                   <?php require(__DIR__.'/../admin/modalDeletarPost.view.php');?>
                   
 

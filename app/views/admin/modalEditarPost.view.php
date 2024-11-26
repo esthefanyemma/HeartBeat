@@ -15,7 +15,7 @@
             <div class="conteudoEditar">
                 <form method="POST" action="/posts/edit">
                     <div class="infosFixasEditar">
-                        <p><?= $post->author?></p>
+                        <p><?= $user->name?></p>
                         <p><?php 
                             $horario = new DateTime($post->date);
                             echo $horario->format('d/m/y H:i');
@@ -29,6 +29,7 @@
                     <input type="text" name="title" id="adcTituloEditar" placeholder="<?= $post->title?>" required>
                     <textarea id="adcDescEditar" placeholder='<?= $post->description?>' name="description" required></textarea>
                     <input type="hidden" value="<?= $post->id?>" name="id">
+                    <input type="hidden" value="<?= $user->id?>" name="userID">
                     <div class="botoesEditar">
                         <button type="submit" class="botaoEditar">Salvar</button>
                         <button class="botaoCancelarEditar" onclick="fechaModal()">Cancelar</button>
