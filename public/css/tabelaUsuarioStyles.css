@@ -56,7 +56,7 @@ body {
   justify-content: left;
   align-items: center;
   width: 100%;
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 #divBusca {
@@ -348,8 +348,8 @@ tbody tr:hover{
   }
 
   .apresentacao {
-    gap: 80px;
-    width: 450px;
+    gap: 200px;
+    width: 550px;
     padding: 5px;
   }
 
@@ -376,7 +376,7 @@ tbody tr:hover{
   }
 
   .container-usuario {
-    width: 450px;
+    width: 550px;
     font-size: 10px;
   }
 
@@ -420,22 +420,13 @@ tbody tr:hover{
   #divBusca {
     width: 150px;
   }
-  .button {
-    padding: 2px 0px;
-    width: 40px;
-  }
-
-  .seta {
-    padding: 0px 0px;
-    width: 30px;
-  }
 
 }
 
 @media (max-width: 450px) {
   .apresentacao {
-    gap: 80px;
-    width: 350px;
+    gap: 120px;
+    width: 400px;
     padding: 5px;
   }
 
@@ -452,15 +443,15 @@ tbody tr:hover{
   }
 
   .container-usuario {
-    width: 350px;
+    width: 400px;
   }
 
   tbody td{
-    font-size: 17px;
+    font-size: 12px;
   }
 
   thead th {
-    font-size: 17px;
+    font-size: 12px;
     gap: 10px;
   }
 
@@ -476,13 +467,69 @@ tbody tr:hover{
   }
 
   .button {
-    padding: 2px 0px;
-    width: 40px;
+    padding: 4px 12px;
   }
 
   .seta {
-    padding: 0px 0px;
-    width: 30px;
+    padding: 4px 6px;
   }
 }
 
+@media(max-width: 375px){
+  .apresentacao {
+    gap: 100px;
+    width: 350px;
+    padding: 5px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .apresentacao h2 {
+    font-size: 13px;
+  }
+
+  .container-usuario {
+    width: 350px;
+  }
+
+  tbody td{
+    font-size: 12px;
+  }
+
+  thead th {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .nome{
+    width: 6%;
+  }
+
+  .acoes .editar,
+  .deletar,
+  .visualizar {
+    width: 25px;
+    height: 15px;
+    gap: 5px;
+  }
+
+  .button {
+    padding: 4px 12px;
+  }
+
+  .seta {
+    padding: 4px 6px;
+  }
+
+  #txtBusca {
+    font-size: 12px;
+    width: fit-content;
+  }
+
+}
