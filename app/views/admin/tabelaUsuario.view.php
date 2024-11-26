@@ -56,10 +56,10 @@
             <tbody>
               <?php foreach($users as $user):   ?>
               <tr>
-                <td><?=$user->id ?></td>
-                <td><?=$user->name ?></td>
-                <td><?=$user->email ?></td>
-                <td>
+                <td class="id"><?=$user->id ?></td>
+                <td class="nome"><?=$user->name ?></td>
+                <td class="email"><?=$user->email ?></td>
+                <td class="acoes-tr">
                   <div class="acoes">
                     <div class="visualizar" onclick="abrirModal('verusuario<?= $user->id?>')">
                       <i class="fa-solid fa-eye"></i>

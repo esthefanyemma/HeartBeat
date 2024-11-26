@@ -1,13 +1,13 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
-}
+} */
 
-body{
+/* body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 header{
     background-color: #BD7BD1;

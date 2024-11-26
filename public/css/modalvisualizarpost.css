@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
+} */
+/* body{
     background-color: #524f53;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-body *{
+} */
+/* body *{
     font-family: "Fredoka", sans-serif;
-}
+} */
 .texto{
     font-size: 16px;
 }

@@ -1,20 +1,20 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-body{
+} */
+/* body{
     background-color: #bd7bd1;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
-}
-body *{
+} */
+/* body *{
     font-family: "Fredoka", sans-serif;
     font-size: 20px;
-}
+} */
 .container{
     width: 100%;
     display: flex;
