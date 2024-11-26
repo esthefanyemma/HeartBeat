@@ -18,9 +18,15 @@ class PostController
 
     public function create()
     {
+        $temporario = $_FILES['imagem']['tmp_name'];
+        $nomeimagem =  sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+        $destinoimagem = "public/imagens/";
+        move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+        $caminhodaimagem = "public/imagens/" . $nomeimagem;
+
         $parametros = [
             'author'=>$_POST['userID'],
-            'image' =>$_POST['image'],
+            'image' =>$caminhodaimagem,
             'title' =>$_POST['title'],
             'description' =>$_POST['description']
         ];
@@ -34,9 +40,19 @@ class PostController
 
     public function edit()
     {
+        $id= $_POST['id'];
+        $users = App::get('database')->selectOne('users', $id);
+        $temporario = $_FILES['imagem']['tmp_name'];
+        $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+        $destinoimagem = "public/imagens/";
+        move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+        $caminhodaimagem = "public/imagens/" . $nomeimagem;
+        $imagem_rota = "public/imagens/" . basename($users->image);
+        unlink($imagem_rota);
+
         $parametros = [
             'author'=>$_POST['userID'],
-            'image' =>$_POST['image'],
+            'image' =>$caminhodaimagem,
             'title' =>$_POST['title'],
             'description' =>$_POST['description'],
         ];

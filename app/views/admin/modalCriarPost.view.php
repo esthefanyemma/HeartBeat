@@ -11,7 +11,7 @@
         <div class="tituloModalCriar">
             <h1>Criar Publicação</h1>
         </div>
-        <form class="conteudoCriar" method="POST" action="/posts/create">
+        <form class="conteudoCriar" method="POST" action="/posts/create" enctype="multipart/form-data">
             <div class="infosFixas">
                 <p><?= $user->name?></p>
                 <p><?php 
@@ -24,7 +24,7 @@
                 <i class="iconeImg fa-solid fa-image"></i>
                 <span class="spanImage" >Adicione uma imagem</span>
             </label>
-            <input type="file" accept="image/*" id="adcImage" name="image" autofocus required>
+            <input type="file" accept="image/*" id="adcImage" name="imagem" autofocus required>
             <input type="text" name="title" id="adcTitulo" placeholder="Digite o título da publicação" required>
             <textarea name="description" id="adcDesc" placeholder="Digite a descrição da publicação" required></textarea>
             <input type="hidden" value="<?= $user->id?>" name="userID">

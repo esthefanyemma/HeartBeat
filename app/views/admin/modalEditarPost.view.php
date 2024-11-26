@@ -13,7 +13,7 @@
                 <h1>Editar Publicação</h1>
             </div>
             <div class="conteudoEditar">
-                <form method="POST" action="/posts/edit">
+                <form method="POST" action="/posts/edit" enctype="multipart/form-data">
                     <div class="infosFixasEditar">
                         <p><?= $user->name?></p>
                         <p><?php 
@@ -22,8 +22,8 @@
                         ?></p>
                     </div>
                     <label for="adcImageEditar" class="imagemEditar" >
-                        <i class="fa-solid fa-image"></i>
-                        <span>Adicione uma imagem</span>
+                        <i class="iconeImgEditar fa-solid fa-image"></i>
+                        <span class="spanImageEditar">Adicione uma imagem</span>
                     </label>
                     <input type="file" accept="image/*" id="adcImageEditar" autofocus name="image">
                     <input type="text" name="title" id="adcTituloEditar" placeholder="<?= $post->title?>" required>
