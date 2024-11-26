@@ -10,10 +10,10 @@ class PostController
 
     public function index()
     {
-        $posts = App::get('database')->selectAll('posts');  //Função feita no query builder que tem q passar a tabela de post
+        $posts = App::get('database')->selectAll('posts'); 
         $users = App::get('database')->selectAll('users');
 
-        return view('admin/index', compact('posts', 'users'));  //Passa os dados para a view *mudar depois aq e no view pra quando criar o index no admin*
+        return view('admin/tabelaPubli', compact('posts', 'users')); 
     }
 
     public function create()
@@ -31,7 +31,6 @@ class PostController
             'description' =>$_POST['description']
         ];
 
-        echo "Entrou";
 
         App::get('database')->insert('posts', $parametros);
 
