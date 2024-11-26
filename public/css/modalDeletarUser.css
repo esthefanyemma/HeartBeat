@@ -27,10 +27,9 @@ body *{
     height: fit-content;
 }
 
-.modal{
+.modaldp{
     display: none;
     position: absolute;
-    width: 300px;
     height: fit-content;
     background-color: #f0f0f0;
     border-radius: 12px;
