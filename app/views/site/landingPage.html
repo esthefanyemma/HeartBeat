@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,33 +13,75 @@
 </head>
 <body>
     <div class="desc">
-        <div class="logo"><img src=../../../public/assets/logoEscrito.png alt="Logo HeartBeats"></div>
         <div class="texto"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magni sunt nihil perspiciatis. Earum quo molestiae quibusdam, mollitia labore iste rerum accusamus sapiente delectus consequuntur ullam commodi sunt quia ut.</p></div>
     </div>
     
-    <div class="grupos">
-        <div class="titulo"><p>GRUPOS</p></div>
-        <form class="conj">
-            <div class="item">
-                <img src="../../../public/assets/Frame 7.png" alt="">
-                <p>BTS</p>
-            </div>
-            <div class="item">
-                <img src="../../../public/assets/Frame 7.png" alt="">
-            <p>BTS</p>
-            </div>
-            <div class="item">
-                <img src="../../../public/assets/Frame 7.png" alt="">
-                <p>BTS</p>
-            </div>
-            <div class="item">
-                <img src="../../../public/assets/Frame 7.png" alt="">
-                <p>BTS</p>
-            </div> 
-        </form>   
-    </div>
+
 
     <div class="posts">
+        <div class="grupos">
+            <div class="titulo"><p>GRUPOS</p></div>
+            <form class="conj">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">                
+                        <div class="item">
+                            <img src="../../../public/assets/Frame 7.png" alt="">
+                            <p>BTS</p>
+                        </div>
+                        <div class="item">
+                            <img src="../../../public/assets/Frame 7.png" alt="">
+                            <p>BTS</p>
+                        </div>
+                        <div class="item">
+                            <img src="../../../public/assets/Frame 7.png" alt="">
+                            <p>BTS</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">                
+                            <div class="item">
+                                <img src="../../../public/assets/Frame 7.png" alt="">
+                                <p>BTS</p>
+                            </div>
+                            <div class="item">
+                                <img src="../../../public/assets/Frame 7.png" alt="">
+                                <p>BTS</p>
+                            </div>
+                            <div class="item">
+                                <img src="../../../public/assets/Frame 7.png" alt="">
+                                <p>BTS</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">                
+                            <div class="item">
+                                <img src="../../../public/assets/Frame 7.png" alt="">
+                                <p>BTS</p>
+                            </div>
+                            <div class="item">
+                                <img src="../../../public/assets/Frame 7.png" alt="">
+                                <p>BTS</p>
+                            </div>
+                            <div class="item">
+                                <img src="../../../public/assets/Frame 7.png" alt="">
+                                <p>BTS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </form>   
+        </div>
         <p class="titulo">POST RECENTES</p>
         <div class="postG">
                 <form class="postLista1">
@@ -53,6 +96,17 @@
                             </div>
                         </div>
                     </div>  
+                    <div class="imagem">
+                        <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
+                        <div class="texto"><p>Titulo</p></div>
+                        <div class="autor">
+                            <div class="elipse"></div>
+                            <div class="autortext">
+                                <p class="textoAutor">Autor</p>
+                                <p class="textoData">01/10/2024</p>
+                            </div>
+                        </div>
+                    </div> 
                     <div class="imagem">
                         <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
                         <div class="texto"><p>Titulo</p></div>
@@ -88,19 +142,6 @@
                         </div>
                     </div>
                 </div> 
-            </form>
-            <form class="postLista1">
-                <div class="imagem">
-                    <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                    <div class="texto"><p>Titulo</p></div>
-                    <div class="autor">
-                        <div class="elipse"></div>
-                        <div class="autortext">
-                            <p class="textoAutor">Autor</p>
-                            <p class="textoData">01/10/2024</p>
-                        </div>
-                    </div>
-                </div>  
                 <div class="imagem">
                     <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
                     <div class="texto"><p>Titulo</p></div>
@@ -113,11 +154,17 @@
                     </div>
                 </div> 
             </form>
+
             
         </div>
         <div class="botao1">
             <button>VER MAIS</button>
         </div>
     </div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/HeartBeat/public/js/carrossel.js"></script>
+
 </body>
 </html>
