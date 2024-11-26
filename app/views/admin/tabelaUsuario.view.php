@@ -85,7 +85,7 @@
             <span class="page-number <?= $page_number == $page ? "active" : "" ?>"><a class="button"
             href="?paginacaoNumero=<?= $page_number?>"><?= $page_number ?> </a></span>
             <?php endfor ?>            
-            <a href="?paginacaoNumero=<?= $page + 1?>" class="seta <?= $page >= $total_pages ? "disabled" : "" ?> ">→</a>
+            <a href="?paginacaoNumero=<?= $page + 1?>" class="seta <?= $page >= $total_pages ? 'disabled' : "" ?> ">→</a>
           </div>
         </div>
       </div>

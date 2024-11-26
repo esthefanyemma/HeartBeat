@@ -15,7 +15,7 @@ class UserController{
                 return redirect('admin/usuarios');
             }
         }
-        $itensPage = 10;
+        $itensPage = 5;
         $inicio = $itensPage * $page - $itensPage;
         $rows_count = App::get('database')->countAll('users');
 
