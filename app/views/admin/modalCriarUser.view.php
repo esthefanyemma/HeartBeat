@@ -15,12 +15,11 @@
         <form id="criarUser" action="usuarios/criar" method="post" enctype="multipart/form-data">
             <div class="img-entrada-CU">
                 <label>
+                    <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
+                    <input type="file" name="imagem" class="img-inp-CU">
                     <div>
                         <img class="profileImg" src="../../../public/assets/profile-picture-973460_1280.webp" alt="">
                     </div>
-                    <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
-                    <input type="file" name="imagem" class="img-inp-CU">
-
                 </label>
             </div>
             <header class="titulo-CU">

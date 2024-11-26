@@ -24,13 +24,11 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    z-index: 3;
 }
 .inputImg{
     width: 200px;
     height: 200px;
     cursor: pointer;
-    z-index: 1;
 }
 
 
