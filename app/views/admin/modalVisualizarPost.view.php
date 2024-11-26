@@ -27,8 +27,8 @@
                 ?></p>
                 </div>
                 <div class="imagem_post">
-                    <!-- <img src="<?= $post->image?>" alt="Imagem da publicação"> -->
-                    <img src="/public/assets/Frame 7.png" alt="">
+                    <img src="<?= $post->image?>" alt="Imagem da publicação">
+                    <!-- <img src="/public/assets/Frame 7.png" alt=""> -->
                 </div>
                 <div class="esct_post">
                     <p class="tituloPost"><?= $post->title ?></p>
