@@ -19,7 +19,7 @@
                 </span>
                 <img src="" alt="">
         </label> -->
-        <img src="<?= $user->image ?>" alt="">
+        <img class="imgEdit" src="<?= $user->image ?>" alt="">
        </div>
            <header>
         

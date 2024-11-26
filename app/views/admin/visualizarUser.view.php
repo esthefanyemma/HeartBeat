@@ -13,7 +13,7 @@
             <img src="<?= $user->image ?>" alt="">
         </div>
         <div class="conteudoVerUser">
-            <header></header>
+            <header class="headerVisualizarUser"></header>
             <div class="infosVerUser">
                 <h1><?=$user->name ?></h1>
                 <p>#<?=$user->id ?></p>

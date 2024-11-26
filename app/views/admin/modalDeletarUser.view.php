@@ -11,7 +11,7 @@
     <title>Modal</title>
 </head>
 <body>
-    <div class="modaldp modal" id="deletarusuario<?= $user->id?>">
+    <div class="modaldu modal" id="deletarusuario<?= $user->id?>">
         <form class="modal_deletar" method="POST" action="/usuarios/deleta">
             <input type="hidden" name="id" value="<?= $user->id?>">
             <p class="cancelarTexto">

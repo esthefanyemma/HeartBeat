@@ -33,8 +33,7 @@
     border-radius: 6px;
     font-family: "Fredoka", sans-serif;
 } 
-
-header{
+.headerVisualizarUser{
     width: 100%;
     background-color: #bd7bd1;
     height: 90px;
@@ -163,5 +162,9 @@ header{
     .modalv{
         width: 76%;
         left: 14%;
+    }
+
+    .infosVerUser h1{
+        font-size: 20px;
     }
 }
