@@ -39,8 +39,8 @@
             <thead>
               <div class="container-busca">
                 <div id="divBuscaPubli">
-                  <i class="fa-solid fa-magnifying-glass"></i> 
                   <input type="text" id="txtBuscaPubli" placeholder="Pesquisar" />
+                  <i class="fa-solid fa-magnifying-glass"></i> 
                 </div>
               </div>
               <tr style="border-bottom: 2px solid #bd7bd1">
