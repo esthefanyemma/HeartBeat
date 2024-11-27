@@ -129,7 +129,7 @@ body {
   padding-bottom: 60px;
 }
 .postG {
-  width: 80%;
+  width: 90%;
   max-width: 1400px;
   gap: 60px;
   display: flex;
@@ -302,9 +302,9 @@ body {
     font-size: 22px;
   }
 
-  .postG{
+  /* .postG{
     width: 100%;
-  }
+  } */
 
   .textoAutor {
     font-size: 18px;
