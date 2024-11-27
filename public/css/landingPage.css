@@ -9,10 +9,18 @@ body *{
 }
 .desc{
     padding-bottom: 20px;
-    background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
-    background-color: #bd7bd1;
-    display: block;
+    background: linear-gradient(
+        to right,
+        rgba(189, 123, 209, 0.7),
+        rgba(255, 159, 223, 0.7),
+        rgba(136, 200, 238, 0.7)
+      );
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    margin: 0 120px;
+    border-radius: 0 0 12px 12px;
+    gap: 60px;
 }
 .desc p{
     margin: 0px 120px;
@@ -31,6 +39,8 @@ body *{
     text-align: center;
     font-size: 24px;
     line-height: 30px;
+    color: #fefefe;
+
 }
 
 .grupos{
@@ -38,7 +48,12 @@ body *{
     flex-direction: column;
     margin: 0x 0px;
     width: 100%;
-    background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
+    background: linear-gradient(
+        to right,
+        rgba(189, 123, 209, 0.7),
+        rgba(255, 159, 223, 0.7),
+        rgba(136, 200, 238, 0.7)
+      );
     background-color: #fefefe;
     justify-content: center;
     align-items: center;
@@ -50,6 +65,7 @@ body *{
     position: relative;
   }
   .swiper-slide{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -68,6 +84,8 @@ body *{
 .titulo{
     text-align: center;
     font-size: 32px;
+    color: #fefefe;
+
 }
 
 .item{
@@ -78,6 +96,7 @@ body *{
     align-items: center;
     gap: 10px;
     background-color: none;
+    
 
 }
 .item img{
@@ -86,14 +105,19 @@ body *{
     object-fit: cover;
 }
 .item p{
+
     width: 100%;
     text-align: center;
     align-items: center;
 }
 .posts{
     margin: 120px 120px;
-    background-image: linear-gradient(to right,#bd7bd1,#ff9fdf,#88c8ee);
-    background-color: #bd7bd1;
+    background: linear-gradient(
+        to right,
+        rgba(189, 123, 209, 0.7),
+        rgba(255, 159, 223, 0.7),
+        rgba(136, 200, 238, 0.7)
+      );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,9 +193,13 @@ body *{
 .textoData{
     font-size: 16px;
     opacity: 80%;
+    color: #fefefe;
+
 }
 .textoAutor{
     font-size: 20px;
+    color: #fefefe;
+
 }
 .autor{
     display: flex;
