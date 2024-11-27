@@ -9,12 +9,6 @@ body *{
 }
 .desc{
     padding-bottom: 20px;
-    background: linear-gradient(
-        to right,
-        rgba(189, 123, 209, 0.7),
-        rgba(255, 159, 223, 0.7),
-        rgba(136, 200, 238, 0.7)
-      );
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -111,7 +105,7 @@ body *{
     align-items: center;
 }
 .posts{
-    margin: 120px 120px;
+    margin: 30px 120px;
     background: linear-gradient(
         to right,
         rgba(189, 123, 209, 0.7),
@@ -129,8 +123,7 @@ body *{
 .postG{
     gap: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;    justify-content: center;
     align-items: center;
 }
 
@@ -251,7 +244,6 @@ body *{
         padding: 10px;
         padding-block: 20px;
     }
-   
     .imagem img{
         height: 180px;
     }
@@ -265,6 +257,73 @@ body *{
         width: fit-content;
     }
 }
+@media only screen and (max-width:715px){
+    .texto{
+        font-size: 16px;
+    }
+    .textoAutor{
+        font-size: 14px;
+    }
+    .textoData{
+        font-size: 12px;
+    }
+    .titulo{
+        font-size: 16px;
+    }
+    .desc p{
+        margin: 0px 60px;
+    }
+    .item{
+        width: 80px;
+    }
+    .item p{
+        font-size: 16px;
+    }
+    .botao1{
+        transform: scale(0.8);
+    }
+    .desc{
+        margin: 0 10px;
+        padding: 20px;
+        gap: 12px;
+    }
+   .grupos{
+    margin: 20px 0px;
+   }
+    .conj{
+        padding: 20px;
+    }
+    .posts{
+        margin: 10px;
+        padding: 20px;
+        gap: 12px;
+    }
+    .postG{
+        gap: 30px;
+    }
+    .autor{
+        padding: 6px;
+    }
+    .postLista1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .imagem{
+        width: 240px;
+    }
+    .imagem img{
+        height: 220px;
+    }
+    .imgGrupo{
+        height: 220px;
+    }
+    .item img{
+        width: 80px;
+        height: 120px;
+    }
+}
+
 
 @media only screen and (max-width:540px){
     .texto{
@@ -297,6 +356,11 @@ body *{
    }
     .conj{
         padding: 20px;
+    }
+    .desc{
+        margin: 10px;
+        padding: 20px;
+        gap: 12px;
     }
     .posts{
         margin: 10px;
