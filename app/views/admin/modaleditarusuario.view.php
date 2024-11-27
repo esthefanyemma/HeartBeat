@@ -13,10 +13,11 @@
 <body>
     <div class="modaledit modal" id="editarusuario<?= $user->id ?>">
         <form method="POST" enctype="multipart/form-data" action="/usuarios/editar">
+            <input type="hidden" name="id" value="<?= $user->id ?>">
             <div class="img-entrada">
                 <label>
                     <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
-                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU">
+                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU" required>
                     <img class="imgEdit" src="<?= $user->image ?>" alt="">
                 </label>
             </div>
