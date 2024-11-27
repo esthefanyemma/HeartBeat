@@ -16,8 +16,8 @@
             <div class="img-entrada-CU">
                 <label>
                     <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
-                    <input type="file" name="imagem" class="img-inp-CU">
-                    <div>
+                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU">
+                    <div class="containerProfileImg">
                         <img class="profileImg" src="../../../public/assets/profile-picture-973460_1280.webp" alt="">
                     </div>
                 </label>
@@ -46,7 +46,38 @@
             </div>
         </form>
     </div>
+    <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
     <script src="/public/js/modal.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const painel = document.querySelector('.img-entrada-CU');
+            const inputImagem = painel.querySelector('input[type="file"]');
+            const spanImage = painel.querySelector('.profileImg');
+            const icone = painel.querySelector('.escuro img');
+
+            if (inputImagem) {
+                inputImagem.addEventListener('change', function(e) {
+                    const inputTarget = e.target;
+                    const arquivo = inputTarget.files[0];
+
+                    if (arquivo) {
+                        const reader = new FileReader();
+                        reader.addEventListener('load', function(e) {
+                            const readerTarget = e.target;
+
+                            spanImage.src = readerTarget.result;
+                            icone.style.display = 'none';
+                        });
+
+                        reader.readAsDataURL(arquivo);
+                    } else {
+                        spanImage.src = "../../../public/assets/profile-picture-973460_1280.webp";
+                        icone.style.display = 'block';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
