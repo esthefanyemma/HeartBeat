@@ -103,7 +103,8 @@
 
 #divBusca img {
   width: 25px;
-  padding-left: 10px;
+  padding: 5px;
+  align-items: center;
 }
 
 table {

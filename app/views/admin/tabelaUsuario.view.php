@@ -42,8 +42,8 @@
             <thead>
               <div class="container-busca">
                 <div id="divBusca">
-                  <img src="/public/assets/Vector.png" alt="" />
                   <input type="text" id="txtBusca" placeholder="Pesquisar" />
+                  <img src="/public/assets/Vector.png" alt="" />
                 </div>
               </div>
               <tr style="border-bottom: 2px solid #bd7bd1">
