@@ -3,12 +3,7 @@
 }
 
 body {
-  background: linear-gradient(
-    to right,
-    rgba(189, 123, 209, 0.7),
-    rgba(255, 159, 223, 0.7),
-    rgba(136, 200, 238, 0.7)
-  );
+  
   margin: 0;
   padding: 0;
   display: flex;
@@ -30,6 +25,12 @@ body {
   padding-right: 100px;
 }
 .containerImage {
+  background: linear-gradient(
+    to right,
+    rgba(189, 123, 209, 0.7),
+    rgba(255, 159, 223, 0.7),
+    rgba(136, 200, 238, 0.7)
+  );
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 6px;
   height: 45%;
@@ -48,6 +49,12 @@ body {
 }
 
 .containerPost {
+  background: linear-gradient(
+    to right,
+    rgba(189, 123, 209, 0.7),
+    rgba(255, 159, 223, 0.7),
+    rgba(136, 200, 238, 0.7)
+  );
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 6px;
   width: 50%;
@@ -83,6 +90,7 @@ body {
 }
 
 .containerPost h1 {
+  color: white;
   font-size: 28px;
   font-family: "fredoka", sans-serif;
   font-weight: 450;
@@ -92,6 +100,7 @@ body {
 }
 
 .container p {
+  color: white;
   font-size: 16px;
   font-family: "fredoka", sans-serif;
   overflow-y: auto;
@@ -100,12 +109,14 @@ body {
 }
 
 .containerAutor .autor h3 {
+  color: white;
   font-size: 16px;
   transform: translate(0px, 10px);
   margin: 0;
 }
 
 .autor h2 {
+  color: white;
   font-size: 12px;
   font-weight: 300;
   font-family: "fredoka", sans-serif;
