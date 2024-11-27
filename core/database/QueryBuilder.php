@@ -78,18 +78,31 @@ class QueryBuilder
         }
     }
 
-    public function join($author)
-    {
-        $sql = sprintf('SELECT users.name FROM users INNER JOIN posts ON %s = users.id',
-                        $author
-        );
+    // public function join($author)
+    // {
+    //     $sql = sprintf('SELECT users.name FROM users INNER JOIN posts ON %s = users.id',
+    //                     $author
+    //     );
 
-        echo "Estou na join";
+    //     echo "Estou na join";
 
+    //     try {
+    //         $stmt = $this->pdo->prepare($sql);
+    //         $stmt->execute();
+    //         echo $stmt->fetchAll(PDO::FETCH_CLASS);
+    //         return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+    //     } catch (Exception $e) {
+    //         die($e->getMessage());
+    //     }
+    // }
+
+    public function selectOne($table, $id){
+        $sql = "select * from {$table} where id= {$id}";
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
-            echo $stmt->fetchAll(PDO::FETCH_CLASS);
+
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
         } catch (Exception $e) {

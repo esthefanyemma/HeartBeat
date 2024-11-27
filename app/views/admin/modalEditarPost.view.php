@@ -22,10 +22,10 @@
                         ?></p>
                     </div>
                     <label for="adcImageEditar" class="imagemEditar" >
-                        <i class="iconeImgEditar fa-solid fa-image"></i>
-                        <span class="spanImageEditar">Adicione uma imagem</span>
+                        <div class="escuroPost"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
+                        <img class="imgPost" src="<?= $post->image ?>" alt="">
                     </label>
-                    <input type="file" accept="image/*" id="adcImageEditar" autofocus name="image">
+                    <input type="file" accept="image/*" id="adcImageEditar" autofocus name="imagem">
                     <input type="text" name="title" id="adcTituloEditar" placeholder="<?= $post->title?>" required>
                     <textarea id="adcDescEditar" placeholder='<?= $post->description?>' name="description" required></textarea>
                     <input type="hidden" value="<?= $post->id?>" name="id">
@@ -40,4 +40,34 @@
     </div>
 </body>
     <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const painel = document.querySelector('.imagemEditar');
+            const inputImagem = document.querySelector('#adcImageEditar');
+            const spanImage = painel.querySelector('.imgPost');
+            const icone = painel.querySelector('.escuroPost img');
+
+            if (inputImagem) {
+                inputImagem.addEventListener('change', function(e) {
+                    const inputTarget = e.target;
+                    const arquivo = inputTarget.files[0];
+
+                    if (arquivo) {
+                        const reader = new FileReader();
+                        reader.addEventListener('load', function(e) {
+                            const readerTarget = e.target;
+
+                            spanImage.src = readerTarget.result;
+                            icone.style.display = 'none';
+                        });
+
+                        reader.readAsDataURL(arquivo);
+                    } else {
+                        spanImage.src = "../../../public/assets/profile-picture-973460_1280.webp";
+                        icone.style.display = 'block';
+                    }
+                });
+            }
+        });
+    </script>
 </html>

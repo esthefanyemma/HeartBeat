@@ -40,13 +40,14 @@ class PostController
     public function edit()
     {
         $id= $_POST['id'];
-        $users = App::get('database')->selectOne('users', $id);
+        $post = App::get('database')->selectOne('posts', $id);
         $temporario = $_FILES['imagem']['tmp_name'];
         $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
         $destinoimagem = "public/imagens/";
         move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
         $caminhodaimagem = "public/imagens/" . $nomeimagem;
-        $imagem_rota = "public/imagens/" . basename($users->image);
+        die(var_dump($caminhodaimagem));
+        $imagem_rota = "public/imagens/" . basename($post->image);
         unlink($imagem_rota);
 
         $parametros = [
@@ -56,7 +57,7 @@ class PostController
             'description' =>$_POST['description'],
         ];
 
-        $id = $_POST['id'];
+        // $id = $_POST['id'];
 
         App::get('database')->update('posts', $parametros, $id);
 
