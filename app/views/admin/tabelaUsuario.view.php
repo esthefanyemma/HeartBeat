@@ -26,9 +26,7 @@
     <?php endforeach; ?>
 
     <div class="overlay" onclick="fechaModal()"></div>
-    <main>
-      <div class="mainTableUser">
-
+    <main class="mainTabelaUser">
         <div class="apresentacao">
           <div class="logo">
             <img src="../../../public/assets/Logo.png" alt="Logo HeartBeats" />
@@ -92,7 +90,6 @@
             </div>
           </div>
         </main>
-      </div>
   </body>
   <script
     src="https://kit.fontawesome.com/654def639f.js"

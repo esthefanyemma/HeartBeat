@@ -2,26 +2,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
-body {
+/* body {
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
-}
-
-.disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
+} */
 
 .mainTabelaUser {
   padding: 30px;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .apresentacao {
@@ -33,11 +34,17 @@ body {
   );
   display: flex;
   align-items: center;
-  gap: 550px;
+  justify-content: space-between;
+  /* gap: 550px; */
+  /* gap: 45%; */
   border-radius: 12px;
   padding: 20px 60px 20px 60px;
   font-family: "Itim", sans-serif;
   font-weight: 100;
+}
+
+.apresentacao h2{ 
+  font-size: 24px;
 }
 
 .logo {
@@ -158,24 +165,24 @@ tbody tr:hover {
 
 .btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100px;
-  height: 35px;
-  background-color: #f2f2f2;
-  border-radius: 12px;
-  border: none;
-  color: #f09fd5;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Itim";
-  transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+    height: 35px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    border: none;
+    color: #f09fd5;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Itim";
 }
 
 .btn p {
   color: #f09fd5;
+  font-size: 20px;
 }
 
 .acoes .editar,
@@ -250,43 +257,40 @@ tbody tr:hover {
 }
 
 @media (max-width: 1200px) {
-  .apresentacao {
-    gap: 300px;
-  }
-  .container-usuario {
-    width: 1000px;
-  }
-
-  .nome {
-    width: 15%;
+  .mainTabelaUser{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
 @media (max-width: 1000px) {
-  .apresentacao {
-    gap: 300px;
-    width: 800px;
-  }
-  .container-usuario {
-    width: 800px;
+  .mainTabelaUser{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  thead tr {
-    display: flex;
-    justify-content: left;
-    gap: 65px;
-  }
-  */ tbody tr {
-    padding-left: 20px;
-    padding-right: 50px;
+}
+
+@media (max-width: 900px){
+  .mainTabelaUser{
+    margin-left: 7%;
+    margin-right: 7%;
   }
 }
 
 @media (max-width: 800px) {
+
+  .mainTabelaUser{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .apresentacao {
-    gap: 100px;
-    width: 700px;
+    /* gap: 100px; */
+    /* width: 600px; */
     font-size: smaller;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .logo img {
@@ -294,27 +298,21 @@ tbody tr:hover {
   }
 
   .apresentacao h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
-  .btnEdit {
+  .btn {
     width: 80px;
     font-size: 15px;
   }
 
   .container-usuario {
-    width: 700px;
+    /* width: 600px; */
+    font-size: 14px;
   }
 
-  thead tr {
-    display: flex;
-    justify-content: left;
-    gap: 35px;
-  }
-
-  tbody tr {
-    padding-left: 10px;
-    padding-right: 10px;
+  #divBusca{
+    width: 25%;
   }
 
   .acoes {
@@ -336,32 +334,10 @@ tbody tr:hover {
   .acoes-tr {
     width: 35%;
   }
-
-  #divBusca {
-    width: 200px;
-  }
+  
 }
 
 @media (max-width: 600px) {
-  tbody tr {
-    padding-left: 0px;
-    padding-right: 0px;
-    gap: 5px;
-  }
-
-  thead th {
-    font-size: 18px;
-  }
-
-  .apresentacao {
-    gap: 200px;
-    width: 550px;
-    padding: 5px;
-  }
-
-  .apresentacao p {
-    font-size: 15px;
-  }
 
   .logo {
     gap: 10px;
@@ -381,19 +357,17 @@ tbody tr:hover {
     font-size: 13px;
   }
 
-  .container-usuario {
-    width: 550px;
-    font-size: 10px;
-  }
-
-  table tbody {
+  .btn p {
     font-size: 15px;
   }
 
-  thead tr {
-    display: flex;
-    justify-content: left;
-    gap: 25px;
+  .container-usuario {
+    /* width: 500px; */
+    font-size: 14px;
+  }
+
+  #divBusca{
+    width: 29%;
   }
 
   .id {
@@ -422,17 +396,13 @@ tbody tr:hover {
     width: 30px;
     height: 20px;
   }
-
-  #divBusca {
-    width: 150px;
-  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .apresentacao {
-    gap: 120px;
-    width: 400px;
-    padding: 5px;
+    /* gap: 150px; */
+    /* width: 410px; */
+    padding: 10px;
   }
 
   .logo {
@@ -447,30 +417,32 @@ tbody tr:hover {
     font-size: 13px;
   }
 
+  .btn {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    gap: 5px;
+  }
+
   .container-usuario {
-    width: 400px;
-  }
-
-  tbody td {
+    /* width: 410px; */
     font-size: 12px;
   }
 
-  thead th {
-    font-size: 12px;
-    gap: 10px;
+  #divBusca{
+    width: 32%;
   }
 
-  .nome {
-    width: 6%;
+  .acoes-tr{
+    gap: 2px;
   }
 
   .acoes .editar,
   .deletar,
   .visualizar {
-    width: 30px;
-    height: 20px;
+    width: 25px;
+    height: 15px;
   }
-
   .button {
     padding: 4px 12px;
   }
@@ -480,10 +452,16 @@ tbody tr:hover {
   }
 }
 
-@media (max-width: 375px) {
+@media(max-width:400px){
+
+  .mainTabelaUser{
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+  }
+
   .apresentacao {
-    gap: 100px;
-    width: 350px;
+    /* gap: 100px; */
+    /* width: 310px; */
     padding: 5px;
   }
 
@@ -492,36 +470,54 @@ tbody tr:hover {
   }
 
   .logo img {
-    width: 40px;
+    width: 45px;
   }
 
   .apresentacao h2 {
-    font-size: 13px;
+    font-size: 10px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
   }
 
   .container-usuario {
-    width: 350px;
+    /* width: 310px; */
+    font-size: 10px;
   }
 
-  tbody td {
+  #divBusca{
+    width: 38%;
+  }
+
+  #txtBusca{
     font-size: 12px;
   }
 
-  thead th {
-    font-size: 12px;
-    gap: 10px;
+  .id{
+    width: 3%;
   }
 
-  .nome {
-    width: 6%;
+  .titulo{
+    width: 18%;
+  }
+
+  .autor{
+    width: 20%;
+  }
+
+  .acoes-tr{
+    gap: 2%;
   }
 
   .acoes .editar,
   .deletar,
   .visualizar {
-    width: 25px;
+    width: 20px;
     height: 15px;
-    gap: 5px;
+    font-size: 10px;
   }
 
   .button {
@@ -530,24 +526,5 @@ tbody tr:hover {
 
   .seta {
     padding: 4px 6px;
-  }
-
-  #txtBusca {
-    font-size: 12px;
-    width: fit-content;
-  }
-}
-
-@media (max-width: 320px) {
-  .apresentacao {
-    width: 300px;
-  }
-  .container-usuario {
-    width: 300px;
-  }
-
-  thead th {
-    font-size: 12px;
-    gap: 10px;
   }
 }
