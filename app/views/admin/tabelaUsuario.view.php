@@ -27,6 +27,8 @@
 
     <div class="overlay" onclick="fechaModal()"></div>
     <main>
+      <div class="mainTableUser">
+
         <div class="apresentacao">
           <div class="logo">
             <img src="../../../public/assets/Logo.png" alt="Logo HeartBeats" />
@@ -55,41 +57,42 @@
             </thead>
             <tbody>
               <?php foreach($users as $user):   ?>
-              <tr>
-                <td class="id"><?=$user->id ?></td>
-                <td class="nome"><?=$user->name ?></td>
-                <td class="email"><?=$user->email ?></td>
-                <td class="acoes-tr">
-                  <div class="acoes">
-                    <div class="visualizar" onclick="abrirModal('verusuario<?= $user->id?>')">
-                      <i class="fa-solid fa-eye"></i>
+                <tr>
+                  <td class="id"><?=$user->id ?></td>
+                  <td class="nome"><?=$user->name ?></td>
+                  <td class="email"><?=$user->email ?></td>
+                  <td class="acoes-tr">
+                    <div class="acoes">
+                      <div class="visualizar" onclick="abrirModal('verusuario<?= $user->id?>')">
+                        <i class="fa-solid fa-eye"></i>
+                      </div>
+                      <div class="editar" onclick="abrirModal('editarusuario<?= $user->id?>')">
+                        <i class="fa-solid fa-pencil"></i>
+                      </div>
+                      <div class="deletar" onclick="abrirModal('deletarusuario<?= $user->id?>')">
+                        <i class="fa-solid fa-trash"></i>
+                      </div>
                     </div>
-                    <div class="editar" onclick="abrirModal('editarusuario<?= $user->id?>')">
-                      <i class="fa-solid fa-pencil"></i>
-                    </div>
-                    <div class="deletar" onclick="abrirModal('deletarusuario<?= $user->id?>')">
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <?php require 'modalDeletarUser.view.php';?>
-              <?php  require 'modaleditarusuario.view.php';?>
-              <?php  require 'visualizarUser.view.php';?>
-              <?php endforeach; ?>
-            </tbody>
-          </table>
-          <div class="paginacao">
-            <a href="?paginacaoNumero=<?= $page - 1?>" class="seta <?= $page <= 1 ? "disabled" : "" ?> ">←</a>
-            <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
-            <span class="page-number <?= $page_number == $page ? "active" : "" ?>"><a class="button"
-            href="?paginacaoNumero=<?= $page_number?>"><?= $page_number ?> </a></span>
-            <?php endfor ?>            
-            <a href="?paginacaoNumero=<?= $page + 1?>" class="seta <?= $page >= $total_pages ? 'disabled' : "" ?> ">→</a>
+                  </td>
+                </tr>
+                <?php require 'modalDeletarUser.view.php';?>
+                <?php  require 'modaleditarusuario.view.php';?>
+                <?php  require 'visualizarUser.view.php';?>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+            <div class="paginacao">
+              <a href="?paginacaoNumero=<?= $page - 1?>" class="seta <?= $page <= 1 ? "disabled" : "" ?> ">←</a>
+              <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
+                <span class="page-number <?= $page_number == $page ? "active" : "" ?>"><a class="button"
+                href="?paginacaoNumero=<?= $page_number?>"><?= $page_number ?> </a></span>
+                <?php endfor ?>            
+                <a href="?paginacaoNumero=<?= $page + 1?>" class="seta <?= $page >= $total_pages ? 'disabled' : "" ?> ">→</a>
+              </div>
+            </div>
           </div>
-        </div>
+        </main>
       </div>
-    </main>
   </body>
   <script
     src="https://kit.fontawesome.com/654def639f.js"
