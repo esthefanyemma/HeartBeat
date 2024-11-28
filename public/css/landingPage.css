@@ -66,6 +66,9 @@ body *{
     gap: 15%;
     padding: 8px;
   }
+  .swiper-button-next, .swiper-button-prev{
+    color: #bd7bd1;
+  }
 .conj{
     display: flex;
     justify-content: center;
@@ -326,7 +329,7 @@ body *{
         gap: 30px;
     }
     .imagem{
-        width: 240px;
+        width: 360px;
     }
     .imagem img{
         height: 220px;
@@ -348,16 +351,16 @@ body *{
 
 @media only screen and (max-width:540px){
     .texto{
-        font-size: 16px;
+        font-size: 18px;
     }
     .textoAutor{
         font-size: 14px;
     }
     .textoData{
-        font-size: 12px;
+        font-size: 14px;
     }
     .titulo{
-        font-size: 16px;
+        font-size: 18px;
     }
     .desc p{
         margin: 0px 60px;
@@ -400,7 +403,7 @@ body *{
         gap: 30px;
     }
     .imagem{
-        width: 240px;
+        width: 320px;
     }
     .imagem img{
         height: 220px;
@@ -423,9 +426,17 @@ body *{
     .swiper-button-next{
         transform: scale(0.8);
     }
+    .botao1 button{
+        transform: scale(1.2);
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width:452px){
+    .titulo{
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
     .imgGrupo{
         height: 50%;
     }
@@ -436,12 +447,16 @@ body *{
         transform: scale(0.5);
     }
     .item img{
-        transform: scale(0.4);
+        transform: scale(0.8);
     }
     .swiper-button-prev{
-        transform: scale(0.6);
+        transform: scale(0.9);
     }
     .swiper-button-next{
-        transform: scale(0.6);
+        transform: scale(0.8);
+    }
+    .botao1 button{
+        transform: scale(1.2);
+        font-size: 24px;
     }
 }
