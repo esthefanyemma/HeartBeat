@@ -22,7 +22,6 @@
                         ?></p>
                     </div>
                     <label for="adcImageEditar<?= $post->id?>" class="imagemEditar" id="imagemEditar<?= $post->id?>">
-                        <!-- <div class="escuroPost"><img src="../../../public/assets/pencil-alt.svg" alt=""></div> -->
                         <img class="imgPost" id="imgPost<?= $post->id?>" src="<?= $post->image ?>" alt="">
                     </label>
                     <input type="file" accept="image/*" id="adcImageEditar<?= $post->id?>" class="adcImageEditar" autofocus name="imagem" onchange="trocaImagem('<?= $post->id?>')">
@@ -45,7 +44,7 @@
             const painel = document.querySelector('#imagemEditar'+id);
             const inputImagem = document.querySelector('#adcImageEditar' +id);
             const spanImage = painel.querySelector('#imgPost'+id);
-            // const icone = painel.querySelector('.escuroPost img');
+
 
             if (inputImagem) {
                  
@@ -57,13 +56,11 @@
                             const readerTarget = e.target;
 
                             spanImage.src = readerTarget.result;
-                            // icone.style.display = 'none';
                         });
 
                         reader.readAsDataURL(arquivo);
                     } else {
                         spanImage.src = "../../../public/assets/profile-picture-973460_1280.webp";
-                        // icone.style.display = 'block';
                     }
                 };
             }

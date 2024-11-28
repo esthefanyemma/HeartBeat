@@ -69,19 +69,11 @@
 
 .imagemEditar{
     background-color: #a4a0a059;
-    /* font-size: 24px;
-    font-family: "Fredoka", sans-serif;
-    color: #bd7bd1; */
     border-radius: 12px;
     width: 70%;
     display: flex;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     margin-left: 25%;
     margin-right: 25%;
-    /* padding-top: 27px;
-    padding-bottom: 27px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
