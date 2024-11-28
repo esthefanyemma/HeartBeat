@@ -21,11 +21,11 @@
                             echo $horario->format('d/m/y H:i');
                         ?></p>
                     </div>
-                    <label for="adcImageEditar" class="imagemEditar" >
+                    <label for="adcImageEditar<?= $post->id?>" class="imagemEditar" id="imagemEditar<?= $post->id?>">
                         <!-- <div class="escuroPost"><img src="../../../public/assets/pencil-alt.svg" alt=""></div> -->
-                        <img class="imgPost" src="<?= $post->image ?>" alt="">
+                        <img class="imgPost" id="imgPost<?= $post->id?>" src="<?= $post->image ?>" alt="">
                     </label>
-                    <input type="file" accept="image/*" id="adcImageEditar" autofocus name="imagem">
+                    <input type="file" accept="image/*" id="adcImageEditar<?= $post->id?>" class="adcImageEditar" autofocus name="imagem" onchange="trocaImagem('<?= $post->id?>')">
                     <input type="text" name="title" id="adcTituloEditar" placeholder="Título da publicação" value="<?= $post->title?>" required>
                     <textarea id="adcDescEditar" placeholder='Descrição da publicação' name="description" required><?= $post->description?></textarea>
                     <input type="hidden" value="<?= $post->id?>" name="id">
@@ -41,16 +41,15 @@
 </body>
     <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const painel = document.querySelector('.imagemEditar');
-            const inputImagem = document.querySelector('#adcImageEditar');
-            const spanImage = painel.querySelector('.imgPost');
+        function trocaImagem(id){
+            const painel = document.querySelector('#imagemEditar'+id);
+            const inputImagem = document.querySelector('#adcImageEditar' +id);
+            const spanImage = painel.querySelector('#imgPost'+id);
             // const icone = painel.querySelector('.escuroPost img');
 
             if (inputImagem) {
-                inputImagem.addEventListener('change', function(e) {
-                    const inputTarget = e.target;
-                    const arquivo = inputTarget.files[0];
+                 
+                    const arquivo = inputImagem.files[0];
 
                     if (arquivo) {
                         const reader = new FileReader();
@@ -66,8 +65,7 @@
                         spanImage.src = "../../../public/assets/profile-picture-973460_1280.webp";
                         // icone.style.display = 'block';
                     }
-                });
+                };
             }
-        });
     </script>
 </html>
