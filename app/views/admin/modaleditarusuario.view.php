@@ -17,8 +17,8 @@
             <div class="img-entrada">
                 <label>
                     <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
-                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU" >
-                    <img class="imgEdit" src="<?= $user->image ?>" alt="">
+                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU" id="img-inp-CU<?= $user->id?>">
+                    <img class="imgEdit" id="imgEdit<?= $user->id?>" src="<?= $user->image ?>" alt="">
                 </label>
             </div>
             <header>
@@ -48,19 +48,18 @@
             </div>
         </form>
     </div>
-    <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
-    <script src="/public/js/modal.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const painel = document.querySelector('.img-entrada');
-            const inputImagem = painel.querySelector('input[type="file"]');
-            const spanImage = painel.querySelector('.imgEdit');
-            const icone = painel.querySelector('.escuro img');
+        function trocaImagem(id){
+            const painel = document.querySelector('#imgEdit'+id);
+            const inputImagem = document.querySelector('#img-inp-CU' +id);
+            const spanImage = painel.querySelector('#imgEdit'+id);
+
 
             if (inputImagem) {
-                inputImagem.addEventListener('change', function(e) {
-                    const inputTarget = e.target;
-                    const arquivo = inputTarget.files[0];
+                 
+                    const arquivo = inputImagem.files[0];
 
                     if (arquivo) {
                         const reader = new FileReader();
@@ -68,18 +67,14 @@
                             const readerTarget = e.target;
 
                             spanImage.src = readerTarget.result;
-                            icone.style.display = 'none';
                         });
 
                         reader.readAsDataURL(arquivo);
                     } else {
                         spanImage.src = "../../../public/assets/profile-picture-973460_1280.webp";
-                        icone.style.display = 'block';
                     }
-                });
+                };
             }
-        });
     </script>
-</body>
 
 </html>
