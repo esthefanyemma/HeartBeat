@@ -56,11 +56,13 @@ class PostController
             'description' =>$_POST['description'],
         ];
 
-        // $id = $_POST['id'];
+        $id = $_POST['id'];
+
 
         App::get('database')->update('posts', $parametros, $id);
 
         header('Location: /posts');
+
     }
 
     public function delete()

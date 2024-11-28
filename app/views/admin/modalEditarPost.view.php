@@ -26,8 +26,8 @@
                         <img class="imgPost" src="<?= $post->image ?>" alt="">
                     </label>
                     <input type="file" accept="image/*" id="adcImageEditar" autofocus name="imagem">
-                    <input type="text" name="title" id="adcTituloEditar" placeholder="<?= $post->title?>" required>
-                    <textarea id="adcDescEditar" placeholder='<?= $post->description?>' name="description" required></textarea>
+                    <input type="text" name="title" id="adcTituloEditar" placeholder="Título da publicação" value="<?= $post->title?>" required>
+                    <textarea id="adcDescEditar" placeholder='Descrição da publicação' name="description" required><?= $post->description?></textarea>
                     <input type="hidden" value="<?= $post->id?>" name="id">
                     <input type="hidden" value="<?= $user->id?>" name="userID">
                     <div class="botoesEditar">
@@ -45,7 +45,7 @@
             const painel = document.querySelector('.imagemEditar');
             const inputImagem = document.querySelector('#adcImageEditar');
             const spanImage = painel.querySelector('.imgPost');
-            const icone = painel.querySelector('.escuroPost img');
+            // const icone = painel.querySelector('.escuroPost img');
 
             if (inputImagem) {
                 inputImagem.addEventListener('change', function(e) {
@@ -58,13 +58,13 @@
                             const readerTarget = e.target;
 
                             spanImage.src = readerTarget.result;
-                            icone.style.display = 'none';
+                            // icone.style.display = 'none';
                         });
 
                         reader.readAsDataURL(arquivo);
                     } else {
                         spanImage.src = "../../../public/assets/profile-picture-973460_1280.webp";
-                        icone.style.display = 'block';
+                        // icone.style.display = 'block';
                     }
                 });
             }
