@@ -17,7 +17,7 @@
             <div class="img-entrada">
                 <label>
                     <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
-                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU" required>
+                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU" >
                     <img class="imgEdit" src="<?= $user->image ?>" alt="">
                 </label>
             </div>
@@ -30,15 +30,15 @@
                 <div class="campodeentrada">
                     <div class="formularios">
                         <label class="nomecampos">Nome:</label>
-                        <input type="text" name="nome" placeholder="Seu nome" value="<?= $user->name ?>" required>
+                        <input type="text" name="nome" placeholder="Seu nome" value="<?= $user->name ?>" >
                     </div>
                     <div class="formularios">
                         <label class="nomecampos">Email:</label>
-                        <input type="email" name="email" placeholder="Seu Email" value="<?= $user->email ?>" required>
+                        <input type="email" name="email" placeholder="Seu Email" value="<?= $user->email ?>" >
                     </div>
                     <div class="formularios">
                         <label class="nomecampos">Senha:</label>
-                        <input type="password" name="senha" placeholder="Senha" value="<?= $user->password ?>" required>
+                        <input type="password" name="senha" placeholder="Senha" value="<?= $user->password ?>" >
                     </div>
                 </div>
                 <div class="btns-edit">
