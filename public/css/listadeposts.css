@@ -148,7 +148,7 @@ body {
 
 .imagem {
   width: 320px;
-  border-radius: 6px;
+  border-radius: 12px;
   background-color: #88c8ee;
   display: flex;
   flex-direction: column;
