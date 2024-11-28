@@ -46,7 +46,6 @@ class PostController
         $destinoimagem = "public/imagens/";
         move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
         $caminhodaimagem = "public/imagens/" . $nomeimagem;
-        die(var_dump($caminhodaimagem));
         $imagem_rota = "public/imagens/" . basename($post->image);
         unlink($imagem_rota);
 

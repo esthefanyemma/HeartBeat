@@ -22,7 +22,7 @@
                         ?></p>
                     </div>
                     <label for="adcImageEditar" class="imagemEditar" >
-                        <div class="escuroPost"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
+                        <!-- <div class="escuroPost"><img src="../../../public/assets/pencil-alt.svg" alt=""></div> -->
                         <img class="imgPost" src="<?= $post->image ?>" alt="">
                     </label>
                     <input type="file" accept="image/*" id="adcImageEditar" autofocus name="imagem">
