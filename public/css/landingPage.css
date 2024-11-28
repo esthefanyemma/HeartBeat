@@ -67,7 +67,7 @@ body *{
     padding: 8px;
   }
   .swiper-button-next, .swiper-button-prev{
-    color: #bd7bd1;
+    color: #f2f2f2;
   }
 .conj{
     display: flex;
@@ -403,7 +403,7 @@ body *{
         gap: 30px;
     }
     .imagem{
-        width: 320px;
+        width: 300px;
     }
     .imagem img{
         height: 220px;
