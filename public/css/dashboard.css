@@ -16,7 +16,12 @@ body{
     display: flex;
     flex-direction: row;
     padding-left: 860px;
-    background-image: linear-gradient(to right, #BD7BD1 0% ,#FF9FDF 52%,#88C8EE 80%);
+    background: linear-gradient(
+        to right,
+        rgba(189, 123, 209, 0.7),
+        rgba(255, 159, 223, 0.7),
+        rgba(136, 200, 238, 0.7)
+      );
     padding: 40px 20px;
     border-radius: 12px;
 }
@@ -38,6 +43,7 @@ body{
 
 .logo-tipo h1{
     font-family: Fredoka, sans-serif; 
+    color: white;
 }
 
 
@@ -46,6 +52,7 @@ a{
     text-align: center;
     transition: 0.2s all;
     cursor: pointer;
+    color: white;
 }
 
 a:hover{
