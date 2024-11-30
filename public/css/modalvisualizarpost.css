@@ -32,10 +32,8 @@
     border-radius: 6px;
     background-color: #f2f2f2;
     z-index: 3;
-    font-family: "Fredoka", sans-serif;
-    /* left: 35%;
-    top: 25%; */
-    
+    font-family: "Fredoka", sans-serif;  
+    word-break: break-all;
 }
 .desc_visualizacao{
     display: flex;
