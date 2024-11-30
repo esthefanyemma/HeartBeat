@@ -38,7 +38,14 @@ body *{
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
 }
+.func i:hover, .func p:hover{
+    background-image: #f09fd5;
+    color: #f09fd5;
+}
+
 .texto{
     padding-left: 12px;
     display: flex;
