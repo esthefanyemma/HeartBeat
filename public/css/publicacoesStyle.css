@@ -405,6 +405,9 @@ body{
     .autor{
       width: 22%;
     }
+    .acoes {
+      gap: 5px;
+    }
 
     .acoes-tr{
       gap: 2px;
@@ -413,7 +416,7 @@ body{
     .acoes .editar,
     .deletar,
     .visualizar {
-      width: 25px;
+      width: 20px;
       height: 15px;
     }
     .button {
