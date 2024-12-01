@@ -38,6 +38,7 @@ footer .redeSocial{
 .redeSocial ul{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #f2f2f2;
     text-decoration: none;
     font-size: 30px;
@@ -69,6 +70,19 @@ footer .infos {
     padding: 1% 5%;
 }
 
+ .meioFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.meioFooter .copyright{
+    padding-left: 42%;
+    color: rgb(55, 55, 55);
+}
+
 .infos ul{
     display: flex;
     justify-content: space-between;
@@ -84,6 +98,8 @@ footer .infos {
     text-decoration: none;
     color: #f2f2f2;
 }
+
+
 
 .infos img{
     height: 80px;
@@ -148,7 +164,7 @@ footer .infos {
     z-index: 2;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 769px){
     .redeSocial {
         width: 100%;
     }
@@ -166,7 +182,7 @@ footer .infos {
     }
 
     .infos li{
-        font-size: 14px;
+        font-size: 20px;
         padding-left: 1%;
         padding-right: 1%;
     }
@@ -184,9 +200,51 @@ footer .infos {
         height: 53px;
     }
 
+    .infos .meioFooter{
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .meioFooter .copyright{
+        font-size: 12px;
+        padding-left: 0;
+    }
+
     .modal{
         width: 60%;
         left: 25%;
         bottom: 7%;
+    }
+}
+
+@media screen and (max-width: 427px){
+    .redeSocial i{
+        font-size: 22px;
+    }
+
+    footer .redeSocial{
+        padding-bottom: 10px;
+    }
+
+    .infos .meioFooter{
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .infos li{
+        font-size: 14px;
+    }
+
+    .meioFooter .copyright{
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .modal .texto{
+        font-size: 10px;
+    }
+
+    .modal .titulo{
+        font-size: 14px;
     }
 }
