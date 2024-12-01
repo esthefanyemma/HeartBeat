@@ -1,10 +1,24 @@
 body{
     padding: 2rem;
-    padding-right: 4rem;
+    padding-right: 2rem;
     padding-top: 40px;
     gap: 60px;
     display: flex;
     flex-direction: column;
+}
+
+.ger-al{
+    align-items: center;
+    background: linear-gradient(
+        to right,
+        rgba(189, 123, 209, 0.7),
+        rgba(255, 159, 223, 0.7),
+        rgba(136, 200, 238, 0.7)
+      ); 
+      padding-left: 860px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    
 }
 
 .logo-tipo img{
@@ -15,15 +29,7 @@ body{
 .cabeçalho{
     display: flex;
     flex-direction: row;
-    padding-left: 860px;
-    background: linear-gradient(
-        to right,
-        rgba(189, 123, 209, 0.7),
-        rgba(255, 159, 223, 0.7),
-        rgba(136, 200, 238, 0.7)
-      );
-    padding: 40px 20px;
-    border-radius: 12px;
+    padding-bottom: 30px;
 }
 
 .material-icons{
@@ -95,9 +101,15 @@ a:hover{
 
 }
 
+@media screen and (max-width:840px) {
+    .logo-tipo{
+        padding-left: 60px;
+    }
+}
+
 @media screen and (max-width:600px) {
     .logo-tipo{
-       padding-left: 60px;
+       padding-left: 40px;
     }
     .logo-tipo h1{
         font-size: 24px;
@@ -113,7 +125,8 @@ a:hover{
     }
 
     .button-logout{
-        font-size: 22px;
+        font-size: 1px;
+        margin-right: 30px;
     }
 
     .cabeçalho{
@@ -142,10 +155,15 @@ a:hover{
      }
 }
 
-@media screen and (max-wisth:350px) {
+@media screen and (max-width:370px) {
    
+    .logo-tipo{
+        padding-left: 25px;
+    }
+
     .divlogout{
         transform: scale(0.7);
+        margin-right: 5px;
     }
     .button-logout{
         margin-right: 10px;
