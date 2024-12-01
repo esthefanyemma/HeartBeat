@@ -34,14 +34,22 @@
               unset($_SESSION['mensagem-erro']);
             ?>
           </div>
+          <div class="textLogin">
+              <p>E-mail:</p>
+          </div>
           <div class="textbox">
             <input type="text" name="email" placeholder="Email" />
           </div>
-          <div class="textbox">
-            <input type="password" name="password" placeholder="Senha" />
+          <div class="textLogin">
+              <p>Senha:</p>
+          </div>
+          <div class="textbox" id="senhaLogin">
+            <input type="password" name="password" placeholder="Senha"/>
+            <i class="fa-solid fa-eye"></i>
           </div>
           <input type="submit" class="btn-entrar" value="Entrar" />
         </form>
       </div>
   </body>
+  <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
 </html>
