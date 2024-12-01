@@ -44,12 +44,21 @@
               <p>Senha:</p>
           </div>
           <div class="textbox" id="senhaLogin">
-            <input type="password" name="password" placeholder="Senha"/>
-            <i class="fa-solid fa-eye"></i>
+            <input type="password" name="password" placeholder="Senha" id="inputSenhaLogin"/>
+            <i class="fa-solid fa-eye" onclick="toggleSenha('inputSenhaLogin')"></i>
           </div>
           <input type="submit" class="btn-entrar" value="Entrar" />
         </form>
       </div>
   </body>
   <script src="https://kit.fontawesome.com/654def639f.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleSenha(idInput){
+      let input = document.getElementById(idInput);
+      if(input.type === 'password')
+        input.type = 'text';
+      else
+        input.type = 'password';
+    }
+  </script>
 </html>
