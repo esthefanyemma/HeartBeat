@@ -36,10 +36,13 @@
                         <label class="nomecampos">Email:</label>
                         <input type="email" name="email" placeholder="Seu Email" value="<?= $user->email ?>" >
                     </div>
-                    <div class="formularios-EU">
-                        <label class="nomecampos">Senha:</label>
-                        <input type="password" name="senha" placeholder="Senha" value="<?= $user->password ?>" >
-                    </div>
+                    <div id="formularioSenha-EU">
+                            <label class="nomecampos-EU">Senha:</label>
+                            <div class="inputSenha-EU">
+                                <input type="password" name="senha" placeholder="***********" required id="input-EU" >
+                                <i class="fa-solid fa-eye" onclick="toggleSenha('input-EU')"></i>
+                            </div>
+                        </div>
                 </div>
                 <div class="btns-edit">
                     <button class="btnEdit" type="submit">Salvar </button>
@@ -74,6 +77,14 @@
                         spanImage.src = "../../../public/assets/profile-picture-973460_1280.webp";
                     }
                 };
+            }
+
+            function toggleSenha(idInput){
+                let input = document.getElementById(idInput);
+                if(input.type === 'password')
+                    input.type = 'text';
+                else
+                    input.type = 'password';
             }
     </script>
 
