@@ -35,9 +35,12 @@
                             <label class="nomecampos-CU">Email:</label>
                             <input type="email" name="email" placeholder="heartbeats@exemplo.com" required>
                         </div>
-                        <div class="formularios-CU">
+                        <div id="formularioSenha-CU">
                             <label class="nomecampos-CU">Senha:</label>
-                            <input type="password" name="senha" placeholder="***********" required>
+                            <div class="inputSenha-CU">
+                                <input type="password" name="senha" placeholder="***********" required id="input-CU" >
+                                <i class="fa-solid fa-eye" onclick="toggleSenha('input-CU')"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="btns-edit-CU">
@@ -78,6 +81,14 @@
                     });
                 }
             });
+
+            function toggleSenha(idInput){
+                let input = document.getElementById(idInput);
+                if(input.type === 'password')
+                    input.type = 'text';
+                else
+                    input.type = 'password';
+            }
         </script>
     </main>
 </body>
