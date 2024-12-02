@@ -9,7 +9,7 @@
     align-items: center;
 } */
 
-header{
+.header-VU{
     background-color: #BD7BD1;
     width: 552px;
     height: 100px;
@@ -96,23 +96,23 @@ header{
     margin-right: 50px;
 }
 
-h2{
+.info-usuario h2{
     font-size: 32px;
     font-family: Itim,sans-serif;
     
 }
 
-p{
+.info-usuario p{
     font-family: Itim,sans-serif;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.68);
 }
 
-.campodeentrada{
+.campodeentrada-EU{
     margin-top: 40px;
 }
 
-.formularios{
+.formularios-EU{
     margin: 20px;
 }
 
@@ -122,18 +122,16 @@ p{
     font-family: Inter,sans-serif;
 }
 
-input{
+.formularios-EU input{
     width: 400px;
     height: 40px;
     border-radius: 8px;
     border: 4px solid #BD7BD1;
     font-size: 22px;
     outline: none;
-}
-
-input:hover{
     cursor: pointer;
 }
+
 
 .btnEdit{
     width: 110px;
@@ -148,7 +146,7 @@ input:hover{
     border: none;
 }
 
-button:hover{
+.btnEdit:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
@@ -163,7 +161,7 @@ button:hover{
 }
 
 
-label{
+.formularios-EU label{
     overflow: hidden;
 }
 
@@ -177,7 +175,7 @@ label{
     height: 600px;
     }
 
-    header{
+    .header-VU{
         width: 470px;
         height: 100px;
     }
@@ -188,22 +186,22 @@ label{
         margin-top: 50px;
     }
 
-    h2{
+    .info-usuario h2{
         font-size: 28px;   
     }
     
-    p{
+    .info-usuario p{
         font-size: 20px;
     }
 
-    input{
+    .formularios-EU input{
         width: 300px;
         height: 30px;
         font-size: 20px;
         border: 3px solid #BD7BD1;
     }
 
-    button{
+    .btnEdit{
         width: 105px;
         height: 36px;
         font-size: 20px;
@@ -213,7 +211,7 @@ label{
         font-size: 18px;
     }
 
-    .campodeentrada{
+    .campodeentrada-EU{
         margin-left: 20px;
     }
 
@@ -228,7 +226,7 @@ label{
     height: 520px;
     }
 
-    header{
+    .header-VU{
         width: 400px;
         height: 100px;
     }
@@ -239,22 +237,22 @@ label{
         margin-top: 60px;
     }
 
-    h2{
+    .info-usuario h2{
         font-size: 28px;   
     }
     
-    p{
+    .info-usuario p{
         font-size: 20px;
     }
 
-    input{
+    .formularios-EU input{
         width: 250px;
         height: 25px;
         font-size: 18px;
         border: 2px solid #BD7BD1;
     }
 
-    button{
+    .btnEdit{
         width: 100px;
         height: 25px;
         font-size: 18px;
@@ -264,7 +262,7 @@ label{
         font-size: 16px;
     }
 
-    .campodeentrada{
+    .campodeentrada-EU{
         margin-left: 5px;
     }
 
@@ -291,7 +289,7 @@ label{
     margin-top: 200px;
     }
 
-    header{
+    .header-VU{
         width: 320px;
         height: 80px;
     }
@@ -303,22 +301,22 @@ label{
         margin-left: 20px;
     }
 
-    h2{
+    .info-usuario h2{
         font-size: 22px;   
     }
     
-    p{
+    .info-usuario p{
         font-size: 18px;
     }
 
-    input{
+    .formularios-EU input{
         width: 210px;
         height: 22px;
         font-size: 14px;
         border: 2px solid #BD7BD1;
     }
 
-    button{
+    .btnEdit{
         width: 80px;
         height: 25px;
         font-size: 18px;
@@ -328,7 +326,7 @@ label{
         font-size: 16px;
     }
 
-    .campodeentrada{
+    .campodeentrada-EU{
         margin-top: 15px;
         margin-left: 1px;
     }
@@ -349,7 +347,7 @@ label{
     height: 410px;
     }
 
-    header{
+    .header-VU{
         width: 280px;
         height: 70px;
     }
@@ -361,22 +359,22 @@ label{
         margin-left: 20px;
     }
 
-    h2{
+    .info-usuario h2{
         font-size: 20px;   
     }
     
-    p{
+    .info-usuario p{
         font-size: 16px;
     }
 
-    input{
+    .formularios-EU input{
         width: 200px;
         height: 20px;
         font-size: 14px;
         border: 2px solid #BD7BD1;
     }
 
-    button{
+    .btnEdit{
         width: 70px;
         height: 25px;
         font-size: 14px;
@@ -386,7 +384,7 @@ label{
         font-size: 16px;
     }
 
-    .campodeentrada{
+    .campodeentrada-EU{
         margin-top: 15px;
         margin-left: 1px;
     }
@@ -412,7 +410,7 @@ label{
     height: 450px;
     }
 
-    header{
+    .header-VU{
         width: 250px;
         height: 70px;
     }
@@ -424,22 +422,22 @@ label{
         margin-left: 20px;
     }
 
-    h2{
+    .info-usuario h2{
         font-size: 20px;   
     }
     
-    p{
+    .info-usuario p{
         font-size: 16px;
     }
 
-    input{
+    .formularios-EU input{
         width: 180px;
         height: 20px;
         font-size: 14px;
         border: 2px solid #BD7BD1;
     }
 
-    button{
+    .btnEdit{
         width: 70px;
         height: 25px;
         font-size: 14px;
@@ -449,7 +447,7 @@ label{
         font-size: 16px;
     }
 
-    /* .campodeentrada{
+    /* .campodeentrada-EU{
         margin-top: 15px;
         margin-left: 1px;
     } */

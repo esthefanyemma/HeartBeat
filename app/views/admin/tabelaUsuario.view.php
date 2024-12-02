@@ -28,11 +28,11 @@
     <div class="overlay" onclick="fechaModal()"></div>
     <main class="mainTabelaUser">
         <div class="apresentacao">
-          <div class="logo">
+          <div class="logo-TU">
             <img src="../../../public/assets/Logo.png" alt="Logo HeartBeats" />
             <h2>Tabela de Usuarios</h2>
           </div>
-          <div class="btn" onclick="abrirModal('criarUser')">
+          <div class="btn-TU" onclick="abrirModal('criarUser')">
             <p>Criar</p>
             <i class="fa-solid fa-plus"></i>
           </div>
@@ -47,27 +47,27 @@
                 </div>
               </div>
               <tr style="border-bottom: 2px solid #bd7bd1">
-                <th class="id">ID</th>
-                <th class="nome">Nome</th>
-                <th class="email">Email</th>
+                <th class="id-TU">ID</th>
+                <th class="nome-TU">Nome</th>
+                <th class="email-TU">Email</th>
                 <th class="acoes-tr">Ações</th>
               </tr>
             </thead>
             <tbody>
               <?php foreach($users as $user):   ?>
                 <tr>
-                  <td class="id"><?=$user->id ?></td>
-                  <td class="nome"><?=$user->name ?></td>
-                  <td class="email"><?=$user->email ?></td>
+                  <td class="id-TU"><?=$user->id ?></td>
+                  <td class="nome-TU"><?=$user->name ?></td>
+                  <td class="email-TU"><?=$user->email ?></td>
                   <td class="acoes-tr">
                     <div class="acoes">
-                      <div class="visualizar" onclick="abrirModal('verusuario<?= $user->id?>')">
+                      <div class="visualizar-TU" onclick="abrirModal('verusuario<?= $user->id?>')">
                         <i class="fa-solid fa-eye"></i>
                       </div>
-                      <div class="editar" onclick="abrirModal('editarusuario<?= $user->id?>')">
+                      <div class="editar-TU" onclick="abrirModal('editarusuario<?= $user->id?>')">
                         <i class="fa-solid fa-pencil"></i>
                       </div>
-                      <div class="deletar" onclick="abrirModal('deletarusuario<?= $user->id?>')">
+                      <div class="deletar-TU" onclick="abrirModal('deletarusuario<?= $user->id?>')">
                         <i class="fa-solid fa-trash"></i>
                       </div>
                     </div>

@@ -21,22 +21,22 @@
                     <img class="imgEdit" id="imgEdit<?= $user->id?>" src="<?= $user->image ?>" alt="">
                 </label>
             </div>
-            <header>
+            <header class="header-VU">
 
             </header>
             <div class="info-usuario">
                 <h2><?= $user->name ?></h2>
                 <p><?= $user->email ?></p>
-                <div class="campodeentrada">
-                    <div class="formularios">
+                <div class="campodeentrada-EU">
+                    <div class="formularios-EU">
                         <label class="nomecampos">Nome:</label>
                         <input type="text" name="nome" placeholder="Seu nome" value="<?= $user->name ?>" >
                     </div>
-                    <div class="formularios">
+                    <div class="formularios-EU">
                         <label class="nomecampos">Email:</label>
                         <input type="email" name="email" placeholder="Seu Email" value="<?= $user->email ?>" >
                     </div>
-                    <div class="formularios">
+                    <div class="formularios-EU">
                         <label class="nomecampos">Senha:</label>
                         <input type="password" name="senha" placeholder="Senha" value="<?= $user->password ?>" >
                     </div>

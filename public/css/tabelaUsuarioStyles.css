@@ -46,14 +46,14 @@
   font-size: 24px;
 }
 
-.logo {
+.logo-TU {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
 
-.logo img {
+.logo-TU img {
   width: 100px;
 }
 
@@ -131,19 +131,19 @@ tbody tr:hover {
   background-color: #af508f4a;
 }
 
-.id {
+.id-TU {
   width: 5%;
   display: flex;
   justify-content: center;
 }
 
-.nome {
+.nome-TU {
   width: 20%;
   display: flex;
   justify-content: center;
 }
 
-.email {
+.email-TU {
   width: 20%;
   display: flex;
   justify-content: center;
@@ -163,7 +163,7 @@ tbody tr:hover {
   gap: 30px;
 }
 
-.btn {
+.btn-TU {
   display: flex;
     justify-content: center;
     align-items: center;
@@ -180,14 +180,14 @@ tbody tr:hover {
     font-family: "Itim";
 }
 
-.btn p {
+.btn-TU p {
   color: #f09fd5;
   font-size: 20px;
 }
 
-.acoes .editar,
-.deletar,
-.visualizar {
+.acoes .editar-TU,
+.deletar-TU,
+.visualizar-TU {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,17 +242,17 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn-TU:hover {
   transform: scale(1.1);
 }
 
-.acoes .deletar:hover {
+.acoes .deletar-TU:hover {
   transform: scale(1.1);
 }
-.acoes .editar:hover {
+.acoes .editar-TU:hover {
   transform: scale(1.1);
 }
-.acoes .visualizar:hover {
+.acoes .visualizar-TU:hover {
   transform: scale(1.1);
 }
 
@@ -293,7 +293,7 @@ tbody tr:hover {
     padding-right: 20px;
   }
 
-  .logo img {
+  .logo-TU img {
     width: 100px;
   }
 
@@ -301,7 +301,7 @@ tbody tr:hover {
     font-size: 17px;
   }
 
-  .btn {
+  .btn-TU {
     width: 80px;
     font-size: 15px;
   }
@@ -319,15 +319,15 @@ tbody tr:hover {
     gap: 10px;
   }
 
-  .id {
+  .id-TU {
     width: 8%;
   }
 
-  .nome {
+  .nome-TU {
     width: 12%;
   }
 
-  .email {
+  .email-TU {
     width: 27%;
   }
 
@@ -339,11 +339,11 @@ tbody tr:hover {
 
 @media (max-width: 600px) {
 
-  .logo {
+  .logo-TU {
     gap: 10px;
   }
 
-  .logo img {
+  .logo-TU img {
     width: 70px;
   }
 
@@ -351,13 +351,13 @@ tbody tr:hover {
     font-size: 15px;
   }
 
-  .btn {
+  .btn-TU {
     width: 60px;
     height: 30px;
     font-size: 13px;
   }
 
-  .btn p {
+  .btn-TU p {
     font-size: 15px;
   }
 
@@ -370,7 +370,7 @@ tbody tr:hover {
     width: 29%;
   }
 
-  .id {
+  .id-TU {
     width: 4%;
   }
 
@@ -378,11 +378,11 @@ tbody tr:hover {
     gap: 10px;
   }
 
-  .nome {
+  .nome-TU {
     width: 12%;
   }
 
-  .email {
+  .email-TU {
     width: 32%;
   }
 
@@ -390,9 +390,9 @@ tbody tr:hover {
     width: 35%;
   }
 
-  .acoes .editar,
-  .deletar,
-  .visualizar {
+  .acoes .editar-TU,
+  .deletar-TU,
+  .visualizar-TU {
     width: 30px;
     height: 20px;
   }
@@ -405,11 +405,11 @@ tbody tr:hover {
     padding: 10px;
   }
 
-  .logo {
+  .logo-TU {
     gap: 10px;
   }
 
-  .logo img {
+  .logo-TU img {
     width: 50px;
   }
 
@@ -417,7 +417,7 @@ tbody tr:hover {
     font-size: 13px;
   }
 
-  .btn {
+  .btn-TU {
     width: 50px;
     height: 25px;
     font-size: 12px;
@@ -437,9 +437,9 @@ tbody tr:hover {
     gap: 2px;
   }
 
-  .acoes .editar,
-  .deletar,
-  .visualizar {
+  .acoes .editar-TU,
+  .deletar-TU,
+  .visualizar-TU {
     width: 25px;
     height: 15px;
   }
@@ -465,11 +465,11 @@ tbody tr:hover {
     padding: 5px;
   }
 
-  .logo {
+  .logo-TU {
     gap: 10px;
   }
 
-  .logo img {
+  .logo-TU img {
     width: 45px;
   }
 
@@ -477,7 +477,7 @@ tbody tr:hover {
     font-size: 10px;
   }
 
-  .btn {
+  .btn-TU {
     width: 50px;
     height: 20px;
     font-size: 10px;
@@ -496,7 +496,7 @@ tbody tr:hover {
     font-size: 12px;
   }
 
-  .id{
+  .id-TU{
     width: 3%;
   }
 
@@ -512,9 +512,9 @@ tbody tr:hover {
     gap: 2%;
   }
 
-  .acoes .editar,
-  .deletar,
-  .visualizar {
+  .acoes .editar-TU,
+  .deletar-TU,
+  .visualizar-TU {
     width: 20px;
     height: 15px;
     font-size: 10px;
