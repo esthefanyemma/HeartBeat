@@ -14,7 +14,9 @@ body{
     height: 100%;
     background-color: black;
     opacity: 30%;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: none;
     z-index: 2;
   }
@@ -233,7 +235,7 @@ body{
     color: white;
     margin: 4px;
   }
-  button:hover {
+  .button:hover {
     background-color: #f763c6;
     cursor: pointer;
   }
