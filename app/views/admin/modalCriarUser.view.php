@@ -29,6 +29,7 @@
                     <div class="campoEntrada-CU">
                         <div class="formularios-CU">
                             <label class="nomecampos-CU">Nome:</label>
+                            <p id="error" style="color: red; display: none;">*O campo não pode conter apenas números!</p>
                             <input type="text" name="nome" placeholder="HeartBeats Da Silva" required>
                         </div>
                         <div class="formularios-CU">
@@ -89,6 +90,22 @@
                 else
                     input.type = 'password';
             }
+
+            const form = document.getElementById('criarUser');
+            const inputNome = form.querySelector('input[name="nome"]');
+            const mensagemErro = document.getElementById('error');
+            
+            form.addEventListener('submit', (event) => {
+                const value = inputNome.value.trim();
+                if(/^ \d + $/.test(value)){
+                    event.preventDefault();
+                    mensagemErro.style.display = 'block';
+                }
+                else{
+                    mensagemErro.style.display = 'none';
+                }
+            });
+
         </script>
     </main>
 </body>
