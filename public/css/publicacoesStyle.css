@@ -79,6 +79,7 @@ body{
     justify-content: space-between;
     padding: 20px 0;        
     width: 100%;
+    max-width: 100%;
     border-bottom: 1px solid #bd7bd1;
   }
 
@@ -130,6 +131,11 @@ body{
       width: 100%;
   }
 
+  tbody{
+    width: 100%;
+    overflow: auto;
+  }
+
    .id{
     width: 5%;
     display: flex;
@@ -140,6 +146,8 @@ body{
     width: 23%;
     display: flex;
     justify-content: center;
+    word-break: break-all;
+    /* overflow: hidden; */
   } 
 
   .autor{
