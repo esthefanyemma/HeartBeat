@@ -20,7 +20,8 @@
   </head>
   <body>
     <div class="overlay" onclick="fechaModal()"></div>
-    <main class="mainTabela">
+    <main>
+      <div class="mainTabela">
         <div class="apresentacao">
           <div class="logo">
             <img src="/public/assets/HeartBeats_img.png" alt="Logo HeartBeats" />
@@ -55,7 +56,7 @@
               <?php foreach($posts as $post):?>
               <tr>
                 <td class="id"><?php echo $post->id; ?></td>
-                <td class="titulo"><?php echo $post->title; ?></td>
+                <td class="titulo"><p><?php echo $post->title; ?></p></td>
                 <td class="autor"><?php foreach($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td> <!-- Tem que ver melhor isso aqui para aparecer o nome do autor e não o id -->         
                 <!-- <td class="data"><?php echo $post->date; ?></td> -->
                 <td class="data"><?php 
@@ -98,11 +99,9 @@
           </div>
         </div>
       </div>
+      </div>
     </main>
   </body>
-  <script
-    src="https://kit.fontawesome.com/654def639f.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://kit.fontawesome.com/654def639f.js"crossorigin="anonymous"></script>
   <script src="/public/js/modal.js"></script>
 </html>

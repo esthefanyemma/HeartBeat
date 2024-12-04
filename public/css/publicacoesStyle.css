@@ -65,6 +65,9 @@ body{
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    /* width: 200px; */
   }
   
   table {
@@ -133,7 +136,6 @@ body{
 
   tbody{
     width: 100%;
-    overflow: auto;
   }
 
    .id{
@@ -146,9 +148,15 @@ body{
     width: 23%;
     display: flex;
     justify-content: center;
-    word-break: break-all;
-    /* overflow: hidden; */
-  } 
+    /* word-break: break-all; */
+    
+  }
+  
+  .titulo p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+  }
 
   .autor{
     width: 20%;
@@ -488,6 +496,7 @@ body{
 
     .titulo{
       width: 18%;
+      overflow: hidden;
     }
 
     .autor{
