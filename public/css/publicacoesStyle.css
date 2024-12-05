@@ -26,6 +26,10 @@ body{
     opacity: 0.5;
   }
 
+  .active .button{
+    background-color: #f763c6;
+  }
+
   .mainTabela{
     padding: 30px;
     margin-left: 10%;
