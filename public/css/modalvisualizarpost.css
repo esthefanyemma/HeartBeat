@@ -3,7 +3,6 @@
 /* *{
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     box-sizing: border-box;
 } */
 /* body{
@@ -17,10 +16,6 @@
 /* body *{
     font-family: "Fredoka", sans-serif;
 } */
-=======
-}
-
->>>>>>> CRUDposts
 .texto{
     font-size: 16px;
     width: auto;
