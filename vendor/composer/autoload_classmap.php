@@ -6,12 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-<<<<<<< HEAD
-    'App\\Controllers\\ExampleController' => $baseDir . '/app/Controllers/ExampleController.php',
-    'App\\Controllers\\UserController' => $baseDir . '/app/Controllers/UserController.php',
-=======
     'App\\Controllers\\PostController' => $baseDir . '/app/Controllers/PostController.php',
->>>>>>> CRUDposts
+    'App\\Controllers\\UserController' => $baseDir . '/app/Controllers/UserController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
@@ -21,8 +17,6 @@ return array(
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-<<<<<<< HEAD
-=======
     'PHPMailer\\PHPMailer\\DSNConfigurator' => $vendorDir . '/phpmailer/phpmailer/src/DSNConfigurator.php',
     'PHPMailer\\PHPMailer\\Exception' => $vendorDir . '/phpmailer/phpmailer/src/Exception.php',
     'PHPMailer\\PHPMailer\\OAuth' => $vendorDir . '/phpmailer/phpmailer/src/OAuth.php',
@@ -78,5 +72,4 @@ return array(
     'PHPMailer\\Test\\Security\\DenialOfServiceVectorsTest' => $vendorDir . '/phpmailer/phpmailer/test/Security/DenialOfServiceVectorsTest.php',
     'PHPMailer\\Test\\SendTestCase' => $vendorDir . '/phpmailer/phpmailer/test/SendTestCase.php',
     'PHPMailer\\Test\\TestCase' => $vendorDir . '/phpmailer/phpmailer/test/TestCase.php',
->>>>>>> CRUDposts
 );
