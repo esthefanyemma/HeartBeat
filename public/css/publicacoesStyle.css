@@ -131,11 +131,16 @@ body{
   thead tr {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
   }
 
   tbody{
     width: 100%;
+  }
+
+  tbody tr{
+    align-items: center;
   }
 
    .id{
@@ -148,15 +153,15 @@ body{
     width: 23%;
     display: flex;
     justify-content: center;
-    /* word-break: break-all; */
+    word-break: break-all;
     
   }
   
-  .titulo p{
+  /* .titulo p{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; 
-  }
+  } */
 
   .autor{
     width: 20%;
