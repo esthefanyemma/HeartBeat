@@ -5,7 +5,7 @@ body{
     margin: 0;
 }
 
-header {
+.navbarHeader {
     background-color: #bd7bd1;
     display: flex;
     justify-content: space-between;
@@ -13,18 +13,18 @@ header {
     width: 100%;
 }
 
-header .logo{
+.navbarHeader .logo{
     display: flex;
     align-items: center;
     margin-left: 7%;
 }
 
-header .logo #marca{
+.navbarHeader .logo #marca{
     height: 90px;
     margin-right: 50px;
 }
 
-header .logo #escrito{
+.navbarHeader .logo #escrito{
     height: 60px;
 }
 
@@ -75,9 +75,18 @@ nav ul #login a{
     display: none;
 }
 
-@media screen and (max-width: 767px) {
-    header .logo #escrito {
-        display: none;
+@media screen and (max-width: 769px) {
+    .navbarHeader .logo #escrito {
+        width: 90%;
+    }
+
+    .navbarHeader .logo{
+        order: 2;
+        padding-right: 5%;
+    }
+
+    .navbarHeader{
+        padding-left: 3%;
     }
 
     nav li{
@@ -87,11 +96,14 @@ nav ul #login a{
 
     nav li.tresBarras {
         display: flex;
+        order: 1;
+        /* margin-left: 5%; */
     }
 
-    header .logo #marca{
-        height: 70px;
-        padding: 5px;
+    .navbarHeader .logo #marca{
+        /* height: 70px;
+        padding: 5px; */
+        display: none;
     }
 
     .modalNav{
@@ -102,7 +114,7 @@ nav ul #login a{
         font-size: 24px;
         position: absolute;
         height: 100%;
-        right: 0;
+        left: 0;
         top: 0;
         padding: 10px;
         padding-top: 20px;

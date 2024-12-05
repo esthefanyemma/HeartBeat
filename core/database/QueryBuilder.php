@@ -31,20 +31,34 @@ class QueryBuilder
         }
     }
 
+<<<<<<< HEAD
     public function criar($parametros){
         $sql = sprintf('INSERT INTO USERS (%s) VALUES (%s) ', implode(', ', array_keys($parametros)), ':' . implode(', :' , array_keys($parametros)) );
+=======
+    public function insert($table, $parametros)
+    {
+         $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)', 
+             $table,
+             implode(', ', array_keys($parametros)),
+             ':'.implode(', :', array_keys($parametros))
+         );
+>>>>>>> CRUDposts
 
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute($parametros);
+<<<<<<< HEAD
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
+=======
+>>>>>>> CRUDposts
         } catch (Exception $e) {
             die($e->getMessage());
         }
     }
 
+<<<<<<< HEAD
     public function atualizar($table, $id, $parametros){
         $sql = sprintf ('UPDATE %s SET %s WHERE id = %s',
         $table,
@@ -61,29 +75,56 @@ class QueryBuilder
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
+=======
+    public function update($table, $parametros, $id)
+    {
+         $sql = sprintf('UPDATE %s SET %s WHERE id = %s;', 
+             $table,
+             implode(',', array_map(function($param){
+                return $param . '=:'. $param;
+             }, array_keys($parametros))),
+             $id
+         );
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parametros);
+>>>>>>> CRUDposts
         } catch (Exception $e) {
             die($e->getMessage());
         }
 
     }
+<<<<<<< HEAD
     
 
     public function deletar($table, $id){
             $sql = sprintf ('DELETE FROM %s WHERE %s',
             $table,
             'id = :id'
+=======
+
+    public function delete($table, $id){
+        $sql = sprintf('DELETE FROM %s WHERE %s',
+                $table,
+                'id = :id'
+>>>>>>> CRUDposts
         );
 
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute(compact('id'));
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> CRUDposts
         } catch (Exception $e) {
             die($e->getMessage());
         }
     }
 
+<<<<<<< HEAD
     public function countAll($table)
     {
         $sql = "select COUNT(*) from {$table}";
@@ -98,6 +139,26 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+=======
+    // public function join($author)
+    // {
+    //     $sql = sprintf('SELECT users.name FROM users INNER JOIN posts ON %s = users.id',
+    //                     $author
+    //     );
+
+    //     echo "Estou na join";
+
+    //     try {
+    //         $stmt = $this->pdo->prepare($sql);
+    //         $stmt->execute();
+    //         echo $stmt->fetchAll(PDO::FETCH_CLASS);
+    //         return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+    //     } catch (Exception $e) {
+    //         die($e->getMessage());
+    //     }
+    // }
+>>>>>>> CRUDposts
 
     public function selectOne($table, $id){
         $sql = "select * from {$table} where id= {$id}";
@@ -111,5 +172,8 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> CRUDposts
 }

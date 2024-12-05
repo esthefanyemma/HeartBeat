@@ -4,12 +4,27 @@
     margin: 0;
     box-sizing: border-box;
   }
-  
-  body {
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
+
+body{
+  background-color: #f2f2f2;
+}
+
+  .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+  }
+
+  .mainTabela{
     padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .apresentacao {
@@ -21,7 +36,9 @@
     );
     display: flex;
     align-items: center;
-    gap: 550px;
+    justify-content: space-between;
+    /* gap: 550px; */
+    /* gap: 45%; */
     border-radius: 12px;
     padding: 20px 60px 20px 60px;
     font-family: "Itim", sans-serif;
@@ -48,6 +65,9 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    /* width: 200px; */
   }
   
   table {
@@ -62,6 +82,7 @@
     justify-content: space-between;
     padding: 20px 0;        
     width: 100%;
+    max-width: 100%;
     border-bottom: 1px solid #bd7bd1;
   }
 
@@ -71,7 +92,8 @@
 
   .container-busca {
     display: flex;
-    justify-content: left;
+    justify-content: right;
+    padding-right: 40px;
     align-items: center;
     width: 100%;
     margin-left: 5%;
@@ -87,7 +109,7 @@
     align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     position: relative;
-    z-index: 2;
+    z-index: 1;
     color: #bd7bd1;
   }
 
@@ -109,7 +131,16 @@
   thead tr {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
+  }
+
+  tbody{
+    width: 100%;
+  }
+
+  tbody tr{
+    align-items: center;
   }
 
    .id{
@@ -122,7 +153,15 @@
     width: 23%;
     display: flex;
     justify-content: center;
-  } 
+    word-break: break-all;
+    
+  }
+  
+  /* .titulo p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+  } */
 
   .autor{
     width: 20%;
@@ -217,35 +256,53 @@
     color: white;
     margin: 4px;
   }
-  button:hover {
+  .button:hover {
     background-color: #f763c6;
     cursor: pointer;
   }
   
   @media (max-width: 1200px) {
-    .apresentacao {
-      gap: 400px;
+    .mainTabela{
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    .container-usuario {
-      width: 1000px;
+    .container-busca {
+      padding-right: 40px;
     }
   }
   
   @media (max-width: 1000px) {
-    .apresentacao {
-      gap: 300px;
-      width: 800px;
+    .mainTabela{
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    .container-usuario {
-      width: 800px;
+
+  }
+
+  @media (max-width: 900px){
+    .mainTabela{
+      margin-left: 7%;
+      margin-right: 7%;
     }
+    .container-busca {
+      padding-right: 50px;
+    }
+  
   }
   
   @media (max-width: 800px) {
+
+    .mainTabela{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
     .apresentacao {
-      gap: 100px;
-      width: 600px;
+      /* gap: 100px; */
+      /* width: 600px; */
       font-size: smaller;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   
     .logo img {
@@ -262,12 +319,15 @@
     }
   
     .container-usuario {
-      width: 600px;
+      /* width: 600px; */
       font-size: 14px;
     }
 
     #divBuscaPubli{
       width: 25%;
+    }
+    .container-busca {
+      padding-right: 30px;
     }
     
     .acoes{
@@ -284,11 +344,6 @@
   }
   
   @media (max-width: 600px) {
-    .apresentacao {
-      gap: 80px;
-      width: 500px;
-      padding: 5px;
-    }
   
     .logo {
       gap: 10px;
@@ -309,8 +364,11 @@
     }
   
     .container-usuario {
-      width: 500px;
+      /* width: 500px; */
       font-size: 14px;
+    }
+    .container-busca {
+      padding-right: 35px;
     }
 
     #divBuscaPubli{
@@ -331,9 +389,9 @@
   
   @media (max-width: 500px) {
     .apresentacao {
-      gap: 150px;
-      width: 410px;
-      padding: 5px;
+      /* gap: 150px; */
+      /* width: 410px; */
+      padding: 10px;
     }
   
     .logo {
@@ -352,19 +410,26 @@
       width: 50px;
       height: 25px;
       font-size: 12px;
+      gap: 5px;
     }
   
     .container-usuario {
-      width: 410px;
+      /* width: 410px; */
       font-size: 12px;
     }
 
     #divBuscaPubli{
       width: 32%;
     }
+    .container-busca {
+      padding-right: 15px;
+    }
 
     .autor{
       width: 22%;
+    }
+    .acoes {
+      gap: 5px;
     }
 
     .acoes-tr{
@@ -374,7 +439,7 @@
     .acoes .editar,
     .deletar,
     .visualizar {
-      width: 25px;
+      width: 20px;
       height: 15px;
     }
     .button {
@@ -387,9 +452,15 @@
   }
 
   @media(max-width:400px){
+
+    .mainTabela{
+      margin-left: 0.1%;
+      margin-right: 0.1%;
+    }
+
     .apresentacao {
-      gap: 100px;
-      width: 310px;
+      /* gap: 100px; */
+      /* width: 310px; */
       padding: 5px;
     }
   
@@ -398,21 +469,21 @@
     }
   
     .logo img {
-      width: 50px;
+      width: 45px;
     }
   
     .apresentacao h2 {
-      font-size: 13px;
+      font-size: 10px;
     }
   
     .btn {
-      width: 60px;
-      height: 25px;
-      font-size: 12px;
+      width: 50px;
+      height: 20px;
+      font-size: 10px;
     }
   
     .container-usuario {
-      width: 310px;
+      /* width: 310px; */
       font-size: 10px;
     }
 
@@ -430,6 +501,7 @@
 
     .titulo{
       width: 18%;
+      overflow: hidden;
     }
 
     .autor{
@@ -454,5 +526,8 @@
   
     .seta {
       padding: 4px 6px;
+    }
+    .container-busca {
+      padding-right: 18px;
     }
   }

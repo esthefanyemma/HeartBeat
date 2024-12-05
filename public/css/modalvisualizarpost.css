@@ -3,6 +3,7 @@
 /* *{
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     box-sizing: border-box;
 } */
 /* body{
@@ -16,10 +17,19 @@
 /* body *{
     font-family: "Fredoka", sans-serif;
 } */
+=======
+}
+
+>>>>>>> CRUDposts
 .texto{
     font-size: 16px;
+    width: auto;
+    height: auto;
+    max-height: 90px;
+    overflow: auto;
+
 }
-.titulo{
+.tituloVP{
     font-size: 32px;
     font-family: "Itim", cursive;
     font-weight: 700 ;
@@ -30,18 +40,22 @@
 }
 .tituloPost{
     font-size: 24px;
+    white-space: normal;
 }
 
 .modal_visualizarPost{
-    display: flex;
+    display: none;
     flex-direction: column;
+    position: absolute;
     justify-content: center;
     width: 28%;
     height:  fit-content;
     gap: 12px;
     border-radius: 6px;
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
     z-index: 3;
+    font-family: "Fredoka", sans-serif;  
+    word-break: break-all;
 }
 .desc_visualizacao{
     display: flex;
@@ -52,13 +66,23 @@
     justify-content: space-between;
     padding: 12px;
     border-radius: 6px 6px 0px 0px;
-
+    margin-bottom: 15px;
 }
+
+.desc_visualizacao i{
+    cursor: pointer;
+}
+
+.desc_visualizacao i:hover{
+    transform: scale(1.05);
+}
+
 .esct_autor_data{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 40px;
+    margin-bottom: 15px;
 }
 .imagem_post{
     display: flex;
@@ -88,7 +112,7 @@
     .texto{
         font-size: 14px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 24px;
     }
     .tituloPost{
@@ -108,7 +132,7 @@
     .texto{
         font-size: 12px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 24px;
     }
     .tituloPost{
@@ -128,7 +152,7 @@
     .texto{
         font-size: 10px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 20px;
     }
     .tituloPost{
@@ -147,7 +171,7 @@
     .texto{
         font-size: 11px;
     }
-    .titulo{
+    .tituloVP{
         font-size: 18px;
     }
     .tituloPost{
@@ -156,6 +180,7 @@
     .modal_visualizarPost{
         gap: 10px;
     }
+    
     .imagem_post img{
         width: 120px;
         height: 80px;

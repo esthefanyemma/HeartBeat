@@ -1,6 +1,7 @@
 /* *{
     padding: 0;
     margin: 0;
+<<<<<<< HEAD
     box-sizing: border-box;
 } */
 /* body{
@@ -26,21 +27,30 @@
 .criar{
     width: fit-content;
     height: fit-content;
+=======
+>>>>>>> CRUDposts
 }
 
+.modaldp{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    /* width: 28%;
+    left: 35%;
+    top: 25%; */
+}
 
 .modal2{
     display: flex;
     flex-direction: column;
-    background-color: #f0f0f0;
-    position: absolute;
-    border-radius: 12px;
+    height: fit-content;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    font-family: "Fredoka", sans-serif;
     padding: 20px;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    z-index: 3;
-
 }
 .cencelarTexto{
     width: 100%;
@@ -50,14 +60,14 @@
     text-align: center;
  }
 
-.botoes{
+.botoesdp{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     gap: 30px;    
 }
-.botoes button{
+.botoesdp button{
     padding: 4px 18px 4px 18px;
     border-radius: 12px;
     color: #f0f0f0;
@@ -65,7 +75,7 @@
     border: none;
     transition: all 0.2s;
 }
-.botoes button:hover{
+.botoesdp button:hover{
     transform: scale(1.05);
 }
 
@@ -77,37 +87,58 @@
     .cancelarTexto{
         font-size: 20px;
     }
-    .botoes button{
+    .botoesdp button{
         font-size: 24px;
     }
-    .modal2{
+    .modaldp{
         transform: scale(0.8);
+        width: 50%;
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .modaldp{
+        width: 60%;
+        left: 25%;
     }
 }
 
 
 @media only screen and (max-width:650px){
 
-    .modal2{
+    .modaldp{
         transform: scale(0.7);
+        width: 70%;
+        left: 16%;
     }
     .cancelarTexto{
         font-size: 20px;
     }
-    .botoes button{
+    .botoesdp button{
         font-size: 20px;
     }
 
 } 
-@media only screen and (max-width:450px){
 
-    .modal2{
+@media only screen and (max-width: 500px){
+    .modaldp{
+        width: 80%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width:400px){
+
+    .modaldp{
         transform: scale(0.5);
+        width: 100%;
+        left: 5%;
     }
     .cancelarTexto{
         font-size: 20px;
     }
-    .botoes button{
+    .botoesdp button{
         font-size: 20px;
     }
 

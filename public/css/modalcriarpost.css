@@ -17,7 +17,7 @@
 }
 
 .modalCriarPost{
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     height: fit-content;
@@ -26,7 +26,7 @@
     z-index: 3;
     border-radius: 6px;
     left: 35%;
-    top: 25%;
+    top: 17%;
     font-family: "Fredoka", sans-serif;
 }   
 
@@ -53,6 +53,10 @@
     align-items: center;
 }
 
+.infosFixas{
+    color: black;
+}
+
 .infosFixas, .imagemCriar, #adcTitulo, #adcDesc, .botoesCriar {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -62,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 38%;
+    gap: 30%;
     width: 100%;
 }
 
@@ -77,19 +81,28 @@
     color: #bd7bd1;
     border-radius: 12px;
     width: 70%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 25%;
     margin-right: 25%;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    /* padding-top: 27px;
+    padding-bottom: 27px; */
     transition: 0.2s ease;
+    cursor: pointer;
+    max-height: 200px;
 }
 
 .imagemCriar:hover{
     background-color: hsla(0, 2%, 64%, 0.5);
+}
+
+.imgCaixa{
+    width: 100%;
+    height: 100%;
 }
 
 .conteudoCriar #adcTitulo{
@@ -119,7 +132,9 @@
 }
 
 .botoesCriar button{
-    padding: 12px;
+    /* padding: 12px; */
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 12px;
     color: #f2f2f2;
     background-color: #bd7bd1;
@@ -127,6 +142,10 @@
     border: none;
     transition: all 0.2s;
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: fit-content; */
 }
 
 .botoesCriar button:hover{
@@ -158,9 +177,9 @@
     }
 }
 
-@media only screen and (max-width: 800px){
-    .modalCriarPost{
-        width: 46%;
+@media screen and (max-width: 800px){
+    body .modalCriarPost{
+        width: 45%;
         left: 30%;
     }
 }
@@ -193,6 +212,22 @@
 
     .conteudoCriar button{
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    body .modalCriarPost{
+        width: 70%;
+        left: 15%;
+    }
+
+    .botoesCriar button{
+        font-size: 10px;
+        width: 30%;
+    }
+
+    .tituloModalCriar{
+        font-size: 10px;
     }
 }
 
