@@ -90,7 +90,7 @@ a:hover{
     display: block;
     padding: 12px 12px;
     width: fit-content;
-    
+    cursor: pointer;
 }
 
 .diminuir{

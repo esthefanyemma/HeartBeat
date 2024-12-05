@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +13,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 .login-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 800px;
-  height: 398px;
-  padding-bottom: 40px;
+  padding-bottom: 3%;
   padding-top: 40px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 12px;
+  font-family: "Fredoka", serif;
 }
 
 .login-box img {
@@ -30,6 +34,11 @@ body {
   gap: 10px;
   padding-right: 18px;
   padding-left: 18px;
+}
+
+.mensagem-erro{
+  margin-bottom: 2%;
+  color: rgb(190, 38, 38);
 }
 
 form {
@@ -41,38 +50,72 @@ form {
   height: 318px;
 }
 
-.textbox input {
-  width: 444px;
+.textLogin{
+  position: relative;
+  right: 37%;
+  padding-bottom: 10px;
+}
+
+.textbox{
+  padding: 6px 12px;
+  width: 87%;
   height: 45px;
   background-color: #f2f2f2;
   border-radius: 12px;
   border: 1px solid #f2f2f2;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
-.textbox input::placeholder {
-  font-size: large;
-  padding-left: 10px;
+.textbox input {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
 }
 
-.btn {
+#senhaLogin i{
+  cursor: pointer;
+  color: #ae58c9;
+  margin-left: 1%;
+  transition: 0.2s;
+}
+
+#senhaLogin i:hover{
+  transform: scale(1.1);
+}
+
+.textbox input:focus-visible{
+  outline: none;
+}
+
+.btn-entrar {
   width: 126px;
   height: 40px;
   background-color: #f2f2f2;
   border-radius: 12px;
   border: none;
-  color: #c44ce8;
+  color: #ae58c9;
   font-size: 28px;
   margin-top: 10px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Itim";
+  font-family: "Itim",serif;
+  transition: 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+.btn-entrar:hover{
+  transform: scale(1.05);
 }
 
 h1 {
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 3%;
   font-family: "Fredoka";
 }
 
@@ -84,10 +127,9 @@ h1 {
   .login-box {
     flex-direction: column;
     width: 80%;
-    height: 60%;
+    padding-bottom: 2%;
   }
   h1{
-    margin-bottom: 40px;
     font-size: 28px;
   }
 }
@@ -102,29 +144,22 @@ h1 {
     width: 100%;
   }
 
-  .textbox input {
-    width: 300px;
-  }
-  .btn {
+  .btn-entrar {
     width: 100px;
   }
 }
 
 @media (max-width: 400px) {
-
-    *{
-        box-sizing: content-box;
-    }
-
-    .login-box {
-        width: 80%;
-        height: 55%;
-        padding-bottom: 0;
-    }
+  .login-box {
+      width: 80%;
+      padding-bottom: 0;
+      font-size: 12px;
+  }
 
   .login-box img {
-    width: 150px;
+    width: 140px;
     height: 140px;
+    padding: 0;
   }
 
   form{
@@ -132,27 +167,30 @@ h1 {
   }
 
   .textbox input {
-    width: 250px;
+    font-size: 12px;
   }
+  
+  .textbox input::placeholder{
+    font-size: medium;
+  }
+
 
   h1{
     font-size: 24px;
   }
 
-  .btn {
+  .btn-entrar {
     width: 80px;
     font-size: 20px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
 
-    .login-box {
-        width: 80%;
-        height: 50%;
-        padding-bottom: 0;
-    }
-
+  .login-box {
+      width: 80%;
+      padding-bottom: 0;
+  }
 
   .login-box img {
     width: 130px;
@@ -163,15 +201,11 @@ h1 {
     width: 100%;
   }
 
-  .textbox input {
-    width: 200px;
-  }
-
   h1{
     font-size: 20px;
   }
 
-  .btn {
+  .btn-entrar {
     width: 70px;
     font-size: 18px;
   }

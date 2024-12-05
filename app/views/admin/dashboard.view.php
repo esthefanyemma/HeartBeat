@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['id'])){
+        header('Location: /login');
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,24 +21,25 @@
 </head>
 
 <body>
-    <div class="ger-al">
-        <div class="cabeçalho">
-            <div class="logo-tipo">
-                <img src="/public/assets/logo2.png" alt="logo do blog"> 
-                    <h1>DASHBOARD</h1>
-            </div>
-            <div class="divlogout">
-                <a class="button-logout">
+    <div class="cabeçalho">
+        <div class="logo-tipo">
+            <img src="/public/assets/logo2.png" alt="logo do blog"> 
+                <h1>DASHBOARD</h1>
+        </div>
+        <div class="divlogout">
+            <form action="/logout" method="POST">
+                <button class="button-logout" type="submit">
                     <span class="material-icons">
                     logout
-                    </span></a>
-            </div>
+                    </span>
+                </button>
+            </form>    
         </div>
-        <div class="diminuir">
-            <div class="botoes-superiores">
-                <a>Tabela de <br>Posts</a> 
-                    <a>Tabela de <br>Usuários</a>
-            </div>
+    </div>
+    <div class="diminuir">
+        <div class="botoes-superiores">
+            <a>Tabela de <br>Posts</a> 
+                <a>Tabela de <br>Usuários</a>
         </div>
     </div>
 
