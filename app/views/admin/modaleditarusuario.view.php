@@ -17,7 +17,7 @@
             <div class="img-entrada">
                 <label>
                     <div class="escuro"><img src="../../../public/assets/pencil-alt.svg" alt=""></div>
-                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU" id="img-inp-CU<?= $user->id?>">
+                    <input type="file" accept="image/*" name="imagem" class="img-inp-CU" id="img-inp-CU<?= $user->id?>" required>
                     <img class="imgEdit" id="imgEdit<?= $user->id?>" src="<?= $user->image ?>" alt="">
                 </label>
             </div>

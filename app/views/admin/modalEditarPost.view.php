@@ -24,7 +24,7 @@
                     <label for="adcImageEditar<?= $post->id?>" class="imagemEditar" id="imagemEditar<?= $post->id?>">
                         <img class="imgPost" id="imgPost<?= $post->id?>" src="<?= $post->image ?>" alt="" value="<?= $post->image?>">
                     </label>
-                    <input type="file" accept="image/*" id="adcImageEditar<?= $post->id?>" class="adcImageEditar" autofocus name="imagem" onchange="trocaImagem('<?= $post->id?>')">
+                    <input type="file" accept="image/*" id="adcImageEditar<?= $post->id?>" class="adcImageEditar" autofocus name="imagem" onchange="trocaImagem('<?= $post->id?>')" required>
                     <input type="text" name="title" id="adcTituloEditar" placeholder="Título da publicação" value="<?= $post->title?>" required>
                     <textarea id="adcDescEditar" placeholder='Descrição da publicação' name="description" required><?= $post->description?></textarea>
                     <input type="hidden" value="<?= $post->id?>" name="id">
