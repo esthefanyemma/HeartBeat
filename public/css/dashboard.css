@@ -7,7 +7,7 @@ body{
     flex-direction: column;
 }
 
-.ger-al{
+.cabeçalho{
     align-items: center;
     background: linear-gradient(
         to right,
