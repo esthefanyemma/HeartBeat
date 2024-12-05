@@ -53,6 +53,7 @@
   justify-content: center;
   align-items: center;
   margin: 4px;
+  
 }
 .button {
   padding-top: 8px;
@@ -64,6 +65,7 @@
   border: #f09fd5;
   color: white;
   box-shadow: 0px 0px 0px #000000;
+  font-size: 20px;
 }
 .seta {
   padding-top: 4px;
@@ -291,6 +293,10 @@ body {
 
   #divBusca {
     height: 32px;
+  }
+
+  .button{
+    font-size: 14px;
   }
 }
 
