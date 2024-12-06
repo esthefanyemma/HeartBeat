@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <?php require 'navbar.html'?>
     <div class="posts">
       <div class="postG">
         <div class="topo">
@@ -122,5 +123,7 @@
         </div>
       </div>
     </div>
+
+    <?php require 'footer.html'?>
   </body>
 </html>

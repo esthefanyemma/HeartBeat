@@ -14,7 +14,7 @@
 <body>
 
     
-
+   <?php require 'navbar.html'?> 
 
     <div class="posts">
         <div class="desc">
@@ -150,6 +150,8 @@
             <button>VER MAIS</button>
         </div>
     </div>
+
+    <?php require'footer.html'?>
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

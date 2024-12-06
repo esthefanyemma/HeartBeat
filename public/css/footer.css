@@ -7,7 +7,7 @@ body{
 }
 
 footer{
-    position: absolute; 
+    /* position: absolute;  */
     bottom: 0;   
     font-family: "Itim", cursive;
     box-sizing: border-box;

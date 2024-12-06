@@ -6,6 +6,7 @@ const fundo =  document.querySelector('.tela');
 function openModal(idModal){
     modal.style.display = "flex";
     fundo.style.display = "flex";
+    console.log("Entrou")
 
     if(idModal === 'missao'){  
         titulo.innerHTML = "Missão";
