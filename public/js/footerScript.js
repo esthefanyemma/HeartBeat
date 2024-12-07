@@ -1,11 +1,12 @@
-const modal = document.querySelector('.modal');
-const titulo = modal.querySelector(".titulo > h1");
+const modal = document.querySelector('.modalFooter');
+const titulo = modal.querySelector(".tituloModalFooter > h1");
 const texto = modal.querySelector("p");
-const fundo =  document.querySelector('.tela');
+const fundoFooter =  document.querySelector('.tela');
+// console.log("Entrou")
 
 function openModal(idModal){
-    modal.style.display = "flex";
-    fundo.style.display = "flex";
+    modal.style.display = "block";
+    fundoFooter.style.display = "flex";
     console.log("Entrou")
 
     if(idModal === 'missao'){  
@@ -28,7 +29,7 @@ function openModal(idModal){
 
 function closeModal(){
     modal.style.display = "none";
-    fundo.style.display = "none";
+    fundoFooter.style.display = "none";
 }
 
 document.addEventListener('mousedown',(e)=>{
