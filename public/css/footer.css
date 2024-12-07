@@ -126,7 +126,7 @@ footer .infos {
     /* width: 400px; */
     width: 30%;
     background-color: #f2f2f2;
-    z-index: 3;
+    z-index: 4;
     border-radius: 12px;
     bottom: 10%;
     left: 38%;
@@ -168,7 +168,7 @@ footer .infos {
     opacity: 30%;
     position: fixed;
     display: none;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
 }

@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <?php require 'navbar.html'?>
     <main class="mainPostIndividual">
       <div class="containerTitlePage">
         <h1>Post Individual</h1>
@@ -57,5 +58,6 @@
         </div>
       </div>
     </main>
+    <?php require 'footer.html'?>
   </body>
 </html>

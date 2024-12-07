@@ -15,4 +15,11 @@ class SiteController{
     {
         return view('site/listadeposts');
     }
+
+    public function mostraPostIndividual()
+    {
+        return view('site/postIndividual');
+    }
+
+
 }
