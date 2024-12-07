@@ -25,11 +25,6 @@ class PostController
          if($inicio > $rows_count){
              return redirect('admin/posts');
          }
-        // $users = App::get('database')->selectAll('users', $inicio, $itensPage);
-        // $total_pages = ceil($rows_count / $itensPage);
-
-        // return view('admin/tabelaUsuario',compact('users','page', 'total_pages') );
-
 
         $total_pages = ceil($rows_count / $itensPage);
 

@@ -86,8 +86,6 @@
                  <?php endforeach ?>
                  <?php require(__DIR__ . '/../admin/modalDeletarPost.view.php'); ?>
 
-
-
                </tr>
              <?php endforeach; ?>
            </tbody>
