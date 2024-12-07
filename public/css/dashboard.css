@@ -7,7 +7,7 @@ body{
     flex-direction: column;
 }
 
-.cabeçalho{
+.ger-al{
     align-items: center;
     background: linear-gradient(
         to right,
@@ -34,6 +34,7 @@ body{
 
 .material-icons{
     transform: scale(1);
+    color: white;
 }
 
 .logo-tipo{
@@ -53,16 +54,16 @@ body{
 }
 
 
-.diminuir a{
+a{
     box-shadow: 1px 1px 10px #000000;
     text-align: center;
+    text-decoration: none;
     transition: 0.2s all;
     cursor: pointer;
     color: white;
-    text-decoration: none;
 }
 
-.diminuir a:hover{
+a:hover{
     transform: scale(1.05);
 }
 
@@ -91,7 +92,8 @@ body{
     display: block;
     padding: 12px 12px;
     width: fit-content;
-    cursor: pointer;
+    border: none;
+    
 }
 
 .diminuir{
