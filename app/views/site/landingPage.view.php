@@ -147,7 +147,7 @@
             
         </div>
         <div class="botao1">
-            <button>VER MAIS</button>
+            <button><a href="./listaposts">VER MAIS</a></button>
         </div>
     </div>
 

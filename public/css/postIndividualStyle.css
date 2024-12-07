@@ -6,9 +6,6 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .containerTitlePage{
@@ -139,11 +136,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-  body {
-    display: flex;
-    justify-content: center;
-  }
-
   .container {
     flex-direction: column;
     height: fit-content;

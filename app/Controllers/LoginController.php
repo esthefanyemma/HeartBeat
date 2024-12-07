@@ -50,7 +50,7 @@ class LoginController
         session_start();
         session_unset();
         session_destroy();
-        header('Location: /login');
+        header('Location: /');
     }
 
 }

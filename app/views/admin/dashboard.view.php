@@ -38,8 +38,8 @@
     </div>
     <div class="diminuir">
         <div class="botoes-superiores">
-            <a>Tabela de <br>Posts</a> 
-                <a>Tabela de <br>Usuários</a>
+            <a href="/posts">Tabela de <br>Posts</a> 
+            <a href="/usuarios">Tabela de <br>Usuários</a>
         </div>
     </div>
 

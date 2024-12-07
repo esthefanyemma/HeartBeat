@@ -171,8 +171,8 @@ body *{
 
 }
 .botao1 button{
-    background-color: #fefefe;
-    color: #bd7bd1;
+    font-family: "Itim", cursive;
+    background-color: #fefefe; 
     font-size: 16px;
     padding: 10px;
     border-radius: 12px;
@@ -180,6 +180,12 @@ body *{
     outline: none;
     transition: all 0.2s;
 }
+
+.botao1 a{
+    text-decoration: none;
+    color: #bd7bd1;
+}
+
 .botao1 button:hover{
     transform: scale(1.05);
 }
