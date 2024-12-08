@@ -54,7 +54,7 @@ body{
 }
 
 
-a{
+.botoes-superiores a{
     box-shadow: 1px 1px 10px #000000;
     text-align: center;
     text-decoration: none;
@@ -63,7 +63,7 @@ a{
     color: white;
 }
 
-a:hover{
+.botoes-superiores a:hover{
     transform: scale(1.05);
 }
 
@@ -93,6 +93,7 @@ a:hover{
     padding: 12px 12px;
     width: fit-content;
     border: none;
+    cursor: pointer;
     
 }
 

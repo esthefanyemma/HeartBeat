@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DASHBOARD</title>
+    <title>HeartBeats | Dashboard</title>
     <link rel="stylesheet" href="/public/css/dashboard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap">
