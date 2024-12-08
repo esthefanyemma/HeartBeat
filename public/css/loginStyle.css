@@ -16,6 +16,25 @@ body {
   
 }
 
+.fechaLogin{
+  font-size: 24px;
+  position: fixed;
+  top: 5%;
+  left: 97%;
+  transition: 0.2s;
+}
+
+.fechaLogin a{
+  color: #f2f2f2;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.fechaLogin:hover{
+  transform: scale(1.1);
+}
+
 .login-box {
   display: flex;
   align-items: center;
@@ -120,6 +139,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .fechaLogin{
+    top: 2%;
+    left: 97%;
+  }
+
   .login-box img {
     width: 220px;
     height: 180px;
@@ -135,6 +159,11 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .fechaLogin{
+    top: 2%;
+    left: 95%;
+  }
+
   .login-box img {
     width: 200px;
     height: 160px;
@@ -150,6 +179,11 @@ h1 {
 }
 
 @media (max-width: 400px) {
+  .fechaLogin{
+    top: 2%;
+    left: 92%;
+  }
+
   .login-box {
       width: 80%;
       padding-bottom: 0;

@@ -19,6 +19,9 @@
     />
   </head>
   <body>
+      <div class="fechaLogin">
+        <a href="/"><i class="fa-solid fa-xmark"></i></a>
+      </div>
       <div class="login-box">
         <div class="logo-login">
           <img src="../../../public/assets/heartBeats-logo-com-nome.png" alt="Logo Heartbeats"/>
