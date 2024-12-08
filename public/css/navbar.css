@@ -7,6 +7,7 @@ body{
 
 .navbarHeader {
     background-color: #bd7bd1;
+    /* background-color: rgba(189, 123, 209, 0.7); */
     display: flex;
     justify-content: space-between;
     align-items: center;
