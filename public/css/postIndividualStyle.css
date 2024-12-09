@@ -6,9 +6,9 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .containerTitlePage{
@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 30px;
   margin-bottom: 120px;
   padding-left: 100px;
   padding-right: 100px;
@@ -62,6 +62,7 @@ body {
 
 .containerImage img {
     width: 100%;
+    max-width: 450px;
   display: flex;
   align-items: center;
   border-radius: 12px;
@@ -82,6 +83,7 @@ body {
   box-sizing: border-box;
   flex-direction: column;
   padding: 20px 50px;
+  overflow: hidden;
 }
 
 .containerAutor {
@@ -91,12 +93,19 @@ body {
   gap: 10px;
 }
 
+.userProfile {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 .elipse {
   width: 45px;
   height: 45px;
   background-color: #f2f2f2;
   border-radius: 50%;
 }
+
 
 .autor {
   width: 90px;
@@ -110,6 +119,7 @@ body {
 
 .containerPost h1 {
   font-size: 28px;
+  line-break: anywhere;
   font-family: "fredoka", sans-serif;
   font-weight: 450;
   display: flex;
@@ -127,22 +137,20 @@ body {
 
 .containerAutor .autor h3 {
   font-size: 16px;
+  width: 200px;
   transform: translate(0px, 10px);
   margin: 0;
 }
 
 .autor h2 {
   font-size: 12px;
+  width: 200px;
   font-weight: 300;
   font-family: "fredoka", sans-serif;
   word-wrap: break-word;
 }
 
 @media (max-width: 1024px) {
-  body {
-    display: flex;
-    justify-content: center;
-  }
 
   .container {
     flex-direction: column;
