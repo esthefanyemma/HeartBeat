@@ -1,6 +1,7 @@
 <?php
   $postObject = $post[0];
   $userObject = $user[0];
+  // die(var_dump($userObject))
 ?>
 
 <!DOCTYPE html>

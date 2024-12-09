@@ -32,7 +32,7 @@
           <div class="imagem">
             <img
               class="imgGrupo"
-              src="<?php foreach ($users as $user): ?><?= $post->image?><?php endforeach ?>"
+              src="<?= $post->image?>" alt="Imagem da publicação"
               alt="" />
             <div class="texto">
               <p><?php echo $post->title; ?></p>
