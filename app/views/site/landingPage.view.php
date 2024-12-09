@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,7 +147,7 @@
             
         </div>
         <div class="botao1">
-            <button>VER MAIS</button>
+            <button><a href="./listaposts">VER MAIS</a></button>
         </div>
     </div>
 

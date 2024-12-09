@@ -46,4 +46,11 @@ class SiteController{
         $user = App::get('database')->selectOne('users', $post[0]->author);  
         return view('site/postIndividual', compact('post','user'));
     }
+
+    public function mostraPostIndividual()
+    {
+        return view('site/postIndividual');
+    }
+
+
 }

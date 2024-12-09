@@ -83,6 +83,10 @@ footer .infos {
     color: rgb(55, 55, 55);
 }
 
+.meioFooter a{
+    cursor: pointer;
+}
+
 .infos ul{
     display: flex;
     justify-content: space-between;
@@ -114,22 +118,21 @@ footer .infos {
 
 /* Modais */
 
-.modal{
+.modalFooter{
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     height: fit-content;
     /* width: 400px; */
     width: 30%;
     background-color: #f2f2f2;
-    z-index: 3;
+    z-index: 4;
     border-radius: 12px;
     bottom: 10%;
     left: 38%;
-
 }
 
-.modal .titulo{
+.modalFooter .tituloModalFooter{
     background-color: #bd7bd1;
     display: flex;
     justify-content: center;
@@ -142,11 +145,15 @@ footer .infos {
     border-top-right-radius: 12px;
 }
 
-.titulo h1{
+.modalFooter .textoModalFooter{
+    color: black;
+}
+
+.tituloModalFooter h1{
     margin: 0;
 }
 
-.modal .texto{
+.modalFooter .textoModalFooter{
     font-family: "Fredoka", sans-serif;
     font-size: 16px;
     padding: 0 10px;
@@ -159,9 +166,11 @@ footer .infos {
     height: 100%;
     background-color: black;
     opacity: 30%;
-    position: absolute;
+    position: fixed;
     display: none;
-    z-index: 2;
+    z-index: 3;
+    top: 0;
+    left: 0;
 }
 
 @media screen and (max-width: 769px){
@@ -210,7 +219,7 @@ footer .infos {
         padding-left: 0;
     }
 
-    .modal{
+    .modalFooter{
         width: 60%;
         left: 25%;
         bottom: 7%;
@@ -240,11 +249,11 @@ footer .infos {
         padding-left: 0;
     }
 
-    .modal .texto{
+    .modalFooter .textoModalFooter{
         font-size: 10px;
     }
 
-    .modal .titulo{
+    .modalFooter .tituloModalFooter{
         font-size: 14px;
     }
 }
