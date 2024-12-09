@@ -21,6 +21,5 @@ use App\Core\Router;
     $router->get('login', 'LoginController@exibirLogin');
     $router->post('login', 'LoginController@efetuaLogin');
     $router->post('logout', 'LoginController@logout');
-    $router->get('listadeposts', 'BuscaController@index');
 
 ?>
