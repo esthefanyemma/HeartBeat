@@ -25,7 +25,7 @@
           />
         </div>
         <div class="containerPost">
-          <h1>Titulo do Post</h1>
+          <h1><?= $post->title ?></h1>
           <div class="containerAutor">
             <div class="elipse"></div>
             <div class="autor">
