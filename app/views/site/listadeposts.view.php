@@ -26,21 +26,23 @@
         <div class="invisivel"></div>
       </div>
       <?php foreach ($posts as $post): ?>
-        <div class="imagem">
-          <img
-            class="imgGrupo"
-            src="<?php foreach ($users as $user): ?><?= $post->image ?><?php endforeach ?>"
-            alt="" />
-          <div class="texto">
-            <p><?php echo $post->title; ?></p>
-          </div>
-          <div class="content-autor">
-            <div class="elipse"><img class="userProfile" src="<?php foreach ($users as $user): ?><?= $user->image ?><?php endforeach ?>" alt=""></div>
-            <div class="autor">
-              <p class="textoAutor"><?php foreach ($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
-              </p>
-              <p class="textoData"><?php $horario = new DateTime($post->date);
-                                    echo $horario->format('d/m/y'); ?></p>
+        <a href="/postindividual?id=<?= $post->id ?>">
+          <div class="imagem">
+            <img
+              class="imgGrupo"
+              src="<?php foreach ($users as $user): ?><?= $post->image?><?php endforeach ?>"
+              alt="" />
+            <div class="texto">
+              <p><?php echo $post->title; ?></p>
+            </div>
+            <div class="content-autor">
+              <div class="elipse"><img class="userProfile" src="<?php foreach ($users as $user): ?><?= $user->image?><?php endforeach ?>" alt=""></div>
+              <div class="autor">
+                <p class="textoAutor"><?php foreach ($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
+                </p>
+                <p class="textoData"><?php $horario = new DateTime($post->date);
+                                      echo $horario->format('d/m/y'); ?></p>
+              </div>
             </div>
           </div>
         </a>
