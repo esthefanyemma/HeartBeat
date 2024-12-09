@@ -1,3 +1,8 @@
+<?php
+  $postObject = $post[0];
+  $userObject = $user[0];
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
   <head>
@@ -19,41 +24,18 @@
       </div>
       <div class="container">
         <div class="containerImage">
-          <img
-            src="../../../public/assets/blackpink-pictures-qixlwlo1dfbuylad.jpg"
-            alt="As Blackpink fazendo L."
-          />
+          <img src="<?= $postObject->image?>" alt="Imagem da publicação">
         </div>
         <div class="containerPost">
-          <h1><?= $post->title ?></h1>
+          <h1><?= $postObject->title;?></h1>
           <div class="containerAutor">
             <div class="elipse"></div>
             <div class="autor">
-              <h3>Autor</h3>
-              <h2>Data de criacao</h2>
+              <h3><?= $userObject->name?></h3>
+              <h2><?= $postObject->date;?></h2>
             </div>
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quam ea
-            ratione inventore dicta suscipit, rerum unde sit recusandae iste!
-            Distinctio eius, sit odit in laudantium repellendus ea possimus
-            veritatis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Ut quam ea ratione inventore dicta suscipit, rerum unde sit
-            recusandae iste! Distinctio eius, sit odit in laudantium repellendus
-            ea possimus veritatis?Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Ut quam ea ratione inventore dicta suscipit, rerum
-            unde sit recusandae iste! Distinctio eius, sit odit in laudantium
-            repellendus ea possimus veritatis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quam ea
-            ratione inventore dicta suscipit, rerum unde sit recusandae iste!
-            Distinctio eius, sit odit in laudantium repellendus ea possimus
-            veritatis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Ut quam ea ratione inventore dicta suscipit, rerum unde sit
-            recusandae iste! Distinctio eius, sit odit in laudantium repellendus
-            ea possimus veritatis?Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Ut quam ea ratione inventore dicta suscipit, rerum
-            unde sit recusandae iste! Distinctio eius, sit odit in laudantium
-            repellendus ea possimus veritatis?
-          </p>
+          <p><?= $postObject->description;?></p>
         </div>
       </div>
     </main>
