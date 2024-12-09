@@ -43,7 +43,7 @@
                                     echo $horario->format('d/m/y'); ?></p>
             </div>
           </div>
-        </div>
+        </a>
       <?php endforeach ?>
     </div>
   </div>

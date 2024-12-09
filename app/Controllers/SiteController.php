@@ -38,4 +38,12 @@ class SiteController{
 
         return view('site/listadeposts', compact('posts', 'users', 'page', 'total_pages')); 
     }
+
+    public function mostraPostIndividual()
+    {
+        $id = $_GET['id'];
+        $post = App::get('database')->selectOne('posts', $id);  
+        $user = App::get('database')->selectOne('users', $post[0]->author);  
+        return view('site/postIndividual', compact('post','user'));
+    }
 }

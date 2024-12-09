@@ -110,6 +110,10 @@
   background-color: #f763c6;
 }
 
+a{
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
