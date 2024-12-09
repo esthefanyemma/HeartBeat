@@ -29,13 +29,13 @@
         <div class="imagem">
           <img
             class="imgGrupo"
-            src="../../../public/assets/blackpink-pictures-qixlwlo1dfbuylad.jpg"
+            src="<?php foreach ($users as $user): ?><?= $post->image ?><?php endforeach ?>"
             alt="" />
           <div class="texto">
             <p><?php echo $post->title; ?></p>
           </div>
           <div class="content-autor">
-            <div class="elipse"></div>
+            <div class="elipse"><img class="userProfile" src="<?php foreach ($users as $user): ?><?= $user->image ?><?php endforeach ?>" alt=""></div>
             <div class="autor">
               <p class="textoAutor"><?php foreach ($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
               </p>

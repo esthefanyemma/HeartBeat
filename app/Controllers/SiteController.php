@@ -33,7 +33,7 @@ class SiteController{
         $total_pages = ceil($rows_count / $itensPage);
 
         $posts = App::get('database')->selectAll('posts', $inicio, $itensPage); 
-        $users = App::get('database')->selectAll('users', $inicio, $itensPage);
+        $users = App::get('database')->selectAll('users');
 
 
         return view('site/listadeposts', compact('posts', 'users', 'page', 'total_pages')); 
