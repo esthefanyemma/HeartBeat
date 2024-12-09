@@ -133,6 +133,7 @@ body {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+  line-break: anywhere;
 }
 
 .containerAutor .autor h3 {

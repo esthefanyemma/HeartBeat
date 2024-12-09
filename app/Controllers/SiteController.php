@@ -47,10 +47,10 @@ class SiteController{
         return view('site/postIndividual', compact('post','user'));
     }
 
-    public function mostraPostIndividual()
-    {
-        return view('site/postIndividual');
-    }
+    // public function mostraPostIndividual()
+    // {
+    //     return view('site/postIndividual');
+    // }
 
 
 }
