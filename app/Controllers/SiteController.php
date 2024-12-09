@@ -16,13 +16,31 @@ class SiteController{
         // return view('site/listadeposts');
 
         $page=1;
+        $itensPage = 6;
+        if(isset($_GET['search'])){
+            $total_itens = App::get('database')->countWithSearch('posts', 'title', $_GET['search']);
+            $total_pages = ceil($total_itens / $itensPage);
+            
+            if(isset($_GET['page']) && filter_var($_GET['page'], FILTER_VALIDATE_INT) && $_GET['page']>0 && $_GET['page'] <= $total_pages)
+                $page = $_GET['page'];
+
+                else
+                $page = 1;
+
+                $skip = ($page - 1) * $itensPage;
+
+                $posts = App::get('database')->selectAllWhithSearch('posts', 'titulo', $_GET['search'], $itensPage , $skip);
+                $search = "&search=" . $_GET['search'];
+                return view('site/listadeposts', compact('posts', 'page', 'total_pages', 'search'));
+        }
+
+
          if(isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])){
              $page = intval($_GET['paginacaoNumero']);
              if($page <= 0){
                  return redirect('admin/posts');
              }
          }
-         $itensPage = 6;
          $inicio = $itensPage * $page - $itensPage;
          $rows_count = App::get('database')->countAll('posts');
 
@@ -36,7 +54,7 @@ class SiteController{
         $users = App::get('database')->selectAll('users');
 
 
-        return view('site/listadeposts', compact('posts', 'users', 'page', 'total_pages')); 
+        return view('site/paginacaoNumero', compact('posts', 'users', 'page', 'total_pages')); 
     }
 
     public function mostraPostIndividual()
@@ -51,6 +69,8 @@ class SiteController{
     // {
     //     return view('site/postIndividual');
     // }
+
+
 
 
 }

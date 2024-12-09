@@ -19,7 +19,9 @@
     <div class="postG">
       <div class="topo">
         <div id="divBusca">
-          <input type="text" id="txtBusca" placeholder="Pesquisar" />
+        <form action="/listadeposts" method="get">
+          <input type="text" name="search" id="txtBusca" placeholder="Pesquisar" />
+        </form>
           <img src="/public/assets/Vector.png" alt="" />
         </div>
         <p class="titulo">LISTA DE POSTS</p>
@@ -51,12 +53,12 @@
   </div>
   <div class="containerPaginacao">
     <div class="paginacao">
-      <a href="?paginacaoNumero=<?= $page - 1 ?>" class="seta <?= $page <= 1 ? "disabled" : "" ?> ">←</a>
+      <a href="?paginacaoNumero=<?= $page - 1 ?> <?= isset($search) ? $search : "" ?>"  class="seta <?= $page <= 1 ? "disabled" : "" ?> ">←</a>
       <?php for ($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
         <span class="page-number <?= $page_number == $page ? "active" : "" ?>"><a class="button"
             href="?paginacaoNumero=<?= $page_number ?>"><?= $page_number ?> </a></span>
       <?php endfor ?>
-      <a href="?paginacaoNumero=<?= $page + 1 ?>" class="seta <?= $page >= $total_pages ? 'disabled' : "" ?> ">→</a>
+      <a href="?paginacaoNumero=<?= $page + 1 ?> <?= isset($search) ? $search : "" ?>" class="seta <?= $page >= $total_pages ? 'disabled' : "" ?> ">→</a>
     </div>
   </div>
 

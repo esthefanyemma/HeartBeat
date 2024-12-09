@@ -40,7 +40,7 @@
            <thead>
              <div class="container-busca">
                <div id="divBuscaPubli">
-                 <input type="text" id="txtBuscaPubli" placeholder="Pesquisar" />
+                 <input type="text" name="search" id="txtBuscaPubli" placeholder="Pesquisar" />
                  <i class="fa-solid fa-magnifying-glass"></i>
                </div>
              </div>
