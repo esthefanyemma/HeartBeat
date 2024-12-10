@@ -1,7 +1,6 @@
 /* *{
     padding: 0;
     margin: 0;
-<<<<<<< HEAD
     box-sizing: border-box;
 } */
 /* body{
@@ -27,8 +26,6 @@
 .criar{
     width: fit-content;
     height: fit-content;
-=======
->>>>>>> CRUDposts
 }
 
 .modaldp{
@@ -74,6 +71,7 @@
     background-color: #bd7bd1;
     border: none;
     transition: all 0.2s;
+    cursor: pointer;
 }
 .botoesdp button:hover{
     transform: scale(1.05);

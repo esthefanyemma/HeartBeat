@@ -29,9 +29,7 @@
          <div class="btn" onclick="abrirModal('modalCriarPost')">
            <p>Criar</p>
            <i class="fa-solid fa-plus"></i>
-           <?php //foreach ($users as $user): ?>
              <?php require(__DIR__ . '/../admin/modalCriarPost.view.php'); ?>
-           <?php //endforeach ?>
          </div>
        </div>
        <div class="container-usuario">
@@ -79,14 +77,12 @@
                  </td>
 
                  <!-- Modais -->
-                 <?php //foreach ($users as $user): ?>
                    <?php require(__DIR__ . '/../admin/modalVisualizarPost.view.php'); ?>
                    <?php require(__DIR__ . '/../admin/modalEditarPost.view.php'); ?>
-                 <?php endforeach ?>
-                 <?php require(__DIR__ . '/../admin/modalDeletarPost.view.php'); ?>
+                  <?php require(__DIR__ . '/../admin/modalDeletarPost.view.php'); ?>
 
                </tr>
-             <?php //endforeach; ?>
+             <?php endforeach; ?>
            </tbody>
          </table>
          <div class="paginacao">

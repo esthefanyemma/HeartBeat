@@ -1,16 +1,4 @@
-/* *{
-    margin: 0px;
-    padding: 0px;
-} */
-
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap');
-
 
 .header-VU{
     background-color: #BD7BD1;
@@ -39,12 +27,15 @@
     width: 552px;
     height: fit-content;
     padding-bottom: 2% ;
-    margin: 4rem;   
+    /* margin: 4rem;    */
     background-color: #F2F2F2;
     border-radius: 6px;
     z-index: 10;
     font-family: "Fredoka", serif;
     position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .imgEdit{
