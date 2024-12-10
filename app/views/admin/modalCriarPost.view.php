@@ -1,6 +1,7 @@
 <?php 
   session_start();
   $userAtual = $_SESSION['id'];
+  
  ?>
  
 <!DOCTYPE html>

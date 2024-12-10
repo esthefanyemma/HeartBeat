@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="pt-br">
  <head>
    <meta charset="UTF-8" />
@@ -20,6 +20,7 @@
  <body>
    <div class="overlay" onclick="fechaModal()"></div>
    <main>
+    <?php //require 'sidebar.html';?>
      <div class="mainTabela">
        <div class="apresentacao">
          <div class="logo">

@@ -1,13 +1,14 @@
 body{
    /* padding: 2rem;*/
     padding-right: 1rem;
-    padding-top: 40px;
+    /* */
     gap: 60px;
     display: flex;
     flex-direction: column;
 }
 
 .ger-al{
+    margin-top: 40px; 
     align-items: center;
     background: linear-gradient(
         to right,

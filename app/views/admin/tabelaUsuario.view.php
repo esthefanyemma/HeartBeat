@@ -26,6 +26,7 @@
   <?php endforeach; ?>
 
   <div class="overlay" onclick="fechaModal()"></div>
+  <?php require 'sidebar.html'?>
   <main class="mainTabelaUser">
     <div class="apresentacao">
       <div class="logo-TU">

@@ -4,9 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-body *{
+.side{
     font-family: "Fredoka", sans-serif;
     font-size: 24px;
+    color: #f0f0f0;
+    position: absolute;
+}
+
+.sidebar{
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    color: #f0f0f0;
+    position: absolute;
+}
+
+.sidebar a{
+    text-decoration: none;
     color: #f0f0f0;
 }
 
@@ -50,19 +63,27 @@ border: none;
     align-items: center;
     cursor: pointer;
     transition: all 0.2s;
+    
 }
+
+.func i{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 24px;
+}
+
 .func i:hover, .func p:hover{
     background-image: #f09fd5;
     color: #f09fd5;
 }
 
-.texto{
+/* .texto{
     padding-left: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+} */
 #menu{
     transform: scale(1.5);
 }
