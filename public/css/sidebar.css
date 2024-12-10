@@ -10,6 +10,11 @@ body *{
     color: #f0f0f0;
 }
 
+button{
+background-color: #bd7bd1;
+border: none;
+}
+
 .sidebar{
     background-color: #bd7bd1;
     display: none;
