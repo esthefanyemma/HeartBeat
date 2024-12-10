@@ -3,7 +3,7 @@
  <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Página de Publicações</title>
+   <title>HeartBeats | Página de Publicações</title>
    <link rel="stylesheet" href="/public/css/publicacoesStyle.css">
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
