@@ -31,10 +31,14 @@
         <div class="containerPost">
           <h1><?= $postObject->title;?></h1>
           <div class="containerAutor">
-          <div class="elipse"><img class="userProfile" src="<?= $userObject->image?>" alt=""></div>
+            <div class="elipse">
+              <img class="userProfile" src="<?= $userObject->image?>" alt="">
+            </div>
             <div class="autor">
               <h3><?= $userObject->name?></h3>
-              <h2><?= $postObject->date;?></h2>
+              <h2><?php $horario = new DateTime($postObject->date);
+                                  echo $horario->format('d/m/y H:i'); ?>
+              </h2>
             </div>
           </div>
           <p><?= $postObject->description;?></p>
