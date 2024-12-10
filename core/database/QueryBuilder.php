@@ -114,6 +114,29 @@ class QueryBuilder
         }
     }
 
+    public function selectAllList($table, $take = null, $skip = null)
+{
+    $sql = "SELECT * FROM {$table}";
+    
+    if (!is_null($take) && !is_null($skip)) {
+        $sql .= " LIMIT :skip, :take";
+    }
+
+    try {
+        $stmt = $this->pdo->prepare($sql);
+
+        if (!is_null($take) && !is_null($skip)) {
+            $stmt->bindValue(':skip', $skip, PDO::PARAM_INT);
+            $stmt->bindValue(':take', $take, PDO::PARAM_INT);
+        }
+
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+    } catch (Exception $e) {
+        die($e->getMessage());
+    }
+}
     public function criar($parametros){
         $sql = sprintf('INSERT INTO USERS (%s) VALUES (%s) ', implode(', ', array_keys($parametros)), ':' . implode(', :' , array_keys($parametros)) );
 

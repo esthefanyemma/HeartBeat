@@ -37,7 +37,7 @@
             <div class="autor">
               <h3><?= $userObject->name?></h3>
               <h2><?php $horario = new DateTime($postObject->date);
-                                  echo $horario->format('d/m/y H:i'); ?>
+                                  echo $horario->format('d/m/y'); ?>
               </h2>
             </div>
           </div>
