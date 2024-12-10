@@ -1,3 +1,8 @@
+<?php 
+  session_start();
+  $userAtual = $_SESSION['id'];
+ ?>
+ 
 <!DOCTYPE html>
  <html lang="pt-br">
  <head>
@@ -20,7 +25,7 @@
  <body>
    <div class="overlay" onclick="fechaModal()"></div>
    <main>
-    <?php //require 'sidebar.html';?>
+    <?php require 'sidebar.html';?>
      <div class="mainTabela">
        <div class="apresentacao">
          <div class="logo">
