@@ -21,6 +21,11 @@ body *{
     left: 0;
     z-index: 10;
 }
+
+.btsdasidebar{
+    box-shadow: none;
+}
+
 .side{
     background-color: #bd7bd1;
     display: flex;

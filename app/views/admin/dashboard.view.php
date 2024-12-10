@@ -21,30 +21,33 @@
 </head>
 
 <body>
-    <div class="ger-al">
-        <div class="cabeçalho">
-            <div class="logo-tipo">
-                <img src="/public/assets/logo2.png" alt="logo do blog"> 
-                    <h1>DASHBOARD</h1>
+    <div class="acertadashboard">
+
+        <?php require 'sidebar.html'?> 
+        <div class="ger-al">
+            <div class="cabeçalho">
+                <div class="logo-tipo">
+                    <img src="/public/assets/logo2.png" alt="logo do blog"> 
+                        <h1>DASHBOARD</h1>
+                </div>
+                <div class="divlogout">
+                <form action="/logout" method="POST">
+                    <button class="button-logout" type="submit">
+                        <span class="material-icons">
+                        logout
+                        </span>
+                    </button>
+                </form> 
+                </div>
             </div>
-            <div class="divlogout">
-            <form action="/logout" method="POST">
-                <button class="button-logout" type="submit">
-                    <span class="material-icons">
-                    logout
-                    </span>
-                </button>
-            </form> 
-            </div>
-        </div>
-        <div class="diminuir">
-            <div class="botoes-superiores">
-            <a href="/posts">Tabela de <br>Posts</a> 
-            <a href="/usuarios">Tabela de <br>Usuários</a>
+            <div class="diminuir">
+                <div class="botoes-superiores">
+                <a href="/posts">Tabela de <br>Posts</a> 
+                <a href="/usuarios">Tabela de <br>Usuários</a>
+                </div>
             </div>
         </div>
     </div>
-
 
 </body>
 
