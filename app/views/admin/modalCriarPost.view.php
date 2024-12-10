@@ -1,3 +1,8 @@
+<?php 
+  session_start();
+  $userAtual = $_SESSION['id'];
+ ?>
+ 
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -13,7 +18,7 @@
         </div>
         <form class="conteudoCriar" method="POST" action="/posts/create" enctype="multipart/form-data">
             <div class="infosFixas">
-                <p><?= $user->name?></p>
+                <p><?php foreach($users as $user):?><?= $user->id === $userAtual ? $user->name : "" ?><?php endforeach;?></p>
                 <p><?php 
                     $timezone = new DateTimeZone('America/Sao_Paulo');
                     $agora = new DateTime('now', $timezone);
@@ -27,7 +32,7 @@
             <input type="file" accept="image/*" id="adcImage" name="imagem" autofocus required>
             <input type="text" name="title" id="adcTitulo" placeholder="Digite o título da publicação" required>
             <textarea name="description" id="adcDesc" placeholder="Digite a descrição da publicação" required></textarea>
-            <input type="hidden" value="<?= $user->id?>" name="userID">
+            <input type="hidden" value="<?= $userAtual?>" name="userID">
             <div class="botoesCriar">
                 <button type="submit" class="botaoCriar">Criar</button>
                 <button type="button" class="botaoCancelar" onclick="fechaModal()" >Cancelar</button>
