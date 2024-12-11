@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -73,75 +74,43 @@
         </div>
         <p class="titulo">POST RECENTES</p>
         <div class="postG">
-                <form class="postLista1">
+            <form class="postLista1">
+                <?php for($i=0;$i<3;$i++):?>
+                    <?php foreach ($users as $user): ?><?php $posts[$i]->author == $user->id ? $userPost = $user : "" ?><?php endforeach ?>
                     <div class="imagem">
-                        <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                        <div class="texto"><p>Titulo</p></div>
+                        <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
+                        <div class="texto"><p><?= $posts[$i]->title;?></p></div>
                         <div class="autor">
-                            <div class="elipse"></div>
+                            <div class="elipse">
+                                <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
+                            </div>
                             <div class="autortext">
-                                <p class="textoAutor">Autor</p>
-                                <p class="textoData">01/10/2024</p>
+                                <p class="textoAutor"><?= $userPost->name;?></p>
+                                <p class="textoData"><?php $horario = new DateTime($posts[$i]->date);
+                                      echo $horario->format('d/m/y'); ?></p>
                             </div>
                         </div>
-                    </div>  
-                    <div class="imagem">
-                        <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                        <div class="texto"><p>Titulo</p></div>
-                        <div class="autor">
-                            <div class="elipse"></div>
-                            <div class="autortext">
-                                <p class="textoAutor">Autor</p>
-                                <p class="textoData">01/10/2024</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="imagem">
-                        <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                        <div class="texto"><p>Titulo</p></div>
-                        <div class="autor">
-                            <div class="elipse"></div>
-                            <div class="autortext">
-                                <p class="textoAutor">Autor</p>
-                                <p class="textoData">01/10/2024</p>
-                            </div>
-                        </div>
-                    </div> 
+                    </div>
+                <?php endfor;?>  
             </form>
             <form class="postLista1">
-                <div class="imagem">
-                    <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                    <div class="texto"><p>Titulo</p></div>
-                    <div class="autor">
-                        <div class="elipse"></div>
-                        <div class="autortext">
-                            <p class="textoAutor">Autor</p>
-                            <p class="textoData">01/10/2024</p>
+                <?php for($i=3;$i<6;$i++):?>
+                    <?php foreach ($users as $user): ?><?php $posts[$i]->author == $user->id ? $userPost = $user : "" ?><?php endforeach ?>
+                    <div class="imagem">
+                        <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
+                        <div class="texto"><p><?= $posts[$i]->title;?></p></div>
+                        <div class="autor">
+                            <div class="elipse">
+                                <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
+                            </div>
+                            <div class="autortext">
+                                <p class="textoAutor"><?= $userPost->name;?></p>
+                                <p class="textoData"><?php $horario = new DateTime($posts[$i]->date);
+                                      echo $horario->format('d/m/y'); ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>  
-                <div class="imagem">
-                    <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                    <div class="texto"><p>Titulo</p></div>
-                    <div class="autor">
-                        <div class="elipse"></div>
-                        <div class="autortext">
-                            <p class="textoAutor">Autor</p>
-                            <p class="textoData">01/10/2024</p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="imagem">
-                    <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                    <div class="texto"><p>Titulo</p></div>
-                    <div class="autor">
-                        <div class="elipse"></div>
-                        <div class="autortext">
-                            <p class="textoAutor">Autor</p>
-                            <p class="textoData">01/10/2024</p>
-                        </div>
-                    </div>
-                </div> 
+                <?php endfor;?>  
             </form>
 
             

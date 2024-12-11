@@ -268,6 +268,20 @@ class QueryBuilder
         }
     }
 
+    public function selectWithOrder($table, $param)
+    {
+        $sql = "select * from {$table} order by {$param} DESC";
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
     
 
 }

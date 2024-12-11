@@ -8,7 +8,9 @@ use Exception;
 class SiteController{
     public function index()
     {
-        return view('site/landingPage'); 
+        $posts = App::get('database')->selectWithOrder('posts', 'date');
+        $users = App::get('database')->selectAll('users');
+        return view('site/landingPage', compact('posts','users')); 
     }
 
     private const ITENS_PER_PAGE = 6;
