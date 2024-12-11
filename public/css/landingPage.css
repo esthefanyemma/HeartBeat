@@ -170,6 +170,10 @@ body *{
     border-radius: 12px;
 }
 
+.postLista1 a{
+    text-decoration: none;
+}
+
 .botao1{
     display: flex;
     justify-content: center;

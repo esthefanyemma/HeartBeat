@@ -77,39 +77,43 @@
             <form class="postLista1">
                 <?php for($i=0;$i<3;$i++):?>
                     <?php foreach ($users as $user): ?><?php $posts[$i]->author == $user->id ? $userPost = $user : "" ?><?php endforeach ?>
-                    <div class="imagem">
-                        <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
-                        <div class="texto"><p><?= $posts[$i]->title;?></p></div>
-                        <div class="autor">
-                            <div class="elipse">
-                                <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
-                            </div>
-                            <div class="autortext">
-                                <p class="textoAutor"><?= $userPost->name;?></p>
-                                <p class="textoData"><?php $horario = new DateTime($posts[$i]->date);
-                                      echo $horario->format('d/m/y'); ?></p>
+                    <a href="/postindividual?id=<?= $posts[$i]->id ?>">
+                        <div class="imagem">
+                            <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
+                            <div class="texto"><p><?= $posts[$i]->title;?></p></div>
+                            <div class="autor">
+                                <div class="elipse">
+                                    <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
+                                </div>
+                                <div class="autortext">
+                                    <p class="textoAutor"><?= $userPost->name;?></p>
+                                    <p class="textoData"><?php $horario = new DateTime($posts[$i]->date);
+                                        echo $horario->format('d/m/y'); ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 <?php endfor;?>  
             </form>
             <form class="postLista1">
                 <?php for($i=3;$i<6;$i++):?>
                     <?php foreach ($users as $user): ?><?php $posts[$i]->author == $user->id ? $userPost = $user : "" ?><?php endforeach ?>
-                    <div class="imagem">
-                        <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
-                        <div class="texto"><p><?= $posts[$i]->title;?></p></div>
-                        <div class="autor">
-                            <div class="elipse">
-                                <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
-                            </div>
-                            <div class="autortext">
-                                <p class="textoAutor"><?= $userPost->name;?></p>
-                                <p class="textoData"><?php $horario = new DateTime($posts[$i]->date);
-                                      echo $horario->format('d/m/y'); ?></p>
+                    <a href="/postindividual?id=<?= $posts[$i]->id ?>">
+                        <div class="imagem">
+                            <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
+                            <div class="texto"><p><?= $posts[$i]->title;?></p></div>
+                            <div class="autor">
+                                <div class="elipse">
+                                    <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
+                                </div>
+                                <div class="autortext">
+                                    <p class="textoAutor"><?= $userPost->name;?></p>
+                                    <p class="textoData"><?php $horario = new DateTime($posts[$i]->date);
+                                        echo $horario->format('d/m/y'); ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 <?php endfor;?>  
             </form>
 
