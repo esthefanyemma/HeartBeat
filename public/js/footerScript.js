@@ -36,4 +36,5 @@ document.addEventListener('mousedown',(e)=>{
     if(!modal.contains(e.target)){
         closeModal();
     }
+    closeModal();
 })

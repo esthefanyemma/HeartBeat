@@ -36,7 +36,7 @@ body *{
     color: #fefefe;
 }
 
-.texto p{
+.textoPost p{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

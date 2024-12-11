@@ -80,7 +80,7 @@
                     <a href="/postindividual?id=<?= $posts[$i]->id ?>">
                         <div class="imagem">
                             <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
-                            <div class="texto"><p><?= $posts[$i]->title;?></p></div>
+                            <div class="texto textoPost"><p><?= $posts[$i]->title;?></p></div>
                             <div class="autor">
                                 <div class="elipse">
                                     <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
@@ -101,7 +101,7 @@
                     <a href="/postindividual?id=<?= $posts[$i]->id ?>">
                         <div class="imagem">
                             <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
-                            <div class="texto"><p><?= $posts[$i]->title;?></p></div>
+                            <div class="texto textoPost"><p><?= $posts[$i]->title;?></p></div>
                             <div class="autor">
                                 <div class="elipse">
                                     <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
