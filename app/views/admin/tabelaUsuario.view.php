@@ -26,7 +26,7 @@
   <?php endforeach; ?>
 
   <div class="overlay" onclick="fechaModal()"></div>
-  <?php require 'sidebar.html'?>
+  <?php require 'sidebar.html' ?>
   <main class="mainTabelaUser">
     <div class="apresentacao">
       <div class="logo-TU">
@@ -43,7 +43,9 @@
         <thead>
           <div class="container-busca">
             <div id="divBusca">
-              <input type="text" id="txtBusca" placeholder="Pesquisar" />
+              <form action="/usuarios" method="get">
+                <input type="text" name="search" id="txtBusca" placeholder="Pesquisar" />
+              </form>
               <img src="/public/assets/Vector.png" alt="" />
             </div>
           </div>
@@ -81,12 +83,11 @@
         </tbody>
       </table>
       <div class="paginacao">
-        <a href="?paginacaoNumero=<?= $page - 1 ?>" class="seta <?= $page <= 1 ? "disabled" : "" ?> ">←</a>
-        <?php for ($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
-          <span class="page-number <?= $page_number == $page ? "active" : "" ?>"><a class="button"
-              href="?paginacaoNumero=<?= $page_number ?>"><?= $page_number ?> </a></span>
+        <a href="/usuarios?page=<?= $page == 1 ? $page : $page - 1 ?><?= isset($search) ? $search : "" ?>" class="seta <?= $page <= 1 ? "disabled" : "" ?> ">←</a>
+        <?php for ($index = 1; $index <= $total_pages; $index++): ?>
+          <span class="page-number <?= $index == $page ? "active" : "" ?>"><a class="button" href="/usuarios?page=<?= $index ?><?= isset($search) ? $search : "" ?>"><?= $index ?> </a></span>
         <?php endfor ?>
-        <a href="?paginacaoNumero=<?= $page + 1 ?>" class="seta <?= $page >= $total_pages ? 'disabled' : "" ?> ">→</a>
+        <a href="/usuarios?page=<?= $page == $total_pages ? $page : $page + 1 ?><?= isset($search) ? $search : "" ?>" class="seta <?= $page >= $total_pages ? 'disabled' : "" ?> ">→</a>
       </div>
     </div>
   </main>
