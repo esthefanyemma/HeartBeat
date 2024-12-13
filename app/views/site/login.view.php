@@ -17,8 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" type="png" href="../../public/assets/heartBeats-logo.png">
   </head>
   <body>
+      <div class="fechaLogin">
+        <a href="/"><i class="fa-solid fa-xmark"></i></a>
+      </div>
       <div class="login-box">
         <div class="logo-login">
           <img src="../../../public/assets/heartBeats-logo-com-nome.png" alt="Logo Heartbeats"/>

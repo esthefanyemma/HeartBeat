@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION['id'])){
+  header('Location: /login');
+}
 $userAtual = $_SESSION['id'];
 ?>
 
@@ -13,6 +16,7 @@ $userAtual = $_SESSION['id'];
   <link rel="stylesheet" href="/public/css/publicacoesStyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" type="png" href="../../public/assets/heartBeats-logo.png">
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
     rel="stylesheet" />

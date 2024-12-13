@@ -15,6 +15,7 @@
     <title>Heart Beats | Dashboard</title>
     <link rel="stylesheet" href="/public/css/dashboard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+    <link rel="shortcut icon" type="png" href="../../public/assets/heartBeats-logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
