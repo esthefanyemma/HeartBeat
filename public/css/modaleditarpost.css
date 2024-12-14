@@ -27,6 +27,25 @@
     border-radius: 6px;
 }   
 
+.modaleditar-h2{
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.editmodalh2titulo{
+    padding-left: 10px;
+    width: 80%;
+    padding: 5px;
+}
+
+.editmodalh2descricao{
+    padding-left: 5px;
+    width: 80%;
+    padding: 5px;
+}
+
 .tituloModalEditar{
     background-color: #bd7bd1;
     display: flex;
