@@ -1,6 +1,6 @@
 .topo {
   display: flex;
-  width: 95%;
+  width: 86%;
   justify-content: space-between;
   align-items: center;
 }
@@ -309,13 +309,16 @@ body {
     margin-bottom: 30px;
   }
   .topo{
-    width: 100%;
+    width: 78%;
   }
 
 }
 @media only screen and (max-width: 1024px) {
   #divBusca {
     height: 32px;
+  }
+  .topo{
+    width: 100%;
   }
 
   .topo p {
