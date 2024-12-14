@@ -17,11 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
     <link rel="shortcut icon" type="png" href="../../public/assets/heartBeats-logo.png">
   </head>
   <body>
       <div class="fechaLogin">
-        <a href="/"><i class="fa-solid fa-xmark"></i></a>
+        <a href="/"><span class="material-symbols-outlined">
+home
+</span></a>
       </div>
       <div class="login-box">
         <div class="logo-login">
