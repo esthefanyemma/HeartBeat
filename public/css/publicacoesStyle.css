@@ -275,7 +275,7 @@ body{
   
   @media (max-width: 1200px) {
     .mainTabela{
-      margin-left: 5%;
+      /* margin-left: 5%; */
       margin-right: 5%;
     }
     .container-busca {
@@ -285,7 +285,7 @@ body{
   
   @media (max-width: 1000px) {
     .mainTabela{
-      margin-left: 5%;
+      /* margin-left: 5%; */
       margin-right: 5%;
     }
 
@@ -293,7 +293,7 @@ body{
 
   @media (max-width: 900px){
     .mainTabela{
-      margin-left: 7%;
+      /* margin-left: 7%; */
       margin-right: 7%;
     }
     .container-busca {
@@ -305,7 +305,7 @@ body{
   @media (max-width: 800px) {
 
     .mainTabela{
-      margin-left: 5%;
+      /* margin-left: 5%; */
       margin-right: 5%;
     }
 
@@ -466,7 +466,7 @@ body{
   @media(max-width:400px){
 
     .mainTabela{
-      margin-left: 0.1%;
+      /* margin-left: 0.1%; */
       margin-right: 0.1%;
     }
 
