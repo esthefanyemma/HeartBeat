@@ -1,6 +1,6 @@
 .topo {
   display: flex;
-  width: 88%;
+  width: 95%;
   justify-content: space-between;
   align-items: center;
 }
@@ -61,11 +61,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1400px;
-  width: 90%;
-  border-radius: 0px 0px 6px 6px;
+  /* max-width: 1400px; */
+  width: 100%;
+  border-radius: 0px 0px 12px 12px;
+  margin: 0px 120px;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 .page-number {
   display: flex;
@@ -155,8 +156,9 @@ body {
 }
 .postG {
   display: flex;
-  width: 90%;
-  max-width: 1400px;
+  width: 100%;
+  /* max-width: 1500px; */
+  margin: 0px 120px;
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
@@ -168,7 +170,7 @@ body {
     rgba(136, 200, 238, 0.7)
   );
   padding: 5%;
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
 
 }
 .imagem {
@@ -260,24 +262,6 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
- .topo{
-  width: 92%;
- }
-  
-}
-
-
-@media only screen and (max-width: 1360px) {
-  .imagem {
-    width: 260px;
-  }
-  #divBusca {
-    height: 32px;
-  }
-  
-}
-
-@media only screen and (max-width: 1280px) {
   .imagem {
     width: 232px;
   }
@@ -289,6 +273,42 @@ body {
   }
 
   .topo {
+    width: 78%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1360px) {
+  .imagem {
+    width: 232px;
+  }
+  .imgGrupo {
+    height: 220px;
+  }
+  #divBusca {
+    height: 32px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .imagem {
+    width: 226px;
+  }
+  .imgGrupo {
+    height: 220px;
+  }
+  #divBusca {
+    height: 32px;
+  }
+  .postG{
+    margin:  0 60px;
+  }
+  .paginacao{
+    margin: 0px 60px;
+    margin-bottom: 30px;
+  }
+  .topo{
     width: 100%;
   }
 
@@ -336,7 +356,7 @@ body {
     font-size: 20px;
   }
   .imagem {
-    width: 232px;
+    width: 195px;
   }
   .imgGrupo {
     height: 180px;
@@ -356,7 +376,17 @@ body {
   }
   
   .topo{
-    width: 86%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .postG {
+    margin:  0 10px;
+  }
+  .paginacao{
+    margin: 0px 10px;
+    margin-bottom: 30px;
   }
 }
 
