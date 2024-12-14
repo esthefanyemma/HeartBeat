@@ -73,8 +73,14 @@
     transition: all 0.2s;
     cursor: pointer;
 }
+
 .botoesdp button:hover{
+    cursor: pointer;
     transform: scale(1.05);
+}
+
+#opacidadebtncancelpost{
+    opacity: 60%;
 }
 
 

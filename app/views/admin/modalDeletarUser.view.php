@@ -19,7 +19,7 @@
             </p>
             <div class="botoes_del">
                 <button type="submit">Confirmar</button>
-                <button type="button" onclick="fechaModal()">Cancelar</button>
+                <button type="button" onclick="fechaModal()" id="opacidadebtncanceluser">Cancelar</button>
             </div>
         </form>
     </div>

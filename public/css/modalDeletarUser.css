@@ -73,7 +73,12 @@ body *{
     transition: all 0.2s;
 }
 .botoes_del button:hover{
+    cursor: pointer;
     transform: scale(1.05);
+}
+
+#opacidadebtncanceluser{
+    opacity: 60%;
 }
 
 

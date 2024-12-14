@@ -20,7 +20,7 @@
                 <input type="hidden" name="id" value="<?= $post->id?>">
                 <div class="botoesdp">
                     <button type="submit">Confirmar</button>
-                    <button onclick="fechaModal()" type="button">Cancelar</button>
+                    <button onclick="fechaModal()" type="button" id="opacidadebtncancelpost">Cancelar</button>
                 </div>
             </form>
         </div>
