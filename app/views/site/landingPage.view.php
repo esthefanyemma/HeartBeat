@@ -76,7 +76,13 @@
         <p class="titulo">POST RECENTES</p>
         <div class="postG">
             <form class="postLista1">
-                <?php for($i=0;$i<6;$i++):?>
+                <?php $n = count($posts, 0);?>
+                <?php if($n<7)
+                        $tam = $n;
+                    else
+                        $tam = 6;
+                ?>
+                <?php for($i=0;$i<$tam;$i++):?>
                     <?php foreach ($users as $user): ?><?php $posts[$i]->author == $user->id ? $userPost = $user : "" ?><?php endforeach ?>
                     <a href="/postindividual?id=<?= $posts[$i]->id ?>">
                         <div class="imagem">
