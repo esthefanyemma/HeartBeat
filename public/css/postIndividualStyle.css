@@ -134,7 +134,16 @@ border-radius: 12px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
-  line-break: anywhere;
+}
+
+pre {
+  font-size: 16px;
+  font-family: "fredoka", sans-serif;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+  white-space: pre-wrap; 
+  word-wrap: break-word; 
 }
 
 .containerAutor .autor h3 {

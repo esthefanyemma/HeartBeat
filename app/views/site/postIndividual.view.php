@@ -42,7 +42,7 @@
               </h2>
             </div>
           </div>
-          <p><?= $postObject->description;?></p>
+          <pre><p><?= $postObject->description;?></p></pre>
         </div>
       </div>
       <?php require 'footer.html' ?>
