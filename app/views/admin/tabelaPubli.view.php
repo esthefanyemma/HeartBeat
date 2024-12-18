@@ -37,10 +37,10 @@ $userAtual = $_SESSION['id'];
           <img src="/public/assets/HeartBeats_img.png" alt="Logo HeartBeats" />
           <h2>Tabela de Publicações</h2>
         </div>
+        <?php require(__DIR__ . '/../admin/modalCriarPost.view.php'); ?>
         <div class="btn" onclick="abrirModal('modalCriarPost')">
           <p>Criar</p>
-          <i class="fa-solid fa-plus"></i>
-          <?php require(__DIR__ . '/../admin/modalCriarPost.view.php'); ?>
+          <i class="fa-solid fa-plus"></i>      
         </div>
       </div>
       <div class="container-usuario">
