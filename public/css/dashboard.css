@@ -10,6 +10,7 @@ body{
 .ger-al{
     margin-top: 40px; 
     align-items: center;
+    justify-content: center;
     background: linear-gradient(
         to right,
         rgba(189, 123, 209, 0.7),
@@ -19,13 +20,16 @@ body{
       padding-left: 860px;
     padding: 40px 20px;
     border-radius: 12px 12px 12px 12px;
-    width: 100%;
+    width: 90%;
     height: 30%;
     margin-left: 69px;
 }
 
 .acertadashboard{
     display: flex;
+    width: 100%;
+    gap: 1000px;
+
 }
 
 .logo-tipo img{
@@ -173,7 +177,8 @@ a:hover{
 @media screen and (max-width:370px) {
    
     .ger-al{
-        margin-left: 40px;
+        margin-left: 50px;
+        width: 88%;
     }
 
     .logo-tipo{
