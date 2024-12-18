@@ -77,7 +77,7 @@ body *{
     transform: scale(1.05);
 }
 
-#opacidadebtncanceluser{
+.opacidadebtncanceluser{
     opacity: 60%;
 }
 
