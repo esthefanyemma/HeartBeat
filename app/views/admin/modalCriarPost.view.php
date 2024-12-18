@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/public/css/modalcriarpost.css">
 </head>
 <body>
-    <div class="modalCriarPost modal" id="modalCriarPost">
+    <div class="modalCriarPost  modal" id="modalCriarPost">
         <div class="tituloModalCriar">
             <h1>Criar Publicação</h1>
         </div>
