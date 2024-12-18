@@ -15,7 +15,7 @@
             <div class="conteudoEditar">
                 <form method="POST" action="/posts/edit" enctype="multipart/form-data">
                     <div class="infosFixasEditar">
-                        <p><?php foreach($users as $user):?><?= $user->id === $userAtual ? $user->name : "" ?><?php endforeach;?></p>
+                        <p><?php foreach($users as $user):?><?= $user->id === $post->author ? $user->name : "" ?><?php endforeach;?></p>
                         <p><?php 
                             $horario = new DateTime($post->date);
                             echo $horario->format('d/m/y H:i');
