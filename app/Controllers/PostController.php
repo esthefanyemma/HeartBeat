@@ -8,12 +8,51 @@ use Exception;
 class PostController
 {
 
+    private const ITENS_PER_PAGE = 5;
+
     public function index()
     {
-        $posts = App::get('database')->selectAll('posts'); 
-        $users = App::get('database')->selectAll('users');
-
-        return view('admin/tabelaPubli', compact('posts', 'users')); 
+        
+        $users = App::get('database')->selectAllList('users');
+        
+        if (isset($_GET['search'])) {
+            $total_itens = App::get('database')->countWithSearch('posts', 'title', $_GET['search']);
+            $total_pages = ceil($total_itens / PostController::ITENS_PER_PAGE);
+            
+            if (
+                isset($_GET['page'])
+                && filter_var($_GET['page'], FILTER_VALIDATE_INT)
+                && $_GET['page'] > 0
+                && $_GET['page'] <= $total_pages
+                )
+                $page = $_GET['page'];
+                else
+                $page = 1;
+            
+            $skip = ($page - 1) * PostController::ITENS_PER_PAGE;
+            
+            $posts = App::get('database')->selectAllWhithSearch('posts', 'title', $_GET['search'], PostController::ITENS_PER_PAGE, $skip);
+            $search = "&search=" . $_GET['search'];
+            return view('admin/tabelaPubli', compact('posts', 'users', 'page', 'total_pages', 'search'));
+        }
+        
+        $total_itens = App::get('database')->count('posts');
+        $total_pages = ceil($total_itens / PostController::ITENS_PER_PAGE);
+        
+        if (
+            isset($_GET['page'])
+            && filter_var($_GET['page'], FILTER_VALIDATE_INT)
+            && $_GET['page'] > 0
+            && $_GET['page'] <= $total_pages
+            )
+            $page = $_GET['page'];
+            else
+            $page = 1;
+        
+        $skip = ($page - 1) * PostController::ITENS_PER_PAGE;
+        
+        $posts = App::get('database')->selectAllList("posts", PostController::ITENS_PER_PAGE, $skip);
+        return view('admin/tabelaPubli', compact('posts', 'users', 'page', 'total_pages'));
     }
 
     public function create()
@@ -25,10 +64,10 @@ class PostController
         $caminhodaimagem = "public/imagens/" . $nomeimagem;
 
         $parametros = [
-            'author'=>$_POST['userID'],
-            'image' =>$caminhodaimagem,
-            'title' =>$_POST['title'],
-            'description' =>$_POST['description']
+            'author' => $_POST['userID'],
+            'image' => $caminhodaimagem,
+            'title' => $_POST['title'],
+            'description' => $_POST['description']
         ];
 
 
@@ -39,7 +78,7 @@ class PostController
 
     public function edit()
     {
-        $id= $_POST['id'];
+        $id = $_POST['id'];
         $post = App::get('database')->selectOne('posts', $id);
         $temporario = $_FILES['imagem']['tmp_name'];
         $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
@@ -50,10 +89,10 @@ class PostController
         unlink($imagem_rota);
 
         $parametros = [
-            'author'=>$_POST['userID'],
-            'image' =>$caminhodaimagem,
-            'title' =>$_POST['title'],
-            'description' =>$_POST['description'],
+            'author' => $_POST['userID'],
+            'image' => $caminhodaimagem,
+            'title' => $_POST['title'],
+            'description' => $_POST['description'],
         ];
 
         $id = $_POST['id'];
@@ -62,7 +101,6 @@ class PostController
         App::get('database')->update('posts', $parametros, $id);
 
         header('Location: /posts');
-
     }
 
     public function delete()
@@ -72,7 +110,5 @@ class PostController
         App::get('database')->delete('posts', $id);
 
         header('Location: /posts');
-    }    
+    }
 }
-
-?>

@@ -6,7 +6,9 @@ use App\Controllers\LoginController;
 use App\Controllers\UserController;
 use App\Core\Router;
 
-    $router->get('', 'ExampleController@index');
+    $router->get('', 'SiteController@index');
+    $router->get('listaposts', 'SiteController@mostraListaPost');
+    $router->get('postindividual', 'SiteController@mostraPostIndividual');
     $router->get('usuarios', 'UserController@index');
     $router->post('usuarios/criar', 'UserController@criar');
     $router->post('usuarios/editar', 'UserController@editar');

@@ -6,26 +6,50 @@ use App\Core\App;
 use Exception;
 
 class UserController{
+
+    
+    private const ITENS_PER_PAGE = 5;
     public function index()
     {
-        $page=1;
-        if(isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])){
-            $page = intval($_GET['paginacaoNumero']);
-            if($page <= 0){
-                return redirect('admin/usuarios');
-            }
+        
+        if(isset($_GET['search'])){
+            $total_itens = App::get('database')->countWithSearch('users', 'name', $_GET['search']);
+            $total_pages = ceil($total_itens/UserController::ITENS_PER_PAGE);
+            
+            if(
+                isset($_GET['page']) 
+                && filter_var($_GET['page'], FILTER_VALIDATE_INT) 
+                && $_GET['page'] > 0 
+                && $_GET['page'] <= $total_pages
+                )
+                $page = $_GET['page'];
+                else 
+                $page = 1;
+            
+            $skip = ($page - 1) * UserController::ITENS_PER_PAGE;
+            
+            $users = App::get('database')->selectAllWhithSearch('users', 'name', $_GET['search'], UserController::ITENS_PER_PAGE, $skip);
+            $search = "&search=" . $_GET['search'];
+            return view('admin/tabelaUsuario', compact( 'users', 'page', 'total_pages', 'search'));
         }
-        $itensPage = 5;
-        $inicio = $itensPage * $page - $itensPage;
-        $rows_count = App::get('database')->countAll('users');
-
-        if($inicio > $rows_count){
-            return redirect('admin/usuarios');
-        }
-        $users = App::get('database')->selectAll('users', $inicio, $itensPage);
-        $total_pages = ceil($rows_count / $itensPage);
-
-        return view('admin/tabelaUsuario',compact('users','page', 'total_pages') );
+        
+        $total_itens = App::get('database')->countAll('users');
+        $total_pages = ceil($total_itens/UserController::ITENS_PER_PAGE);
+        
+        if(
+            isset($_GET['page']) 
+            && filter_var($_GET['page'], FILTER_VALIDATE_INT) 
+            && $_GET['page'] > 0 
+            && $_GET['page'] <= $total_pages
+            )
+            $page = $_GET['page'];
+            else 
+            $page = 1;
+        
+        $skip = ($page - 1) * UserController::ITENS_PER_PAGE;
+        
+        $users = App::get('database')->selectAllList('users', UserController::ITENS_PER_PAGE, $skip);
+        return view('admin/tabelaUsuario', compact( 'users', 'page', 'total_pages'));
     }
     public function criar(){
         $temporario = $_FILES['imagem']['tmp_name'];
@@ -70,5 +94,7 @@ class UserController{
         header('Location: /usuarios');
     }
 }
+
+
 
 ?>

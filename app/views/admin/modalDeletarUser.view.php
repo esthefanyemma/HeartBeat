@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
             </p>
             <div class="botoes_del">
                 <button type="submit">Confirmar</button>
-                <button type="button" onclick="fechaModal()">Cancelar</button>
+                <button type="button" onclick="fechaModal()" class="opacidadebtncanceluser">Cancelar</button>
             </div>
         </form>
     </div>

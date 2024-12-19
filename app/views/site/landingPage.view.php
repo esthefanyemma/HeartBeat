@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" type="png" href="../../public/assets/heartBeats-logo.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +16,7 @@
 <body>
 
     
-
+   <?php require 'navbar.html'?> 
 
     <div class="posts">
         <div class="desc">
@@ -73,83 +75,43 @@
         </div>
         <p class="titulo">POST RECENTES</p>
         <div class="postG">
-                <form class="postLista1">
-                    <div class="imagem">
-                        <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                        <div class="texto"><p>Titulo</p></div>
-                        <div class="autor">
-                            <div class="elipse"></div>
-                            <div class="autortext">
-                                <p class="textoAutor">Autor</p>
-                                <p class="textoData">01/10/2024</p>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="imagem">
-                        <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                        <div class="texto"><p>Titulo</p></div>
-                        <div class="autor">
-                            <div class="elipse"></div>
-                            <div class="autortext">
-                                <p class="textoAutor">Autor</p>
-                                <p class="textoData">01/10/2024</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="imagem">
-                        <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                        <div class="texto"><p>Titulo</p></div>
-                        <div class="autor">
-                            <div class="elipse"></div>
-                            <div class="autortext">
-                                <p class="textoAutor">Autor</p>
-                                <p class="textoData">01/10/2024</p>
-                            </div>
-                        </div>
-                    </div> 
-            </form>
             <form class="postLista1">
-                <div class="imagem">
-                    <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                    <div class="texto"><p>Titulo</p></div>
-                    <div class="autor">
-                        <div class="elipse"></div>
-                        <div class="autortext">
-                            <p class="textoAutor">Autor</p>
-                            <p class="textoData">01/10/2024</p>
+                <?php $n = count($posts, 0);?>
+                <?php if($n<7)
+                        $tam = $n;
+                    else
+                        $tam = 6;
+                ?>
+                <?php for($i=0;$i<$tam;$i++):?>
+                    <?php foreach ($users as $user): ?><?php $posts[$i]->author == $user->id ? $userPost = $user : "" ?><?php endforeach ?>
+                    <a href="/postindividual?id=<?= $posts[$i]->id ?>">
+                        <div class="imagem">
+                            <img class="imgGrupo" src="<?=$posts[$i]->image; ?> " alt="Foto do post">
+                            <div class="texto textoPost"><p><?= $posts[$i]->title;?></p></div>
+                            <div class="autor">
+                                <div class="elipse">
+                                    <img class="userImagemLP" src="<?=$userPost->image; ?>" alt="Foto do usuário">
+                                </div>
+                                <div class="autortext">
+                                    <p class="textoAutor"><?= $userPost->name;?></p>
+                                    <p class="textoData"><?php $horario = new DateTime($posts[$i]->date);
+                                        echo $horario->format('d/m/y'); ?></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>  
-                <div class="imagem">
-                    <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                    <div class="texto"><p>Titulo</p></div>
-                    <div class="autor">
-                        <div class="elipse"></div>
-                        <div class="autortext">
-                            <p class="textoAutor">Autor</p>
-                            <p class="textoData">01/10/2024</p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="imagem">
-                    <img class="imgGrupo" src="../../../public/assets/Frame 7.png  " alt="">
-                    <div class="texto"><p>Titulo</p></div>
-                    <div class="autor">
-                        <div class="elipse"></div>
-                        <div class="autortext">
-                            <p class="textoAutor">Autor</p>
-                            <p class="textoData">01/10/2024</p>
-                        </div>
-                    </div>
-                </div> 
+                    </a>
+                <?php endfor;?>  
             </form>
+          
 
             
         </div>
         <div class="botao1">
-            <button>VER MAIS</button>
+            <button><a href="./listaposts">VER MAIS</a></button>
         </div>
     </div>
+
+    <?php require'footer.html'?>
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

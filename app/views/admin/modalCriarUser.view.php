@@ -97,7 +97,7 @@
             
             form.addEventListener('submit', (event) => {
                 const value = inputNome.value.trim();
-                if(/^ \d + $/.test(value)){
+                if(/^\d+$/.test(value)){
                     event.preventDefault();
                     mensagemErro.style.display = 'block';
                 }

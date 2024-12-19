@@ -3,7 +3,6 @@
 /* *{
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     box-sizing: border-box;
 } */
 /* body{
@@ -17,10 +16,6 @@
 /* body *{
     font-family: "Fredoka", sans-serif;
 } */
-=======
-}
-
->>>>>>> CRUDposts
 .texto{
     font-size: 16px;
     width: auto;
@@ -46,7 +41,7 @@
 .modal_visualizarPost{
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     width: 28%;
     height:  fit-content;
@@ -56,6 +51,10 @@
     z-index: 3;
     font-family: "Fredoka", sans-serif;  
     word-break: break-all;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
 }
 .desc_visualizacao{
     display: flex;
@@ -103,6 +102,10 @@
     align-items: center;
     gap: 12px;
     padding: 0px 12px 12px 12px;
+}
+
+.esct_post .texto{
+    max-height: 120px;
 }
 
 @media only screen and (max-width: 900px){

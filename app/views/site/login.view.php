@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>HeartBeats | Login</title>
     <link rel="stylesheet" href="../../../public/css/loginStyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,8 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+    <link rel="shortcut icon" type="png" href="../../public/assets/heartBeats-logo.png">
   </head>
   <body>
+      <div class="fechaLogin">
+        <a href="/"><span class="material-symbols-outlined">
+home
+</span></a>
+      </div>
       <div class="login-box">
         <div class="logo-login">
           <img src="../../../public/assets/heartBeats-logo-com-nome.png" alt="Logo Heartbeats"/>

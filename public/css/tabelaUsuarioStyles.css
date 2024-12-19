@@ -24,6 +24,10 @@
   opacity: 0.5;
 }
 
+.active .button{
+  background-color: #f763c6;
+}
+
 .apresentacao {
   background: linear-gradient(
     to right,
@@ -258,14 +262,14 @@ tbody tr:hover {
 
 @media (max-width: 1200px) {
   .mainTabelaUser{
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-right: 5%;
   }
 }
 
 @media (max-width: 1000px) {
   .mainTabelaUser{
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-right: 5%;
   }
 
@@ -273,7 +277,7 @@ tbody tr:hover {
 
 @media (max-width: 900px){
   .mainTabelaUser{
-    margin-left: 7%;
+    /* margin-left: 7%; */
     margin-right: 7%;
   }
 }
@@ -281,7 +285,7 @@ tbody tr:hover {
 @media (max-width: 800px) {
 
   .mainTabelaUser{
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-right: 5%;
   }
 
@@ -455,7 +459,7 @@ tbody tr:hover {
 @media(max-width:400px){
 
   .mainTabelaUser{
-    margin-left: 0.1%;
+    /* margin-left: 0.1%; */
     margin-right: 0.1%;
   }
 

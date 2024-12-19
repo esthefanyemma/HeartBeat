@@ -13,24 +13,27 @@ body{
     width: 100%;
 }
 
-.navbarHeader .logo{
+.navbarHeader .logoNavbar
+{
     display: flex;
     align-items: center;
     margin-left: 7%;
 }
 
-.navbarHeader .logo #marca{
+.navbarHeader .logoNavbar
+ #marca{
     height: 90px;
     margin-right: 50px;
 }
 
-.navbarHeader .logo #escrito{
+.navbarHeader .logoNavbar
+ #escrito{
     height: 60px;
 }
 
 nav{
     color: #f2f2f2;
-    font-family: "Itim", cursive;
+    font-family: "Fredoka", cursive;
     font-size: 20px;
     margin-right: 9%;
 }
@@ -76,11 +79,13 @@ nav ul #login a{
 }
 
 @media screen and (max-width: 769px) {
-    .navbarHeader .logo #escrito {
+    .navbarHeader .logoNavbar
+     #escrito {
         width: 90%;
     }
 
-    .navbarHeader .logo{
+    .navbarHeader .logoNavbar
+    {
         order: 2;
         padding-right: 5%;
     }
@@ -100,19 +105,19 @@ nav ul #login a{
         /* margin-left: 5%; */
     }
 
-    .navbarHeader .logo #marca{
+    .navbarHeader .logoNavbar
+     #marca{
         /* height: 70px;
         padding: 5px; */
         display: none;
     }
 
     .modalNav{
-        background-color: #f09fd5;
-        background-color: #ff9fdf;
-        /* background-image: linear-gradient(to bottom, #ff9fdf, hwb(0 0% 100% / 0.3)); */
+        background-color: #bd7bd1;
+                /* background-image: linear-gradient(to bottom, #ff9fdf, hwb(0 0% 100% / 0.3)); */
         font-family: "Itim", cursive;
         font-size: 24px;
-        position: absolute;
+        position: fixed;
         height: 100%;
         left: 0;
         top: 0;
@@ -131,7 +136,7 @@ nav ul #login a{
 
     .modalNav li{
         list-style: none;
-        padding: 20px;  
+        padding: 14px;  
         display: flex;
         justify-content: center;
         /* width: 100%; */

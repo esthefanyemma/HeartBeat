@@ -1,14 +1,16 @@
 body{
-    padding: 2rem;
-    padding-right: 2rem;
-    padding-top: 40px;
+   /* padding: 2rem;*/
+    padding-right: 1rem;
+    /* */
     gap: 60px;
     display: flex;
     flex-direction: column;
 }
 
-.cabeçalho{
+.ger-al{
+    margin-top: 40px; 
     align-items: center;
+    justify-content: center;
     background: linear-gradient(
         to right,
         rgba(189, 123, 209, 0.7),
@@ -17,8 +19,17 @@ body{
       ); 
       padding-left: 860px;
     padding: 40px 20px;
-    border-radius: 12px;
-    
+    border-radius: 12px 12px 12px 12px;
+    width: 90%;
+    height: 30%;
+    margin-left: 69px;
+}
+
+.acertadashboard{
+    display: flex;
+    width: 100%;
+    gap: 1000px;
+
 }
 
 .logo-tipo img{
@@ -34,6 +45,7 @@ body{
 
 .material-icons{
     transform: scale(1);
+    color: white;
 }
 
 .logo-tipo{
@@ -56,6 +68,7 @@ body{
 a{
     box-shadow: 1px 1px 10px #000000;
     text-align: center;
+    text-decoration: none;
     transition: 0.2s all;
     cursor: pointer;
     color: white;
@@ -90,6 +103,7 @@ a:hover{
     display: block;
     padding: 12px 12px;
     width: fit-content;
+    border: none;
     cursor: pointer;
 }
 
@@ -137,6 +151,11 @@ a:hover{
 }
 
 @media screen and (max-width:522px) {
+    .ger-al{
+        margin-left: 45px;
+        margin-right: 10px;
+    }
+
     .botoes-superiores{   
         gap: 30px;
         flex-direction: column;
@@ -157,6 +176,11 @@ a:hover{
 
 @media screen and (max-width:370px) {
    
+    .ger-al{
+        margin-left: 50px;
+        width: 88%;
+    }
+
     .logo-tipo{
         padding-left: 25px;
     }
