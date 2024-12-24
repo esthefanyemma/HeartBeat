@@ -14,7 +14,7 @@
 #### Desenvolvedores:
 
 * Grégori Roberto 
-* Rebeca Brasilino
+* Rômulo Amaral
 * Vinicius Campos
 * José Simões
 
